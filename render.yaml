@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: seven-adventures
+    runtime: static
+    staticPublishPath: .
+    buildCommand: ""
+    envVars: []
