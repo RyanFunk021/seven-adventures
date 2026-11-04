@@ -1,0 +1,1199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<!--WRAPPER-END-->
+<title>Rocket Crew</title>
+<meta name="theme-color" content="#0b0d26">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@600;800&display=swap">
+<style>
+/* Layout: a one-screen space console. Setup is a scrolling crew roster; play is a full-bleed canvas
+   split into four player quadrants around a shared "bridge" stripe. Deliberately single dark theme. */
+:root{
+  --void:#0b0d26;      /* deep space ground */
+  --hull:#171c4d;      /* panels */
+  --bridge:#252c80;    /* the shared stripe */
+  --ink:#f3f0ff;       /* text */
+  --dim:#a6a3d8;       /* secondary text */
+  --flare:#ffd166;     /* stars, call to action */
+  --red:#ff6b6b; --blue:#4dabf7; --yellow:#ffd43b; --green:#69db7c;
+  --display:"Baloo 2","Trebuchet MS",system-ui,sans-serif;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{height:100%;box-sizing:border-box;background:var(--void)}
+body{height:100%;margin:0;overflow:hidden;background:var(--void);color:var(--ink);font-family:var(--body);
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;overscroll-behavior:none}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid var(--flare);outline-offset:2px}
+
+/* ---------- setup ---------- */
+#setup{height:100%;overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y;
+  background:radial-gradient(120% 60% at 50% -10%,#2a2f8f 0%,transparent 60%),var(--void)}
+.wrap{max-width:560px;margin:0 auto;padding-block:28px 48px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:22px}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:center}
+.hero .ship{font-size:64px;line-height:1;grid-row:span 2;filter:drop-shadow(0 6px 18px #ff9f4366);animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px) rotate(-4deg)}}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,11vw,58px);line-height:.9;margin:0;letter-spacing:-.01em;
+  background:linear-gradient(180deg,#fff 30%,var(--flare));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{margin:0;color:var(--dim);font-size:15px;line-height:1.45}
+h2{font-family:var(--display);font-size:20px;margin:0 0 10px;font-weight:800}
+.label{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);font-weight:800}
+.panel{background:var(--hull);border-radius:20px;padding:16px;border:1px solid #2f3678}
+.setup-how{display:grid;grid-template-columns:118px 1fr;gap:16px;align-items:center}
+.diagram{position:relative;width:118px;aspect-ratio:9/16;max-width:100%;border-radius:18px;border:3px solid #4b53a8;background:#0e1238;
+  display:grid;grid-template-rows:1fr 18% 1fr;grid-template-columns:1fr 1fr;overflow:hidden}
+.diagram .dq{display:flex;align-items:center;justify-content:center;font-size:24px}
+.diagram .dq.flip{transform:rotate(180deg)}
+.diagram .db{grid-column:1/3;background:var(--bridge)}
+.diagram .off{opacity:.18;filter:grayscale(1)}
+.steps{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:14px;line-height:1.4;color:var(--ink)}
+.steps b{color:var(--flare)}
+.seg{display:flex;gap:8px}
+.seg button{flex:1;border:2px solid #3a428f;background:transparent;border-radius:14px;padding:10px 0;font-family:var(--display);font-size:22px;font-weight:800}
+.seg button[aria-pressed="true"]{background:var(--flare);color:#2a1d00;border-color:var(--flare)}
+#cards{display:flex;flex-direction:column;gap:14px}
+.card{border-radius:20px;background:var(--hull);border:2px solid var(--c);padding:14px;display:flex;flex-direction:column;gap:12px;
+  box-shadow:inset 0 0 0 999px color-mix(in srgb,var(--c) 6%,transparent)}
+.card-head{display:flex;align-items:center;gap:12px}
+.card-head .big{font-size:40px;line-height:1;width:52px;height:52px;display:grid;place-items:center;border-radius:16px;background:color-mix(in srgb,var(--c) 22%,transparent)}
+.card-head .who{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
+.card-head .seat{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:var(--c)}
+.card input[type=text]{width:100%;border:2px solid #3a428f;background:#0e1238;color:var(--ink);border-radius:12px;padding:8px 12px;font:800 18px var(--display);-webkit-user-select:text;user-select:text}
+.card input[type=text]::placeholder{color:#6d6aa8}
+.row{display:flex;flex-wrap:wrap;gap:6px}
+.av{width:42px;height:42px;border-radius:12px;border:2px solid transparent;background:#0e1238;font-size:24px;line-height:1;display:grid;place-items:center;padding:0}
+.av[aria-pressed="true"]{border-color:var(--c);background:color-mix(in srgb,var(--c) 25%,#0e1238)}
+.av:disabled{opacity:.25;cursor:default}
+.age{min-width:40px;height:36px;border-radius:999px;border:2px solid #3a428f;background:transparent;font-weight:800;font-size:15px;padding:0 8px}
+.age[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:#14122e}
+#start{border:0;border-radius:20px;padding:16px;background:linear-gradient(180deg,#ffdf8a,var(--flare));color:#2a1d00;
+  font:800 26px var(--display);box-shadow:0 8px 0 #c79a2c,0 14px 30px #ffd16644}
+#start:active{transform:translateY(4px);box-shadow:0 4px 0 #c79a2c}
+.fine{font-size:13px;color:var(--dim);margin:0;line-height:1.5}
+
+/* ---------- game ---------- */
+#game{position:relative;width:100%;height:100%;touch-action:none}
+#cv{display:block;width:100%;height:100%;touch-action:none}
+#pauseBtn{position:absolute;left:8px;width:40px;height:40px;border-radius:12px;border:2px solid #5560c0;background:#1b2160cc;font:800 16px var(--display);display:grid;place-items:center;padding:0}
+#endBtns{position:absolute;left:0;right:0;display:flex;justify-content:center;gap:10px;pointer-events:none}
+#endBtns button{pointer-events:auto;border:0;border-radius:14px;padding:8px 14px;font:800 16px var(--display);background:var(--flare);color:#2a1d00}
+#endBtns button.ghost{background:#ffffff1a;color:var(--ink);border:2px solid #ffffff55}
+.overlay{position:fixed;inset:0;background:#06071acc;display:grid;place-items:center;z-index:5;padding:16px}
+.sheet{background:var(--hull);border:2px solid #3a428f;border-radius:22px;padding:20px;width:min(340px,100%);display:flex;flex-direction:column;gap:10px}
+.sheet h2{text-align:center;margin:0 0 4px}
+.sheet button{border:2px solid #3a428f;background:#0e1238;border-radius:14px;padding:12px;font:800 18px var(--display)}
+.sheet button.primary{background:var(--flare);color:#2a1d00;border-color:var(--flare)}
+@media (prefers-reduced-motion:reduce){.hero .ship{animation:none}}
+</style>
+<!--WRAPPER-BODY-->
+</head>
+<body>
+<!--WRAPPER-BODY-END-->
+
+<div id="setup">
+  <div class="wrap">
+    <header class="hero">
+      <div class="ship" aria-hidden="true">🚀</div>
+      <h1>Rocket Crew</h1>
+      <p class="tag">Seven team missions on one phone. About ten minutes. Everyone has a job, and the rocket only gets home if the whole crew helps.</p>
+    </header>
+
+    <section class="panel setup-how" aria-label="How to sit">
+      <div class="diagram" id="diagram" aria-hidden="true"></div>
+      <ol class="steps">
+        <li>Lay the phone <b>flat</b> on a table or the floor.</li>
+        <li>Sit <b>two crew at each end</b>. Each of you owns one corner of the screen.</li>
+        <li>Turn the sound up and switch on <b>rotation lock</b>.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>How many crew?</h2>
+      <div class="seg" id="count" role="group" aria-label="Number of players">
+        <button type="button" data-n="2">2</button>
+        <button type="button" data-n="3">3</button>
+        <button type="button" data-n="4">4</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Meet the crew</h2>
+      <p class="fine" style="margin-bottom:12px">Age sets how hard each player's part is, so a 4-year-old and a 12-year-old can both shine.</p>
+      <div id="cards"></div>
+    </section>
+
+    <button id="start" type="button">Blast off!</button>
+    <p class="fine">Grown-ups: the <b>II</b> button on the middle stripe pauses, skips a mission or turns the voice off. Tap the middle stripe during a mission briefing to hear it again.</p>
+  </div>
+</div>
+
+<div id="game" hidden>
+  <canvas id="cv"></canvas>
+  <button id="pauseBtn" type="button" aria-label="Pause">II</button>
+  <div id="endBtns" hidden>
+    <button type="button" id="againBtn">Play again</button>
+    <button type="button" id="crewBtn" class="ghost">Change crew</button>
+  </div>
+</div>
+
+<div id="pause" class="overlay" hidden>
+  <div class="sheet">
+    <h2>Paused</h2>
+    <button type="button" class="primary" id="resumeBtn">Keep playing</button>
+    <button type="button" id="skipBtn">Skip this mission</button>
+    <button type="button" id="soundBtn">Sound: on</button>
+    <button type="button" id="voiceBtn">Voice: on</button>
+    <button type="button" id="quitBtn">Back to crew setup</button>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* ================= constants & helpers ================= */
+const $ = s => document.querySelector(s);
+const AVATARS = ['🐯','🐼','🦊','🐸','🐵','🐰','🐶','🐱','🦄','🐙','🐧','🦖'];
+// seats: 0 bottom-left, 1 bottom-right, 2 top-right, 3 top-left (top seats are drawn upside down)
+const SEATS = [
+  {name:'Red',    main:'#ff6b6b', deep:'#6b1f35', note:261.63, where:'Bottom left'},
+  {name:'Blue',   main:'#4dabf7', deep:'#123c6e', note:329.63, where:'Bottom right'},
+  {name:'Yellow', main:'#ffd43b', deep:'#5e4a0c', note:392.00, where:'Top right'},
+  {name:'Green',  main:'#69db7c', deep:'#14512a', note:523.25, where:'Top left'},
+];
+const SEATS_FOR = {2:[0,2], 3:[0,1,2], 4:[0,1,2,3]};
+const AGES = [3,4,5,6,7,8,9,10,11,12];
+const lvlOf = a => a<=4?1 : a<=6?2 : a<=8?3 : a<=10?4 : 5;
+const rand = (a,b) => a + Math.random()*(b-a);
+const ri = (a,b) => Math.floor(rand(a,b+1));
+const pick = a => a[Math.floor(Math.random()*a.length)];
+const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
+const sum = (a,f) => a.reduce((s,x)=>s+f(x),0);
+const shuffle = a => { for (let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+const easeBack = k => { const c=1.7; k=clamp(k,0,1)-1; return 1 + (c+1)*k*k*k + c*k*k; };
+const cap = s => s[0].toUpperCase()+s.slice(1);
+const store = {
+  get(k){ try { return JSON.parse(localStorage.getItem(k)); } catch(e){ return null; } },
+  set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+};
+
+/* ================= setup screen ================= */
+let cfg = store.get('rocketcrew.cfg') || {
+  count:4,
+  seats:[{avatar:'🐯',name:'',age:4},{avatar:'🐼',name:'',age:6},{avatar:'🦊',name:'',age:8},{avatar:'🐸',name:'',age:10}]
+};
+
+function renderSetup(){
+  document.querySelectorAll('#count button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.n === cfg.count)));
+  const active = SEATS_FOR[cfg.count];
+  // diagram: grid order is top-left, top-right, band, bottom-left, bottom-right
+  const cell = s => `<div class="dq ${s>=2?'flip':''} ${active.includes(s)?'':'off'}" style="background:${SEATS[s].main}33">${active.includes(s)?cfg.seats[s].avatar:'·'}</div>`;
+  $('#diagram').innerHTML = cell(3)+cell(2)+'<div class="db"></div>'+cell(0)+cell(1);
+  const used = active.map(s => cfg.seats[s].avatar);
+  $('#cards').innerHTML = active.map(s => {
+    const c = cfg.seats[s], S = SEATS[s];
+    return `<div class="card" style="--c:${S.main}" data-seat="${s}">
+      <div class="card-head">
+        <div class="big" aria-hidden="true">${c.avatar}</div>
+        <div class="who">
+          <span class="seat">${S.name} corner · ${S.where}</span>
+          <input type="text" id="name${s}" maxlength="12" placeholder="${S.name}" value="${(c.name||'').replace(/"/g,'&quot;')}" aria-label="${S.name} player's name" autocomplete="off">
+        </div>
+      </div>
+      <div><div class="label" style="margin-bottom:6px">Pick an animal</div>
+        <div class="row">${AVATARS.map(a => `<button type="button" class="av" data-av="${a}" aria-pressed="${a===c.avatar}" ${a!==c.avatar && used.includes(a)?'disabled':''} aria-label="Animal ${a}">${a}</button>`).join('')}</div></div>
+      <div><div class="label" style="margin-bottom:6px">Age</div>
+        <div class="row">${AGES.map(a => `<button type="button" class="age" data-age="${a}" aria-pressed="${a===c.age}">${a===12?'12+':a}</button>`).join('')}</div></div>
+    </div>`;
+  }).join('');
+}
+$('#count').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  cfg.count = +b.dataset.n; renderSetup(); store.set('rocketcrew.cfg', cfg);
+});
+$('#cards').addEventListener('click', e => {
+  const card = e.target.closest('.card'); if (!card) return;
+  const s = +card.dataset.seat, b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.av) cfg.seats[s].avatar = b.dataset.av;
+  if (b.dataset.age) cfg.seats[s].age = +b.dataset.age;
+  renderSetup(); store.set('rocketcrew.cfg', cfg);
+});
+$('#cards').addEventListener('input', e => {
+  const card = e.target.closest('.card'); if (!card) return;
+  cfg.seats[+card.dataset.seat].name = e.target.value.trim(); store.set('rocketcrew.cfg', cfg);
+});
+renderSetup();
+
+/* ================= audio & voice ================= */
+let AC = null, master = null, soundOn = true, voiceOn = true;
+function initAudio(){
+  try {
+    if (!AC){ AC = new (window.AudioContext||window.webkitAudioContext)(); master = AC.createGain(); master.gain.value = .55; master.connect(AC.destination); }
+    if (AC.state === 'suspended') AC.resume();
+  } catch(e){}
+}
+function tone(f, d=.15, type='sine', v=.2, delay=0, f2=0){
+  if (!AC || !soundOn) return;
+  const t = AC.currentTime + delay, o = AC.createOscillator(), g = AC.createGain();
+  o.type = type; o.frequency.setValueAtTime(f, t);
+  if (f2) o.frequency.exponentialRampToValueAtTime(f2, t+d);
+  g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(v, t+.012); g.gain.exponentialRampToValueAtTime(.0001, t+d);
+  o.connect(g); g.connect(master); o.start(t); o.stop(t+d+.05);
+}
+let noiseBuf = null;
+function noise(d=.3, v=.3, fc=900){
+  if (!AC || !soundOn) return;
+  if (!noiseBuf){ noiseBuf = AC.createBuffer(1, AC.sampleRate, AC.sampleRate); const ch = noiseBuf.getChannelData(0); for (let i=0;i<ch.length;i++) ch[i] = Math.random()*2-1; }
+  const t = AC.currentTime, s = AC.createBufferSource(), f = AC.createBiquadFilter(), g = AC.createGain();
+  s.buffer = noiseBuf; f.type = 'lowpass'; f.frequency.value = fc;
+  g.gain.setValueAtTime(v, t); g.gain.exponentialRampToValueAtTime(.0001, t+d);
+  s.connect(f); f.connect(g); g.connect(master); s.start(t); s.stop(t+d);
+}
+function hum(){
+  if (!AC || !soundOn) return {set(){}, stop(){}};
+  const o = AC.createOscillator(), o2 = AC.createOscillator(), g = AC.createGain();
+  o.type = 'sawtooth'; o2.type = 'sine'; g.gain.value = 0;
+  const f = AC.createBiquadFilter(); f.type='lowpass'; f.frequency.value = 600;
+  o.connect(f); o2.connect(f); f.connect(g); g.connect(master); o.start(); o2.start();
+  return {
+    set(freq, vol){ const t = AC.currentTime; o.frequency.setTargetAtTime(freq, t, .08); o2.frequency.setTargetAtTime(freq*2, t, .08); g.gain.setTargetAtTime(vol, t, .08); },
+    stop(){ try { g.gain.setTargetAtTime(0, AC.currentTime, .05); o.stop(AC.currentTime+.3); o2.stop(AC.currentTime+.3); } catch(e){} }
+  };
+}
+const sfx = {
+  note: (s, oct=1) => tone(SEATS[s].note*oct, .28, 'triangle', .26),
+  pop: s => { tone(SEATS[s].note*2, .08, 'square', .06); tone(SEATS[s].note*3, .14, 'triangle', .16, .03); },
+  good: () => [523,659,784,1047].forEach((f,i) => tone(f, .2, 'triangle', .16, i*.07)),
+  win: () => [523,659,784,1047,1319,1568].forEach((f,i) => tone(f, .35, 'triangle', .15, i*.09)),
+  bad: () => { tone(220, .3, 'sawtooth', .09, 0, 110); },
+  boing: () => { tone(180, .12, 'sine', .25, 0, 420); tone(420, .25, 'sine', .2, .12, 160); },
+  boom: () => { noise(.55, .45, 500); tone(110, .45, 'sine', .35, 0, 40); },
+  crack: () => { noise(.18, .3, 2400); tone(700, .08, 'square', .05, 0, 200); },
+  tick: () => tone(880, .07, 'square', .07),
+  go: () => { tone(784, .12, 'square', .1); tone(1175, .3, 'square', .1, .12); },
+  nom: () => { tone(330, .07, 'square', .09); tone(262, .07, 'square', .09, .09); tone(523, .16, 'triangle', .16, .18); },
+  whoosh: () => noise(.7, .14, 1600),
+  freeze: () => { tone(1200, .5, 'sine', .14, 0, 300); }
+};
+const buzz = ms => { try { navigator.vibrate && navigator.vibrate(ms); } catch(e){} };
+
+let voice = null;
+function pickVoice(){
+  try {
+    const vs = speechSynthesis.getVoices();
+    voice = vs.find(v => /^en[-_]/i.test(v.lang) && /Samantha|Google US English|Aria|Jenny|Zira|Karen|Moira|Tessa/i.test(v.name))
+         || vs.find(v => /^en[-_]US/i.test(v.lang)) || vs.find(v => /^en/i.test(v.lang)) || null;
+  } catch(e){}
+}
+if ('speechSynthesis' in window){ pickVoice(); try { speechSynthesis.onvoiceschanged = pickVoice; } catch(e){} }
+function say(t, interrupt=true){
+  if (!voiceOn || !('speechSynthesis' in window)) return;
+  try {
+    if (interrupt) speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(t);
+    if (voice) u.voice = voice; u.lang = 'en-US'; u.rate = 1.0; u.pitch = 1.15;
+    speechSynthesis.speak(u);
+  } catch(e){}
+}
+let lastNag = 0;
+function nag(t, gap=4.5){
+  const n = performance.now()/1000;
+  if (n - lastNag < gap) return;
+  try { if (speechSynthesis.speaking) return; } catch(e){}
+  lastNag = n; say(t, false);
+}
+
+/* ================= canvas, layout, input ================= */
+const cv = $('#cv'), ctx = cv.getContext('2d');
+let W=0, H=0, DPR=1, L=null, starCv=null;
+let crew = [], bySeat = {}, scene = null, running = false, paused = false;
+let game = {idx:-1, stars:[]};
+
+function layout(){
+  const r = $('#game').getBoundingClientRect();
+  W = Math.max(200, r.width); H = Math.max(300, r.height); DPR = Math.min(window.devicePixelRatio||1, 2.5);
+  cv.width = Math.round(W*DPR); cv.height = Math.round(H*DPR);
+  const bandH = clamp(Math.round(H*.17), 92, 150), qw = W/2, qh = (H-bandH)/2;
+  L = {W, H, bandH, qw, qh, u: Math.min(qw, qh),
+       band: {y: qh, h: bandH},
+       q: [{x:0,y:qh+bandH,rot:false},{x:qw,y:qh+bandH,rot:false},{x:qw,y:0,rot:true},{x:0,y:0,rot:true}]};
+  starCv = document.createElement('canvas'); starCv.width = cv.width; starCv.height = cv.height;
+  const g = starCv.getContext('2d'); g.scale(DPR, DPR);
+  for (let i=0;i<Math.round(W*H/2600);i++){ g.globalAlpha = rand(.15,.8); g.fillStyle = pick(['#fff','#cfd3ff','#ffe9b8']); const s = rand(.6,1.8); g.fillRect(rand(0,W), rand(0,H), s, s); }
+  const pb = $('#pauseBtn'); pb.style.top = (L.band.y + L.band.h/2 - 20) + 'px';
+  const eb = $('#endBtns'); eb.style.top = (L.band.y + L.band.h/2 - 19) + 'px';
+  if (scene && scene.resize) scene.resize();
+}
+const seatAt = (x,y) => (y >= L.band.y && y < L.band.y + L.band.h) ? -1 : (y < L.band.y ? (x < L.qw ? 3 : 2) : (x < L.qw ? 0 : 1));
+// rotation by 180° is its own inverse, so the same mapping works both ways
+const flipMap = (seat,x,y) => { const q = L.q[seat]; return q.rot ? {x: q.x + L.qw - x, y: q.y + L.qh - y} : {x: x - q.x, y: y - q.y}; };
+const toLocal = flipMap;
+const toScreen = (seat,x,y) => { const q = L.q[seat]; return q.rot ? {x: q.x + L.qw - x, y: q.y + L.qh - y} : {x: q.x + x, y: q.y + y}; };
+function inQuad(seat, fn){
+  const q = L.q[seat]; ctx.save();
+  if (q.rot){ ctx.translate(q.x + L.qw, q.y + L.qh); ctx.rotate(Math.PI); } else ctx.translate(q.x, q.y);
+  ctx.beginPath(); ctx.rect(0,0,L.qw,L.qh); ctx.clip();
+  fn(L.qw, L.qh); ctx.restore();
+}
+
+const ptrs = new Map();
+const evPos = e => { const r = cv.getBoundingClientRect(); return {x: e.clientX - r.left, y: e.clientY - r.top}; };
+cv.addEventListener('pointerdown', e => {
+  e.preventDefault(); initAudio();
+  const p = evPos(e), s = seatAt(p.x, p.y);
+  const pp = {id: e.pointerId, x: p.x, y: p.y, seat: s};
+  ptrs.set(e.pointerId, pp);
+  if (paused || !scene || !running) return;
+  if (s === -1){ scene.bandDown && scene.bandDown(p.x, p.y, pp); }
+  else if (bySeat[s]){ const l = toLocal(s, p.x, p.y); scene.down && scene.down(s, l.x, l.y, pp); }
+});
+cv.addEventListener('pointermove', e => {
+  const pp = ptrs.get(e.pointerId); if (!pp) return;
+  const p = evPos(e); pp.x = p.x; pp.y = p.y; pp.seat = seatAt(p.x, p.y);
+});
+const ptrEnd = e => { ptrs.delete(e.pointerId); };
+cv.addEventListener('pointerup', ptrEnd);
+cv.addEventListener('pointercancel', ptrEnd);
+cv.addEventListener('lostpointercapture', ptrEnd);
+cv.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('touchmove', e => { if (running) e.preventDefault(); }, {passive:false});
+const ptrsIn = seat => [...ptrs.values()].filter(p => seatAt(p.x, p.y) === seat);
+const bandPtrs = () => [...ptrs.values()].filter(p => seatAt(p.x, p.y) === -1).length;
+
+/* ================= drawing helpers ================= */
+const FD = '"Baloo 2","Trebuchet MS",system-ui,sans-serif';
+const font = (sz, w=800) => { ctx.font = `${w} ${Math.max(6,sz)}px ${FD}`; };
+function txt(t, x, y, sz, color='#fff', align='center', w=800){
+  font(sz, w); ctx.fillStyle = color; ctx.textAlign = align; ctx.textBaseline = 'middle'; ctx.fillText(t, x, y);
+}
+function fit(t, x, y, maxW, sz, color='#fff', w=800){
+  font(sz, w); const m = ctx.measureText(t).width; if (m > maxW) sz *= maxW/m; txt(t, x, y, sz, color, 'center', w);
+}
+function wrap(t, x, y, maxW, sz, color='#fff', lh=1.12){
+  font(sz); const words = t.split(' '), lines = []; let line = '';
+  for (const w of words){ const tt = line ? line+' '+w : w; if (ctx.measureText(tt).width > maxW && line){ lines.push(line); line = w; } else line = tt; }
+  if (line) lines.push(line);
+  const y0 = y - (lines.length-1)*sz*lh/2;
+  lines.forEach((l,i) => fit(l, x, y0 + i*sz*lh, maxW, sz, color));
+}
+function rr(x, y, w, h, r){ r = Math.min(r, w/2, h/2); ctx.beginPath(); ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+function circle(x, y, r, fill, stroke, lw=3){ ctx.beginPath(); ctx.arc(x,y,Math.max(0,r),0,Math.PI*2); if (fill){ ctx.fillStyle = fill; ctx.fill(); } if (stroke){ ctx.strokeStyle = stroke; ctx.lineWidth = lw; ctx.stroke(); } }
+function pill(t, x, y, sz, bg, fg){ font(sz); const w = ctx.measureText(t).width + sz*1.3; rr(x-w/2, y-sz*.75, w, sz*1.5, sz*.75); ctx.fillStyle = bg; ctx.fill(); txt(t, x, y+sz*.04, sz, fg); }
+
+const ecache = new Map();
+function emoji(e, x, y, size, alpha=1, rot=0){
+  if (size <= 1) return;
+  const b = Math.max(16, Math.ceil(size*DPR/24)*24), k = e+'|'+b;
+  let c = ecache.get(k);
+  if (!c){
+    c = document.createElement('canvas'); const s = Math.ceil(b*1.35); c.width = c.height = s;
+    const g = c.getContext('2d'); g.font = `${b}px "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif`;
+    g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(e, s/2, s/2 + b*.07); ecache.set(k, c);
+  }
+  const s = size*1.35; ctx.save(); ctx.globalAlpha *= alpha; ctx.translate(x,y); if (rot) ctx.rotate(rot); ctx.drawImage(c, -s/2, -s/2, s, s); ctx.restore();
+}
+// text readable from both ends of the phone: once upright in the lower half of the bridge, once flipped in the upper half
+function bandSay(t, color='#fff', sz){
+  const b = L.band; sz = sz || Math.min(26, b.h*.21);
+  ctx.save(); ctx.translate(W/2, b.y + b.h*.79); fit(t, 0, 0, W*.74, sz, color); ctx.restore();
+  ctx.save(); ctx.translate(W/2, b.y + b.h*.21); ctx.rotate(Math.PI); fit(t, 0, 0, W*.74, sz, color); ctx.restore();
+}
+function bandBar(frac, color='#ffd166', icon){
+  const b = L.band, y = b.y + b.h/2, x0 = W*.16, x1 = W*.84, h = Math.max(10, b.h*.11);
+  rr(x0, y-h/2, x1-x0, h, h/2); ctx.fillStyle = '#0d1140'; ctx.fill();
+  const f = clamp(frac,0,1);
+  if (f > 0){ rr(x0, y-h/2, Math.max(h, (x1-x0)*f), h, h/2); ctx.fillStyle = color; ctx.fill(); }
+  if (icon) emoji(icon, x0 + (x1-x0)*f, y, h*2.4);
+}
+function bandBg(timeFrac){
+  const b = L.band, g = ctx.createLinearGradient(0, b.y, 0, b.y+b.h);
+  g.addColorStop(0,'#1a1f5c'); g.addColorStop(.5,'#2a3290'); g.addColorStop(1,'#1a1f5c');
+  ctx.fillStyle = g; ctx.fillRect(0, b.y, W, b.h);
+  ctx.fillStyle = '#7d86ff55'; ctx.fillRect(0, b.y, W, 2); ctx.fillRect(0, b.y+b.h-2, W, 2);
+  if (timeFrac != null){ // time left shrinks toward the middle on both edges
+    const w = W*clamp(timeFrac,0,1); ctx.fillStyle = timeFrac < .2 ? '#ff8787' : '#9fb0ff';
+    ctx.fillRect((W-w)/2, b.y, w, 4); ctx.fillRect((W-w)/2, b.y+b.h-4, w, 4);
+  }
+}
+function quadBg(seat, t){
+  const S = SEATS[seat], on = !!bySeat[seat];
+  inQuad(seat, (w,h) => {
+    if (on){
+      const g = ctx.createLinearGradient(0, h, 0, 0); g.addColorStop(0, S.deep+'ee'); g.addColorStop(1, S.deep+'22');
+      ctx.fillStyle = g; ctx.fillRect(0,0,w,h);
+    } else { ctx.fillStyle = '#05061399'; ctx.fillRect(0,0,w,h); }
+    rr(3,3,w-6,h-6,18); ctx.strokeStyle = on ? S.main+'88' : '#ffffff14'; ctx.lineWidth = 2; ctx.stroke();
+    if (!on){ emoji('🤖', w/2, h/2 - L.u*.06, L.u*.26, .45, Math.sin(t)*.1); txt('empty seat', w/2, h/2 + L.u*.2, L.u*.08, '#ffffff55'); }
+  });
+}
+function badge(p){
+  inQuad(p.seat, (w,h) => {
+    const s = L.u*.15, x = s*.85, y = h - s*.85;
+    circle(x, y, s*.62, SEATS[p.seat].main+'44');
+    emoji(p.avatar, x, y, s*.85);
+    txt(p.name, x + s*.75, y, L.u*.085, '#ffffffcc', 'left');
+  });
+}
+
+/* ================= effects ================= */
+let parts = [], flyers = [], pops = [], timers = [], banner = null;
+function burst(x, y, color, n=14, spd=170){
+  for (let i=0;i<n;i++){ const a = rand(0, Math.PI*2), v = rand(.3,1)*spd; parts.push({x, y, vx: Math.cos(a)*v, vy: Math.sin(a)*v, life: rand(.4,.9), age:0, color, s: rand(2,5)}); }
+}
+function burstL(seat, lx, ly, color, n, spd){ const s = toScreen(seat, lx, ly); burst(s.x, s.y, color, n, spd); }
+function confetti(n=60){
+  const cols = SEATS.map(s=>s.main).concat('#ffffff','#ffd166');
+  for (let i=0;i<n;i++) parts.push({x: rand(0,W), y: rand(-20, H*.2), vx: rand(-40,40), vy: rand(60,220), life: rand(1.6,3), age:0, color: pick(cols), s: rand(4,8), conf: true, r: rand(0,6)});
+}
+function fly(e, from, to, dur, size, done){ flyers.push({e, fx: from.x, fy: from.y, tx: to.x, ty: to.y, t:0, dur, size, done}); }
+function pop(seat, lx, ly, t, color='#fff'){ pops.push({seat, x: lx, y: ly, t, color, age:0}); }
+function after(sec, fn){ timers.push({t: sec, fn}); }
+function showBanner(t, color='#ffd166', dur=1.6){ banner = {t, color, age:0, dur}; }
+function updateFx(dt){
+  for (const p of parts){ p.age += dt; p.x += p.vx*dt; p.y += p.vy*dt; if (p.conf){ p.vx *= .99; p.r += dt*5; } else { p.vx *= .93; p.vy *= .93; } }
+  parts = parts.filter(p => p.age < p.life);
+  for (const f of flyers){ f.t += dt; if (f.t >= f.dur && f.done){ const d = f.done; f.done = null; d(); } }
+  flyers = flyers.filter(f => f.t < f.dur);
+  for (const p of pops) p.age += dt; pops = pops.filter(p => p.age < 1);
+  const due = []; timers.forEach(tm => { tm.t -= dt; if (tm.t <= 0) due.push(tm); });
+  timers = timers.filter(tm => tm.t > 0); due.forEach(tm => tm.fn());
+  if (banner){ banner.age += dt; if (banner.age > banner.dur) banner = null; }
+}
+function drawFx(){
+  for (const p of parts){ ctx.globalAlpha = clamp(1 - p.age/p.life, 0, 1); ctx.fillStyle = p.color;
+    if (p.conf){ ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.r); ctx.fillRect(-p.s/2,-p.s/4,p.s,p.s/2); ctx.restore(); }
+    else { ctx.beginPath(); ctx.arc(p.x,p.y,p.s,0,7); ctx.fill(); } }
+  ctx.globalAlpha = 1;
+  for (const f of flyers){ const k = clamp(f.t/f.dur,0,1), e = k*k*(3-2*k); const x = f.fx + (f.tx-f.fx)*e, y = f.fy + (f.ty-f.fy)*e - Math.sin(k*Math.PI)*30; emoji(f.e, x, y, f.size*(1 - .4*k)); }
+  for (const p of pops) inQuad(p.seat, () => { ctx.globalAlpha = clamp(1-p.age, 0, 1); txt(p.t, p.x, p.y - p.age*40, L.u*.13, p.color); ctx.globalAlpha = 1; });
+  if (banner){
+    const k = banner.age, s = k < .25 ? easeBack(k/.25) : 1;
+    ctx.save(); ctx.globalAlpha = k > banner.dur - .25 ? (banner.dur-k)/.25 : 1;
+    ctx.fillStyle = '#12164bee'; ctx.fillRect(0, L.band.y, W, L.band.h);
+    const sz = Math.min(34, L.band.h*.27)*s;
+    ctx.save(); ctx.translate(W/2, L.band.y + L.band.h*.73); fit(banner.t, 0, 0, W*.84, sz, banner.color); ctx.restore();
+    ctx.save(); ctx.translate(W/2, L.band.y + L.band.h*.27); ctx.rotate(Math.PI); fit(banner.t, 0, 0, W*.84, sz, banner.color); ctx.restore();
+    ctx.restore();
+  }
+}
+
+/* ================= main loop & flow ================= */
+let last = 0, clock = 0;
+function frame(ts){
+  requestAnimationFrame(frame);
+  const dt = Math.min(.05, (ts - last)/1000 || 0); last = ts;
+  if (!running || !scene) return;
+  if (!paused){ clock += dt; scene.update(dt); updateFx(dt); }
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+  ctx.fillStyle = '#0b0d26'; ctx.fillRect(0,0,W,H); ctx.drawImage(starCv, 0, 0, W, H);
+  for (let s=0;s<4;s++) quadBg(s, clock);
+  bandBg(scene.tf != null ? scene.tf() : null);
+  scene.draw();
+  crew.forEach(badge);
+  drawFx();
+}
+requestAnimationFrame(frame);
+
+function go(s){ if (scene && scene.exit) scene.exit(); timers = []; banner = null; scene = s; s.enter && s.enter(); }
+function nextMission(){ game.idx++; go(game.idx >= MISSIONS.length ? End() : Ready(MISSIONS[game.idx])); }
+function finish(stars){ game.stars[game.idx] = stars; go(Result(stars)); }
+
+/* ================= scenes ================= */
+const CHEERS = ['Woo-hoo!','Amazing teamwork!','High five, crew!','Super job!','Out of this world!','Rocket-tastic!'];
+
+function bandMap(t){
+  const b = L.band, y = b.y + b.h/2, x0 = W*.17, x1 = W*.83, n = MISSIONS.length;
+  ctx.strokeStyle = '#ffffff33'; ctx.lineWidth = 3; ctx.setLineDash([4,7]); ctx.beginPath(); ctx.moveTo(x0,y); ctx.lineTo(x1,y); ctx.stroke(); ctx.setLineDash([]);
+  for (let i=0;i<n;i++){
+    const x = x0 + (x1-x0)*i/n, s = game.stars[i];
+    circle(x, y, b.h*.07, s != null ? '#ffd166' : (i === game.idx ? '#ffffff' : '#3a428f'));
+  }
+  emoji('🌍', x1, y, b.h*.28);
+  const cur = Math.max(0, game.idx);
+  emoji('🚀', x0 + (x1-x0)*cur/n, y - Math.sin(t*4)*2, b.h*.26, 1, Math.PI/4);
+}
+
+function Ready(def){
+  const ready = {}; let t = 0, cd = -1;
+  const names = crew.map(p=>p.name);
+  const voice = def
+    ? `Mission ${game.idx+1}: ${def.title}! ${def.voice()} Tap your corner when you're ready.`
+    : `Welcome, Rocket Crew! ${names.slice(0,-1).join(', ')}${names.length>1?' and ':''}${names[names.length-1]}. Our rocket is lost in space, and we need to get home. We can only do it as a team! Find your color, and tap your corner when you're ready.`;
+  return {
+    enter(){ sfx.whoosh(); after(.3, () => say(voice)); },
+    update(dt){
+      t += dt;
+      if (cd < 0 && crew.every(p => ready[p.seat]) && t > 2) { cd = 3; sfx.tick(); }
+      if (cd >= 0){
+        const prev = Math.ceil(cd); cd -= dt;
+        if (Math.ceil(cd) !== prev && cd > 0) sfx.tick();
+        if (cd <= 0){ sfx.go(); if (def) go(def.make()); else nextMission(); }
+      }
+    },
+    down(seat){ if (!ready[seat]){ ready[seat] = true; sfx.note(seat); burstL(seat, L.qw/2, L.qh*.8, SEATS[seat].main, 16); buzz(20); } },
+    bandDown(){ if (cd < 0) say(voice); },
+    draw(){
+      const u = L.u;
+      crew.forEach(p => inQuad(p.seat, (w,h) => {
+        if (def){
+          emoji(def.icon, w/2, h*.2, u*.34, 1, Math.sin(t*2+p.seat)*.08);
+          wrap(def.tip(p), w/2, h*.47, w*.86, u*.1);
+        } else {
+          emoji(p.avatar, w/2, h*.24, u*.42, 1, Math.sin(t*3+p.seat)*.12);
+          fit(`Hi, ${p.name}!`, w/2, h*.48, w*.86, u*.14);
+          txt('This corner is yours', w/2, h*.6, u*.08, '#ffffffaa');
+        }
+        if (ready[p.seat]) pill('✓ Ready!', w/2, h*.76, u*.1, SEATS[p.seat].main, '#14122e');
+        else { const s = 1 + Math.sin(t*6)*.06; ctx.save(); ctx.translate(w/2, h*.76); ctx.scale(s,s); pill('Tap when ready', 0, 0, u*.095, '#ffffff', '#14122e'); ctx.restore(); }
+      }));
+      bandMap(t);
+      if (cd >= 0){
+        const n = String(Math.ceil(cd)), s = 1 + (Math.ceil(cd)-cd)*.5;
+        bandSay(n, '#ffd166', Math.min(40, L.band.h*.3)*s);
+      } else bandSay(def ? def.title : 'Welcome aboard!', '#ffffff');
+    }
+  };
+}
+
+function Result(stars){
+  let t = 0; const cheer = pick(CHEERS);
+  return {
+    enter(){ sfx.win(); confetti(50); say(`${cheer} Mission complete. You earned ${stars} star${stars>1?'s':''}!`); },
+    update(dt){ t += dt; if (t > 4) nextMission(); },
+    draw(){
+      const u = L.u;
+      crew.forEach(p => inQuad(p.seat, (w,h) => {
+        for (let i=0;i<3;i++){
+          const k = clamp((t - .3 - i*.35)/.35, 0, 1), on = i < stars;
+          emoji(on ? '⭐' : '☆', w/2 + (i-1)*u*.3, h*.3, u*.26*(on ? easeBack(k) : 1), on ? 1 : .35);
+        }
+        fit(cheer, w/2, h*.56, w*.86, u*.13, SEATS[p.seat].main);
+        emoji(p.avatar, w/2, h*.75 - Math.abs(Math.sin(t*6))*u*.06, u*.2);
+      }));
+      bandMap(t);
+      bandSay('Mission complete!', '#ffd166');
+    }
+  };
+}
+
+/* ---------- Mission 1: Catch the Stars ---------- */
+function StarCatch(){
+  const C = {maxOn:[0,1,2,2,3,3], r:[0,.24,.21,.19,.17,.15], life:[0,4.6,3.7,3,2.5,2.1], gap:[0,1,.85,.7,.6,.5], cloud:[0,0,0,.12,.17,.22]};
+  const goal = sum(crew, p => [0,9,11,13,15,17][p.lvl]), DUR = 50;
+  let t = 0, count = 0, done = false, gold = null, nextGold = 11;
+  const S = {}; crew.forEach(p => S[p.seat] = {items:[], next: rand(.2,.8), gold:null});
+  function spawn(p){
+    const r = C.r[p.lvl]*L.u, st = S[p.seat]; let x, y, n = 0;
+    do { x = rand(r+6, L.qw-r-6); y = rand(r+6, L.qh - r - L.u*.3); n++; } while (n < 14 && st.items.some(o => Math.hypot(o.x-x, o.y-y) < o.r + r + 8));
+    const kind = Math.random() < C.cloud[p.lvl] ? 'cloud' : 'star';
+    st.items.push({x, y, r, age:0, life: C.life[p.lvl]*(kind==='cloud'?1.2:1), kind});
+  }
+  function end(){ if (done) return; done = true; const s = count >= goal ? 3 : count >= goal*.7 ? 2 : 1; after(.6, () => finish(s)); }
+  return {
+    tf: () => 1 - t/DUR,
+    update(dt){
+      if (done) return; t += dt;
+      crew.forEach(p => {
+        const st = S[p.seat]; st.items.forEach(o => o.age += dt); st.items = st.items.filter(o => o.age < o.life);
+        if (!gold){ st.next -= dt; if (st.next <= 0 && st.items.filter(o => o.kind==='star').length < C.maxOn[p.lvl]){ spawn(p); st.next = C.gap[p.lvl]*rand(.7,1.3); } }
+      });
+      if (!gold && t >= nextGold && t < DUR - 6){
+        gold = {t:0, dur: 4.5, got:{}};
+        crew.forEach(p => { S[p.seat].items = []; S[p.seat].gold = {x: L.qw/2, y: L.qh*.42, r: L.u*.28}; });
+        say('Golden star! Everybody tap it together!'); sfx.go();
+      }
+      if (gold){
+        gold.t += dt;
+        if (crew.every(p => gold.got[p.seat])){
+          const bonus = crew.length*2; count += bonus; showBanner(`TEAMWORK! +${bonus} stars`); sfx.win(); confetti(25);
+          crew.forEach(p => S[p.seat].gold = null); gold = null; nextGold = t + 14;
+        } else if (gold.t > gold.dur){
+          crew.forEach(p => S[p.seat].gold = null); gold = null; nextGold = t + 12; say('So close! Next time, everybody tap!');
+        }
+      }
+      if (count >= goal || t >= DUR) end();
+    },
+    down(seat, x, y){
+      if (done) return;
+      const st = S[seat], p = bySeat[seat];
+      if (gold && st.gold && !gold.got[seat] && Math.hypot(x-st.gold.x, y-st.gold.y) < st.gold.r*1.5){
+        gold.got[seat] = true; sfx.note(seat, 2); burstL(seat, x, y, '#ffd166', 18); buzz(25); return;
+      }
+      let best = -1, bd = 1e9;
+      st.items.forEach((o,i) => { const d = Math.hypot(x-o.x, y-o.y); if (d < o.r*1.4 && d < bd){ bd = d; best = i; } });
+      if (best < 0) return;
+      const o = st.items.splice(best, 1)[0];
+      if (o.kind === 'cloud'){ count = Math.max(0, count-1); sfx.boing(); pop(seat, o.x, o.y, 'Splash!', '#9fd3ff'); buzz(60); }
+      else {
+        count++; p.st.stars++; sfx.pop(seat); buzz(10);
+        const s = toScreen(seat, o.x, o.y); burst(s.x, s.y, '#ffd166', 10);
+        fly('⭐', s, {x: W*.16 + W*.68*clamp(count/goal,0,1), y: L.band.y + L.band.h/2}, .5, o.r*1.6);
+      }
+    },
+    draw(){
+      crew.forEach(p => inQuad(p.seat, () => {
+        S[p.seat].items.forEach(o => {
+          const k = o.age/o.life, sc = o.age < .25 ? easeBack(o.age/.25) : 1, blink = k > .72 ? (Math.sin(o.age*28) > 0 ? 1 : .35) : 1;
+          if (o.kind === 'star') circle(o.x, o.y, o.r*1.15*sc, '#ffd16622');
+          emoji(o.kind === 'cloud' ? '🌧️' : '⭐', o.x, o.y, o.r*2*sc, blink, Math.sin(o.age*3)*.15);
+        });
+        const g = S[p.seat].gold;
+        if (g && gold){
+          const pulse = 1 + .08*Math.sin(gold.t*10);
+          ctx.beginPath(); ctx.arc(g.x, g.y, g.r*1.35, -Math.PI/2, -Math.PI/2 + Math.PI*2*(1 - gold.t/gold.dur)); ctx.strokeStyle = '#ffd166'; ctx.lineWidth = 6; ctx.stroke();
+          emoji('🌟', g.x, g.y, g.r*2*pulse);
+          if (gold.got[p.seat]) pill('✓ Got it!', g.x, g.y + g.r*1.75, L.u*.09, SEATS[p.seat].main, '#14122e');
+          else pill('TAP!', g.x, g.y + g.r*1.75, L.u*.1, '#ffd166', '#2a1d00');
+        }
+      }));
+      bandBar(count/goal, '#ffd166', '⭐');
+      bandSay(gold ? 'Everybody tap the golden star!' : `Star jar: ${count} of ${goal}`);
+    }
+  };
+}
+
+/* ---------- Mission 2: Feed the Space Alien ---------- */
+const FOODS = [['🍎','apple'],['🍌','banana'],['🍇','grapes'],['🍓','strawberry'],['🍕','pizza'],['🍩','donut'],['🧀','cheese'],['🥕','carrot'],
+  ['🍪','cookie'],['🌽','corn'],['🍉','watermelon'],['🍒','cherries'],['🍔','burger'],['🧁','cupcake'],['🍦','ice cream'],['🥦','broccoli'],
+  ['🍋','lemon'],['🥨','pretzel'],['🍐','pear'],['🥐','croissant'],['🍿','popcorn'],['🌮','taco'],['🍭','lollipop'],['🥚','egg'],
+  ['🍑','peach'],['🥝','kiwi'],['🍊','orange'],['🥞','pancakes'],['🍗','chicken leg'],['🍫','chocolate'],['🍅','tomato'],['🍍','pineapple'],['🍰','cake'],['🥜','peanuts']];
+function FeedPets(){
+  const DUR = 75, goal = 6 + crew.length*2, N = [0,2,3,4,6,6];
+  let t = 0, rt = 0, fed = 0, wanted = [], grids = {}, bag = [], done = false, between = -1, happy = 0;
+  function nextOwner(excl){
+    if (!bag.filter(s => !excl.includes(s)).length) bag = bag.concat(shuffle(crew.map(p => p.seat)));
+    const i = bag.findIndex(s => !excl.includes(s)); return bag.splice(i, 1)[0];
+  }
+  function place(items){
+    const n = items.length, cols = n <= 3 ? n : n === 4 ? 2 : 3, rows = Math.ceil(n/cols);
+    const top = L.qh*.05, bot = L.qh*.8, cw = L.qw/cols, ch = (bot-top)/rows, r = Math.min(cw, ch)*.36;
+    items.forEach((it,i) => { it.x = cw*((i%cols)+.5); it.y = top + ch*(Math.floor(i/cols)+.5); it.r = r; it.wig = 0; it.age = 0; });
+  }
+  function newRound(){
+    rt = 0; between = -1;
+    const dbl = fed >= 4 && crew.length >= 2 && Math.random() < .4;
+    const pool = shuffle(FOODS.slice()), owners = [];
+    wanted = [];
+    for (let i=0;i<(dbl?2:1);i++){ const o = nextOwner(owners); owners.push(o); wanted.push({f: pool.pop(), owner: o, done: false}); }
+    crew.forEach(p => {
+      const items = []; for (let i=0;i<N[p.lvl];i++) items.push({f: pool.pop()});
+      const mine = wanted.filter(w => w.owner === p.seat), slots = shuffle(items.map((_,i)=>i));
+      mine.forEach((w,i) => items[slots[i]] = {f: w.f});
+      place(items); grids[p.seat] = items;
+    });
+    say(dbl ? `Double snack! ${cap(wanted[0].f[1])} and ${wanted[1].f[1]}!` : `${cap(wanted[0].f[1])}, please!`);
+  }
+  newRound();
+  return {
+    tf: () => 1 - t/DUR,
+    resize(){ crew.forEach(p => place(grids[p.seat])); },
+    update(dt){
+      if (done) return; t += dt; rt += dt; happy = Math.max(0, happy - dt);
+      crew.forEach(p => grids[p.seat].forEach(it => { it.age += dt; it.wig = Math.max(0, it.wig - dt); }));
+      if (between >= 0){ between -= dt; if (between < 0) newRound(); }
+      else if (rt > 9) wanted.filter(w => !w.done).forEach(w => { const p = bySeat[w.owner]; if (p.lvl <= 2) nag(`${p.name}, look! You have the ${w.f[1]}!`, 6); });
+      if (fed >= goal || t >= DUR){ done = true; const s = fed >= goal ? 3 : fed >= goal*.6 ? 2 : 1; after(.8, () => finish(s)); }
+    },
+    down(seat, x, y){
+      if (done || between >= 0) return;
+      const it = grids[seat].find(o => !o.gone && Math.hypot(x-o.x, y-o.y) < o.r*1.2); if (!it) return;
+      const w = wanted.find(w => !w.done && w.owner === seat && w.f[0] === it.f[0]);
+      if (!w){ it.wig = .45; sfx.boing(); buzz(40); return; }
+      w.done = true; it.gone = true; bySeat[seat].st.feeds++; sfx.nom(); buzz(15);
+      const s = toScreen(seat, it.x, it.y); burst(s.x, s.y, SEATS[seat].main, 12);
+      fly(it.f[0], s, {x: W/2, y: L.band.y + L.band.h/2}, .45, it.r*1.8, () => { happy = .6; });
+      if (wanted.every(w => w.done)){ fed += wanted.length; between = .8; if (wanted.length > 1) showBanner('Double snack! Yum!', '#ffd166', 1.2); }
+    },
+    draw(){
+      const hint = rt > 5;
+      crew.forEach(p => inQuad(p.seat, () => {
+        grids[p.seat].forEach(it => {
+          if (it.gone) return;
+          const isW = wanted.some(w => !w.done && w.owner === p.seat && w.f[0] === it.f[0]);
+          const sc = it.age < .3 ? easeBack(it.age/.3) : 1;
+          const wig = it.wig > 0 ? Math.sin(it.wig*40)*.25 : 0;
+          let y = it.y;
+          circle(it.x, it.y, it.r*1.08*sc, '#ffffff12', '#ffffff22', 2);
+          if (hint && isW){ y -= Math.abs(Math.sin(rt*6))*it.r*.25; circle(it.x, it.y, it.r*(1.15 + .08*Math.sin(rt*8)), null, '#ffd166', 4); }
+          emoji(it.f[0], it.x, y, it.r*1.55*sc, 1, wig);
+        });
+      }));
+      // the alien and its thought bubbles, one bubble facing each end
+      const b = L.band, cy = b.y + b.h/2, bs = b.h*.27;
+      emoji('👾', W/2, cy - (happy > 0 ? Math.sin(happy*20)*4 : 0), b.h*.42*(1 + happy*.4));
+      const bubble = () => {
+        const n = wanted.length, bw = bs*1.15*n + bs*.4;
+        rr(-bw/2, -bs*.72, bw, bs*1.44, bs*.6); ctx.fillStyle = '#ffffffee'; ctx.fill();
+        wanted.forEach((w,i) => { const x = -bw/2 + bs*.2 + bs*1.15*(i+.5); emoji(w.f[0], x, 0, bs*.95, w.done ? .3 : 1); if (w.done) txt('✓', x, 0, bs*.9, '#2b8a3e'); });
+      };
+      ctx.save(); ctx.translate(W*.27, cy); bubble(); ctx.restore();
+      ctx.save(); ctx.translate(W*.73, cy); ctx.rotate(Math.PI); bubble(); ctx.restore();
+      bandSay(`Snacks: ${fed} of ${goal}  ·  Who has it?`);
+    }
+  };
+}
+
+/* ---------- Mission 3: The Secret Door ---------- */
+function SecretCode(){
+  const n = crew.length, lens = [n, Math.min(8, n+2), Math.min(8, n+4)], CAPS = [0,1,2,3,4,4];
+  let round = 0, step = 0, seq = [], hold = {}, mistakes = 0, roundMiss = 0, t = 0, done = false, wait = 0, shake = 0;
+  function build(){
+    const len = lens[round], quota = {};
+    crew.forEach(p => quota[p.seat] = 1);
+    let extra = len - n;
+    const order = crew.slice().sort((a,b) => b.lvl - a.lvl);
+    while (extra > 0){
+      let gave = false;
+      for (const p of order){ if (extra > 0 && quota[p.seat] < CAPS[p.lvl]){ quota[p.seat]++; extra--; gave = true; } }
+      if (!gave){ quota[order[0].seat]++; extra--; }
+    }
+    const slots = []; crew.forEach(p => { for (let i=0;i<quota[p.seat];i++) slots.push(p.seat); });
+    seq = shuffle(slots); step = 0; roundMiss = 0;
+  }
+  const mine = seat => seq.map((s,i) => s === seat ? i+1 : 0).filter(Boolean);
+  const geo = () => ({bx: L.qw/2, by: L.qh*.33, br: L.u*.25, cx: L.qw*.3, cy: L.qh*.63, cw: L.qw*.62, ch: L.qh*.24});
+  build();
+  return {
+    tf: () => 1 - t/150,
+    enter(){ after(.2, () => say('Round 1! Peek at your secret number. Who is number one?')); },
+    update(dt){
+      if (done) return; t += dt; shake = Math.max(0, shake - dt);
+      if (wait > 0){ wait -= dt; if (wait <= 0){
+        round++;
+        if (round >= lens.length){ done = true; const s = mistakes <= 1 ? 3 : mistakes <= 4 ? 2 : 1; after(.4, () => finish(s)); return; }
+        build(); say(`Round ${round+1}! The code is longer now. Some of you have two numbers. Peek!`);
+      } }
+      if (t > 150 && !done){ done = true; finish(round >= 2 ? 2 : 1); }
+      // peek = a finger resting on your own peek card
+      const g = geo(); hold = {};
+      crew.forEach(p => ptrsIn(p.seat).forEach(pp => { const l = toLocal(p.seat, pp.x, pp.y); if (l.x > g.cx - 10 && l.x < g.cx + g.cw + 10 && l.y > g.cy - 10 && l.y < g.cy + g.ch + 10) hold[p.seat] = true; }));
+    },
+    down(seat, x, y){
+      if (done || wait > 0) return;
+      const g = geo(); if (Math.hypot(x - g.bx, y - g.by) > g.br*1.25) return;
+      if (seq[step] === seat){
+        step++; bySeat[seat].st.code++; tone(392*Math.pow(2, step/8), .25, 'triangle', .22); buzz(15);
+        burstL(seat, g.bx, g.by, SEATS[seat].main, 14);
+        if (step >= seq.length){ sfx.win(); showBanner('Code cracked!', '#69db7c'); say(pick(['Code cracked!','The door opens!','You did it!'])); wait = 2.2; }
+      } else {
+        mistakes++; roundMiss++; step = 0; shake = .5; sfx.bad(); buzz([60,40,60]);
+        say(roundMiss >= 2 ? 'Oops! Start again. Watch for the glowing button!' : 'Oops! Back to number one. Talk to each other!');
+      }
+    },
+    draw(){
+      const g = geo(), u = L.u;
+      crew.forEach(p => inQuad(p.seat, (w,h) => {
+        const S = SEATS[p.seat], hintMe = roundMiss >= 2 && wait <= 0 && seq[step] === p.seat;
+        const pr = ptrsIn(p.seat).some(pp => { const l = toLocal(p.seat, pp.x, pp.y); return Math.hypot(l.x - g.bx, l.y - g.by) < g.br*1.25; });
+        if (hintMe) circle(g.bx, g.by, g.br*(1.25 + .1*Math.sin(t*8)), null, '#ffd166', 6);
+        circle(g.bx, g.by + (pr ? 2 : 6), g.br, S.deep);
+        circle(g.bx, g.by + (pr ? 2 : 0), g.br, S.main, '#ffffff66', 3);
+        txt('PRESS', g.bx, g.by + (pr ? 2 : 0), u*.09, '#14122e');
+        // peek card
+        rr(g.cx, g.cy, g.cw, g.ch, 14); ctx.fillStyle = hold[p.seat] ? '#ffffff' : '#ffffff22'; ctx.fill();
+        if (hold[p.seat]){
+          const nums = mine(p.seat), sz = nums.length > 1 ? u*.15 : u*.2;
+          fit(nums.join(' & '), g.cx + g.cw/2, g.cy + g.ch*.42, g.cw*.9, sz, '#14122e');
+          if (p.lvl <= 2) fit(nums.map(k => '●'.repeat(k)).join('  '), g.cx + g.cw/2, g.cy + g.ch*.8, g.cw*.9, u*.07, S.deep);
+        } else {
+          txt('🤫 Hold to peek', g.cx + g.cw/2, g.cy + g.ch*.5, u*.085, '#ffffffcc');
+        }
+      }));
+      // the door: one light per code number
+      const b = L.band, cy = b.y + b.h/2, len = seq.length, gap = Math.min(W*.6/len, b.h*.3), r = gap*.36;
+      const x0 = W/2 - gap*(len-1)/2 + (shake > 0 ? Math.sin(shake*50)*6 : 0);
+      for (let i=0;i<len;i++){
+        const on = i < step;
+        circle(x0 + i*gap, cy, r, on ? SEATS[seq[i]].main : '#0d1140', '#ffffff55', 2);
+        if (!on){ ctx.save(); ctx.translate(x0 + i*gap, cy); txt(String(i+1), 0, 0, r*1.1, '#ffffff66'); ctx.restore(); }
+      }
+      bandSay(wait > 0 ? 'Door open!' : `Round ${round+1} of 3 · Who is number ${step+1}?`);
+    }
+  };
+}
+
+/* ---------- Mission 4: Hold the Rocket Steady ---------- */
+function Steady(){
+  let t = 0, meter = 0, done = false, everAll = false, h = null;
+  const pads = {}, off = {};
+  crew.forEach(p => { pads[p.seat] = {ph: rand(0, 6), o1: rand(0,6), o2: rand(0,6)}; off[p.seat] = 0; });
+  const radius = p => L.u*[0,.27,.23,.2,.18,.16][p.lvl];
+  function pos(p){
+    const pd = pads[p.seat], r = radius(p), cx = L.qw/2, cy = L.qh*.45;
+    const A = clamp(.15 + .12*p.lvl + meter*.45, 0, 1);
+    return {x: cx + (L.qw/2 - r - 8)*A*Math.sin(pd.ph + pd.o1), y: cy + (L.qh*.45 - r - 8)*A*Math.sin(pd.ph*1.37 + pd.o2), r};
+  }
+  const held = p => { const q = pos(p); return ptrsIn(p.seat).some(pp => { const l = toLocal(p.seat, pp.x, pp.y); return Math.hypot(l.x - q.x, l.y - q.y) < q.r*1.5; }); };
+  return {
+    tf: () => 1 - t/70,
+    enter(){ h = hum(); },
+    exit(){ h && h.stop(); },
+    update(dt){
+      if (done) return; t += dt;
+      const all = crew.every(p => { const on = held(p); if (on) bySeat[p.seat].st.hold += dt; return on; });
+      crew.forEach(p => {
+        if (all || everAll) pads[p.seat].ph += dt*(.3 + .1*p.lvl)*(1 + meter*1.2);
+        off[p.seat] = held(p) ? 0 : off[p.seat] + dt;
+        if (everAll && off[p.seat] > 2.5) nag(`${p.name}, put your finger on your circle!`, 5);
+      });
+      if (all){
+        if (!everAll){ everAll = true; say("That's it! Hold on, everybody!"); }
+        const before = meter; meter = Math.min(1, meter + dt/13);
+        if (before < .5 && meter >= .5) say('Halfway! It gets faster. Hold on!');
+        h && h.set(90 + meter*260, .07);
+      } else { meter = Math.max(0, meter - dt*.03); h && h.set(70, .0); }
+      if (meter >= 1 || t > 70){
+        done = true; h && h.set(400, 0); sfx.win();
+        const s = meter < 1 ? 1 : t < 28 ? 3 : t < 45 ? 2 : 1; after(.5, () => finish(s));
+      }
+    },
+    draw(){
+      crew.forEach(p => inQuad(p.seat, (w) => {
+        const q = pos(p), on = held(p), S = SEATS[p.seat];
+        circle(q.x, q.y, q.r*1.5, S.main + (on ? '33' : '18'));
+        circle(q.x, q.y, q.r, on ? S.main : S.main + '88', '#ffffff', on ? 4 : 2);
+        if (on) txt('✓', q.x, q.y, q.r*.9, '#14122e');
+        else emoji('👆', q.x, q.y, q.r*1.1, .6 + .4*Math.sin(t*8));
+        if (!on && everAll) pill('Hold your circle!', w/2, L.qh*.92 - L.u*.12, L.u*.08, '#ff6b6b', '#fff');
+      }));
+      const b = L.band, cy = b.y + b.h/2;
+      bandBar(meter, '#69db7c', '🚀');
+      const missing = crew.filter(p => !held(p));
+      if (missing.length && everAll) missing.forEach((p,i) => emoji(p.avatar, W*.08 + i*b.h*.24 + 40, cy, b.h*.2, .5 + .5*Math.sin(t*10)));
+      bandSay(missing.length ? (everAll ? `Hold on, ${missing.map(p=>p.name).join(' & ')}!` : 'Everybody hold your circle!') : `Charging… ${Math.round(meter*100)}%`, missing.length ? '#ffd166' : '#b2f2bb');
+    }
+  };
+}
+
+/* ---------- Mission 5: Space Rock Storm ---------- */
+function Asteroids(){
+  const DUR = 55, SP = [0,.11,.15,.2,.25,.3], GAP = [0,2.6,2.0,1.6,1.3,1.1], RR = [0,.19,.17,.15,.135,.12];
+  let t = 0, shield = 10, done = false, mega = null, megas = [14, 33], flash = {};
+  const S = {}; crew.forEach(p => S[p.seat] = {rocks:[], next: rand(.5,1.2), f: 1, streak: 0});
+  const wallY = () => L.qh - L.u*.3;
+  function rockShape(){ const pts = []; for (let i=0;i<9;i++) pts.push(rand(.78, 1.08)); return pts; }
+  function drawRock(x, y, r, rot, shape, hue='#8d7b6a', cr=0){
+    ctx.save(); ctx.translate(x,y); ctx.rotate(rot); ctx.beginPath();
+    shape.forEach((k,i) => { const a = i/shape.length*Math.PI*2; ctx[i ? 'lineTo' : 'moveTo'](Math.cos(a)*r*k, Math.sin(a)*r*k); });
+    ctx.closePath(); const g = ctx.createRadialGradient(-r*.3,-r*.3,r*.1,0,0,r*1.1); g.addColorStop(0,'#c9b8a6'); g.addColorStop(1,hue);
+    ctx.fillStyle = g; ctx.fill(); ctx.strokeStyle = '#3d3229'; ctx.lineWidth = Math.max(2, r*.07); ctx.stroke();
+    circle(r*.25, -r*.15, r*.2, '#6b5b4d'); circle(-r*.3, r*.3, r*.13, '#6b5b4d');
+    if (cr > 0){ ctx.strokeStyle = '#ffd166'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(-r*.6,-r*.2); ctx.lineTo(-r*.1,0); ctx.lineTo(-r*.2,r*.4); ctx.moveTo(-r*.1,0); ctx.lineTo(r*.5,-r*.3); ctx.globalAlpha = cr; ctx.stroke(); }
+    ctx.restore();
+  }
+  function end(){ if (done) return; done = true; const s = shield >= 7 ? 3 : shield >= 3 ? 2 : 1; after(.6, () => finish(s)); }
+  return {
+    tf: () => 1 - t/DUR,
+    update(dt){
+      if (done) return; t += dt;
+      for (const k in flash) flash[k] = Math.max(0, flash[k] - dt);
+      if (!mega && megas.length && t >= megas[0]){ megas.shift(); mega = {t:0, dur:6, hold:0, shape: rockShape()}; say('Giant rock! Everybody touch the middle stripe!'); sfx.boom(); }
+      if (mega){
+        mega.t += dt;
+        const need = crew.length, have = bandPtrs();
+        mega.have = have;
+        if (have >= need){ mega.hold += dt; if (mega.hold > .35){ const x = W/2, y = L.band.y + L.band.h/2; burst(x, y, '#c9b8a6', 40, 320); burst(x, y, '#ffd166', 20, 220); sfx.boom(); sfx.win(); showBanner('TEAM SMASH!'); buzz(80); mega = null; } }
+        else mega.hold = 0;
+        if (mega && mega.t > mega.dur){ shield = Math.max(0, shield - 2); sfx.boom(); showBanner('Bonk! Shield −2', '#ff8787'); buzz([80,40,80]); mega = null; }
+        if (mega) return; // everything else waits while the crew handles the giant rock
+      }
+      const ramp = 1 + (t/DUR)*.45;
+      crew.forEach(p => {
+        const st = S[p.seat];
+        st.next -= dt;
+        if (st.next <= 0 && t < DUR - 2){
+          const r = RR[p.lvl]*L.u;
+          st.rocks.push({x: rand(r+4, L.qw - r - 4), y: -r, r, vy: SP[p.lvl]*L.qh*ramp*st.f*rand(.85,1.15), rot: rand(0,6), vr: rand(-2,2), shape: rockShape()});
+          st.next = GAP[p.lvl]/ramp/st.f*rand(.75,1.25);
+        }
+        st.rocks.forEach(o => { o.y += o.vy*dt; o.rot += o.vr*dt; });
+        const hit = st.rocks.filter(o => o.y > wallY());
+        if (hit.length){
+          st.rocks = st.rocks.filter(o => o.y <= wallY());
+          hit.forEach(o => { shield = Math.max(0, shield - 1); flash[p.seat] = .5; burstL(p.seat, o.x, wallY(), '#ff8787', 12); });
+          sfx.crack(); buzz(50); st.f = Math.max(.65, st.f*.88); st.streak = 0;
+        }
+      });
+      if (t >= DUR) end();
+    },
+    down(seat, x, y){
+      if (done || mega) return;
+      const st = S[seat]; let best = -1, bd = 1e9;
+      st.rocks.forEach((o,i) => { const d = Math.hypot(x-o.x, y-o.y); if (d < o.r*1.45 && d < bd){ bd = d; best = i; } });
+      if (best < 0) return;
+      const o = st.rocks.splice(best,1)[0];
+      burstL(seat, o.x, o.y, '#c9b8a6', 14, 200); burstL(seat, o.x, o.y, SEATS[seat].main, 8); tone(SEATS[seat].note*1.5, .1, 'square', .08); noise(.15, .2, 1800); buzz(12);
+      bySeat[seat].st.rocks++;
+      if (++st.streak >= 6){ st.streak = 0; st.f = Math.min(1.3, st.f*1.07); }
+    },
+    draw(){
+      crew.forEach(p => inQuad(p.seat, (w) => {
+        const S2 = SEATS[p.seat], y = wallY(), fl = flash[p.seat] || 0;
+        if (fl > 0){ ctx.fillStyle = `rgba(255,80,80,${fl*.4})`; ctx.fillRect(0,0,w,L.qh); }
+        ctx.fillStyle = S2.main; ctx.globalAlpha = .35 + .2*Math.sin(t*4); ctx.fillRect(8, y, w-16, 5); ctx.globalAlpha = 1;
+        txt('your wall', w - 10, y + 16, L.u*.065, S2.main + 'aa', 'right');
+        S[p.seat].rocks.forEach(o => drawRock(o.x, o.y, o.r, o.rot, o.shape));
+      }));
+      const b = L.band, cy = b.y + b.h/2;
+      // shield pips
+      for (let i=0;i<10;i++){ const x = W*.22 + i*(W*.56/9); circle(x, cy, b.h*.055, i < shield ? '#74c0fc' : '#ffffff18'); }
+      if (mega){
+        const k = mega.t/mega.dur, r = b.h*.5;
+        const x = W*.5 + Math.sin(mega.t*7)*4;
+        drawRock(x, cy, r, mega.t*.6, mega.shape, '#7a6655', clamp(mega.hold/.35, 0, 1));
+        ctx.beginPath(); ctx.arc(x, cy, r*1.15, -Math.PI/2, -Math.PI/2 + Math.PI*2*(1-k)); ctx.strokeStyle = '#ff8787'; ctx.lineWidth = 5; ctx.stroke();
+        bandSay(`Everybody touch here! ✋ ${mega.have||0} of ${crew.length}`, '#ffd166');
+      } else bandSay(`Shield ${shield} · Smash the rocks!`, shield <= 3 ? '#ff8787' : '#d0ebff');
+    }
+  };
+}
+
+/* ---------- Mission 6: The Space Radio Song ---------- */
+function Echo(){
+  const target = 7;
+  let seq = [], phase = 'wait', idx = 0, pt = 0, mistakes = 0, best = 0, t = 0, done = false, lit = {};
+  const seats = crew.map(p => p.seat);
+  function add(){ let s; do { s = pick(seats); } while (seq.length >= 2 && s === seq[seq.length-1] && s === seq[seq.length-2]); seq.push(s); }
+  for (let i=0;i<3;i++) add();
+  const stepOn = () => Math.max(.38, .72 - seq.length*.04), stepGap = .2;
+  function show(){ phase = 'show'; idx = 0; pt = -.6; }
+  function light(s, d=.35){ lit[s] = d; sfx.note(s); }
+  return {
+    tf: () => 1 - t/110,
+    enter(){ after(1.6, show); },
+    update(dt){
+      if (done) return; t += dt;
+      for (const k in lit) lit[k] = Math.max(0, lit[k] - dt);
+      if (phase === 'show'){
+        pt += dt;
+        if (pt >= 0){
+          const per = stepOn() + stepGap, i = Math.floor(pt/per);
+          if (i >= seq.length){ phase = 'input'; idx = 0; say('Your turn!'); }
+          else if (i >= idx){ idx = i+1; light(seq[i], stepOn()); }
+        }
+      }
+      if (t > 110 && !done){ done = true; finish(best >= 5 ? 2 : 1); }
+    },
+    down(seat){
+      if (done || phase !== 'input') return;
+      light(seat, .25); buzz(12);
+      if (seq[idx] === seat){
+        idx++; bySeat[seat].st.echo++;
+        if (idx >= seq.length){
+          best = seq.length; phase = 'wait';
+          if (seq.length >= target){ done = true; sfx.win(); showBanner('Song complete!'); after(1, () => finish(3)); return; }
+          sfx.good(); showBanner(pick(['Perfect!','You got it!','Great listening!']), '#69db7c', 1.1);
+          add(); after(1.5, () => { say(`Now ${seq.length} notes!`); after(1, show); });
+        }
+      } else {
+        mistakes++; phase = 'wait'; sfx.bad(); buzz([60,40,60]);
+        if (mistakes >= 4){ done = true; say('Nice try, crew!'); after(1.2, () => finish(best >= 5 ? 2 : 1)); return; }
+        say('Oops! Listen again.'); after(1.6, show);
+      }
+    },
+    draw(){
+      crew.forEach(p => inQuad(p.seat, (w,h) => {
+        const S = SEATS[p.seat], l = lit[p.seat] || 0, m = L.u*.08;
+        rr(m, m, w - m*2, h*.8 - m, 26); ctx.fillStyle = l > 0 ? S.main : S.deep; ctx.fill();
+        if (l > 0){ ctx.save(); ctx.shadowColor = S.main; ctx.shadowBlur = 40; ctx.strokeStyle = '#fff'; ctx.lineWidth = 5; ctx.stroke(); ctx.restore(); }
+        else { ctx.strokeStyle = S.main + '99'; ctx.lineWidth = 3; ctx.stroke(); }
+        emoji(p.avatar, w/2, h*.4 - (l > 0 ? L.u*.06 : 0), L.u*(l > 0 ? .42 : .34));
+      }));
+      const b = L.band, cy = b.y + b.h/2, n = seq.length, gap = Math.min(W*.6/n, b.h*.28);
+      for (let i=0;i<n;i++){
+        const x = W/2 - gap*(n-1)/2 + i*gap, doneI = phase === 'input' && i < idx;
+        circle(x, cy, gap*.32, doneI ? SEATS[seq[i]].main : '#0d1140', '#ffffff55', 2);
+      }
+      bandSay(phase === 'show' ? '🎧 Listen and watch…' : phase === 'input' ? `Your turn! Note ${idx+1} of ${n}` : `Song length: ${n} · goal ${target}`, phase === 'input' ? '#ffd166' : '#fff');
+    }
+  };
+}
+
+/* ---------- Mission 7: Blast Home! ---------- */
+function BlastHome(){
+  const WT = [0,1.7,1.45,1.25,1.1,1];
+  const base = 100/(26*4*sum(crew, p => WT[p.lvl]));
+  let fuel = 0, phase = 'go', pt = 0, plen = rand(3.5,5.5), t = 0, oops = 0, land = 0, done = false, h = null, freezes = 0;
+  const tap = {};
+  return {
+    enter(){ h = hum(); say('Go go go!'); },
+    exit(){ h && h.stop(); },
+    update(dt){
+      if (done) return; t += dt; pt += dt;
+      for (const k in tap) tap[k] = Math.max(0, tap[k] - dt);
+      if (phase === 'go' && pt > plen && fuel < 92 && freezes < 6){ phase = 'freeze'; pt = 0; plen = rand(1.6, 2.8); freezes++; say('Freeze!'); sfx.freeze(); buzz(150); }
+      else if (phase === 'freeze' && pt > plen){ phase = 'go'; pt = 0; plen = rand(3, 5.5); say(pick(['Go!','Go go go!','Tap tap tap!'])); sfx.go(); }
+      if (phase === 'go' || phase === 'freeze') h && h.set(80 + fuel*3, phase === 'go' ? .05 : .01);
+      if (phase !== 'land' && fuel >= 100){ phase = 'land'; pt = 0; sfx.good(); say('The tank is full! Everybody put your hand down and hold on to land!'); }
+      if (phase === 'land'){
+        h && h.set(380 - land*120, .05);
+        if (crew.every(p => ptrsIn(p.seat).length > 0)) land += dt; else land = Math.max(0, land - dt*.5);
+        if (land >= 2.2 || pt > 25){ done = true; h && h.set(100, 0); const s = oops <= 2 ? 3 : oops <= 6 ? 2 : 1; after(.3, () => finish(s)); }
+      }
+    },
+    down(seat, x, y){
+      if (done || phase === 'land') return;
+      const p = bySeat[seat];
+      if (phase === 'freeze' && pt > .35){
+        oops++; fuel = Math.max(0, fuel - 2.5); sfx.boing(); pop(seat, x, y, 'Oops! Freeze!', '#ffa8a8'); buzz(60); return;
+      }
+      fuel = Math.min(100, fuel + base*WT[p.lvl]*(t > 60 ? 1.6 : 1)); p.st.boost++; tap[seat] = .12;
+      tone(SEATS[seat].note*(1 + fuel/100), .06, 'square', .05);
+      const s = toScreen(seat, x, y); fly('🔥', s, {x: W*.16 + W*.68*fuel/100, y: L.band.y + L.band.h/2}, .35, L.u*.12);
+    },
+    draw(){
+      const fr = phase === 'freeze';
+      crew.forEach(p => inQuad(p.seat, (w,h) => {
+        const S = SEATS[p.seat];
+        if (fr){ ctx.fillStyle = '#ff6b6b33'; ctx.fillRect(0,0,w,h); emoji('✋', w/2, h*.38, L.u*.45); fit('FREEZE!', w/2, h*.7, w*.8, L.u*.17, '#ff8787'); }
+        else if (phase === 'land'){
+          const on = ptrsIn(p.seat).length > 0;
+          circle(w/2, h*.42, L.u*.3, on ? S.main : S.main + '44', '#fff', on ? 5 : 2);
+          emoji(on ? '✋' : '👇', w/2, h*.42, L.u*.3);
+          fit(on ? 'Holding!' : 'Hold here!', w/2, h*.76, w*.8, L.u*.11, on ? S.main : '#fff');
+        } else {
+          const k = tap[p.seat] > 0 ? .92 : 1;
+          circle(w/2, h*.42, L.u*.33*k, S.main, '#ffffff88', 4);
+          emoji('🔥', w/2, h*.38, L.u*.3*k);
+          txt('TAP!', w/2, h*.42 + L.u*.2*k, L.u*.11, '#14122e');
+          fit('Tap tap tap!', w/2, h*.78, w*.8, L.u*.09, '#ffffffcc');
+        }
+      }));
+      bandBar(fuel/100, fr ? '#ff8787' : '#ffa94d', '🚀');
+      bandSay(phase === 'land' ? 'Everybody hold on to land!' : fr ? '✋ FREEZE! Don’t tap!' : `Rocket fuel ${Math.round(fuel)}%`, fr ? '#ff8787' : '#ffd166');
+    }
+  };
+}
+
+/* ---------- Mission list ---------- */
+const MISSIONS = [
+  {title:'Catch the Stars', icon:'⭐', make: StarCatch,
+   voice: () => `Stars are popping up in your corner. Tap them to fill our star jar!${crew.some(p=>p.lvl>=3)?' Big kids, watch out for rain clouds!':''} If a golden star shows up, everybody tap it at the same time!`,
+   tip: p => p.lvl >= 3 ? 'Tap the stars. Don’t tap rain clouds!' : 'Tap the stars!'},
+  {title:'Feed the Alien', icon:'👾', make: FeedPets,
+   voice: () => 'The space alien is hungry! Look at the snack in its bubble. Whoever has that snack in their corner, tap it! Help each other find it!',
+   tip: p => p.lvl <= 2 ? 'Do you have the snack? Tap it!' : 'Find the snack the alien wants. Help your crew look!'},
+  {title:'The Secret Door', icon:'🔐', make: SecretCode,
+   voice: () => 'The door has a secret code. Hold your peek card to see your secret number. Then press your big button in order. Number one goes first, then number two. Talk to each other!',
+   tip: p => 'Peek at your number. Say it out loud! Press in order.'},
+  {title:'Hold It Steady', icon:'✋', make: Steady,
+   voice: () => 'The rocket is wobbly! Everybody put one finger on your glowing circle, and keep it there, even when it moves. The rocket only charges when everyone is holding on!',
+   tip: p => p.lvl <= 2 ? 'Keep your finger on your circle!' : 'Keep one finger on your circle as it moves.'},
+  {title:'Space Rock Storm', icon:'☄️', make: Asteroids,
+   voice: () => 'Space rocks are flying at the rocket! Tap them before they hit your wall. If a giant rock comes, everybody touch the middle stripe together!',
+   tip: p => 'Tap rocks before they hit your wall!'},
+  {title:'The Radio Song', icon:'🎵', make: Echo,
+   voice: () => 'The space radio plays a song with our colors. Watch and listen! Then play it back. When it is your color, tap your corner!',
+   tip: p => 'Watch the lights. Tap when it is your turn!'},
+  {title:'Blast Home!', icon:'🚀', make: BlastHome,
+   voice: () => 'Last mission! Tap, tap, tap to fill the rocket with fuel. But when I say freeze, everybody stop! When the tank is full, everybody hold on to land.',
+   tip: p => 'Tap fast! When it says FREEZE, stop!'},
+];
+
+/* ---------- The End: awards ---------- */
+const AWARDS = [
+  {k:'stars', t:'Star Catcher', e:'⭐', line: n => `You caught ${n} stars`},
+  {k:'feeds', t:'Alien’s Best Friend', e:'👾', line: n => `You fed the alien ${n} snacks`},
+  {k:'code',  t:'Code Cracker', e:'🔐', line: n => `You pressed ${n} code buttons`},
+  {k:'hold',  t:'Steady Hands', e:'✋', line: n => `You held on for ${Math.round(n)} seconds`},
+  {k:'rocks', t:'Rock Smasher', e:'☄️', line: n => `You smashed ${n} space rocks`},
+  {k:'echo',  t:'Music Maker', e:'🎵', line: n => `You played ${n} radio notes`},
+  {k:'boost', t:'Turbo Booster', e:'🔥', line: n => `You tapped ${n} rocket boosts`},
+];
+function assignAwards(){
+  const EXP = [0,.55,.7,.85,1,1.1], cand = [];
+  AWARDS.forEach(a => {
+    const vals = crew.map(p => (p.st[a.k]||0)/EXP[p.lvl]), mean = sum(vals, v=>v)/vals.length || 1;
+    crew.forEach((p,i) => cand.push({p, a, score: vals[i]/mean + Math.random()*.01}));
+  });
+  cand.sort((x,y) => y.score - x.score);
+  const out = new Map(), usedA = new Set();
+  for (const c of cand){ if (!out.has(c.p) && !usedA.has(c.a.k) && (c.p.st[c.a.k]||0) > 0){ out.set(c.p, c.a); usedA.add(c.a.k); } }
+  crew.forEach(p => { if (!out.has(p)) out.set(p, {k:'', t:'Super Helper', e:'💖', line: () => 'The crew needed you!'}); });
+  return out;
+}
+function End(){
+  const total = sum(game.stars, s => s||0), max = MISSIONS.length*3, aw = assignAwards();
+  const head = total >= 18 ? 'Superstar crew!' : total >= 12 ? 'Amazing crew!' : 'Great crew!';
+  let t = 0, nextConf = 0;
+  return {
+    enter(){
+      sfx.win(); confetti(90);
+      say(`We made it home! ${head} You earned ${total} stars. ` + crew.map(p => `${p.name}, you are the ${aw.get(p).t}!`).join(' ') + ' Great teamwork, Rocket Crew!');
+      $('#pauseBtn').hidden = true; after(3, () => { $('#endBtns').hidden = false; });
+    },
+    exit(){ $('#endBtns').hidden = true; $('#pauseBtn').hidden = false; },
+    update(dt){ t += dt; nextConf -= dt; if (nextConf <= 0 && t < 12){ confetti(18); nextConf = .9; } },
+    bandDown(){},
+    draw(){
+      const u = L.u;
+      crew.forEach(p => inQuad(p.seat, (w,h) => {
+        const a = aw.get(p), S = SEATS[p.seat], k = clamp((t - .5 - p.seat*.4)/.5, 0, 1);
+        emoji('🏅', w/2 - u*.2, h*.2, u*.3*easeBack(k), 1, Math.sin(t*2)*.1);
+        emoji(a.e, w/2 + u*.2, h*.2, u*.24*easeBack(k));
+        txt('You are the', w/2, h*.42, u*.08, '#ffffffaa');
+        fit(a.t, w/2, h*.54, w*.9, u*.15, S.main);
+        fit(a.k ? a.line(p.st[a.k]) : a.line(), w/2, h*.67, w*.88, u*.075, '#ffffffdd');
+      }));
+      const b = L.band;
+      emoji('🌍', W*.12, b.y + b.h/2, b.h*.3, 1, t*.3);
+      bandSay(`Home! ${head} ⭐ ${total} of ${max}`, '#ffd166');
+    }
+  };
+}
+
+/* ================= start / pause / end controls ================= */
+let wakeLock = null;
+async function keepAwake(){ try { if ('wakeLock' in navigator && document.visibilityState === 'visible') wakeLock = await navigator.wakeLock.request('screen'); } catch(e){} }
+function startGame(){
+  initAudio(); say(' ');
+  const active = SEATS_FOR[cfg.count];
+  crew = active.map(s => {
+    const c = cfg.seats[s];
+    return {seat: s, avatar: c.avatar, name: (c.name || SEATS[s].name).slice(0,12), age: c.age, lvl: lvlOf(c.age), st:{stars:0,feeds:0,code:0,hold:0,rocks:0,echo:0,boost:0}};
+  });
+  bySeat = {}; crew.forEach(p => bySeat[p.seat] = p);
+  $('#setup').hidden = true; $('#game').hidden = false;
+  layout(); running = true; paused = false; parts = []; flyers = []; pops = [];
+  game = {idx:-1, stars:[]};
+  keepAwake();
+  go(Ready(null));
+}
+$('#start').addEventListener('click', startGame);
+function setPaused(v){
+  paused = v; $('#pause').hidden = !v;
+  if (v){ try { speechSynthesis.cancel(); } catch(e){} }
+  $('#soundBtn').textContent = 'Sound: ' + (soundOn ? 'on' : 'off');
+  $('#voiceBtn').textContent = 'Voice: ' + (voiceOn ? 'on' : 'off');
+  $('#skipBtn').hidden = !(scene && game.idx >= 0 && game.idx < MISSIONS.length);
+}
+$('#pauseBtn').addEventListener('click', () => setPaused(true));
+$('#resumeBtn').addEventListener('click', () => setPaused(false));
+$('#soundBtn').addEventListener('click', () => { soundOn = !soundOn; setPaused(true); });
+$('#voiceBtn').addEventListener('click', () => { voiceOn = !voiceOn; if (!voiceOn) try { speechSynthesis.cancel(); } catch(e){} setPaused(true); });
+$('#skipBtn').addEventListener('click', () => { setPaused(false); if (game.idx >= 0 && game.idx < MISSIONS.length){ game.stars[game.idx] = game.stars[game.idx] || 1; go(Result(game.stars[game.idx])); } });
+function toSetup(){ if (scene && scene.exit) scene.exit(); scene = null; running = false; setPaused(false); $('#endBtns').hidden = true; $('#game').hidden = true; $('#setup').hidden = false; renderSetup(); try { speechSynthesis.cancel(); } catch(e){} }
+$('#quitBtn').addEventListener('click', toSetup);
+$('#crewBtn').addEventListener('click', toSetup);
+$('#againBtn').addEventListener('click', () => { $('#endBtns').hidden = true; startGame(); });
+window.addEventListener('resize', () => { if (running) layout(); });
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden' && running) setPaused(true);
+  if (document.visibilityState === 'visible' && running) keepAwake();
+});
+
+// test hook (harmless in play): lets an automated check jump between scenes
+window.__rocketCrew = {go, MISSIONS, Ready, Result, End, finish, get game(){ return game; }, get scene(){ return scene; }, get crew(){ return crew; }};
+})();
+</script>
+<!--WRAPPER-TAIL-->
+</body>
+</html>

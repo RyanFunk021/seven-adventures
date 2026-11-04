@@ -19,3 +19,9 @@ file automatically if you connect the repo via New -> Blueprint instead.
 
 If you edit the trip in Claude and republish the artifact, re-export it and replace
 `index.html` here, then push — Render redeploys automatically on push.
+
+## Rocket Crew (bonus)
+
+`rocket-crew/index.html` is a cooperative party game for 2–4 kids sharing one phone
+laid flat on a table (two kids at each end). Seven short missions, about ten minutes in all.
+On Render it is served at `https://<name>.onrender.com/rocket-crew/`.
