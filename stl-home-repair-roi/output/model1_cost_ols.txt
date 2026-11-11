@@ -1,0 +1,57 @@
+                            WLS Regression Results                            
+==============================================================================
+Dep. Variable:                  lcost   R-squared:                       0.342
+Model:                            WLS   Adj. R-squared:                  0.342
+Method:                 Least Squares   F-statistic:                     643.6
+Date:                Wed, 11 Nov 2026   Prob (F-statistic):               0.00
+Time:                        01:58:19   Log-Likelihood:                -94355.
+No. Observations:               57830   AIC:                         1.888e+05
+Df Residuals:                   57796   BIC:                         1.891e+05
+Df Model:                          33                                         
+Covariance Type:                  HC1                                         
+============================================================================================================================================
+                                                                               coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                    2.8326      0.135     20.932      0.000       2.567       3.098
+C(type, Treatment('Water heater'))[T.Bathroom remodel]                       1.6903      0.026     64.549      0.000       1.639       1.742
+C(type, Treatment('Water heater'))[T.Central air conditioning]               1.5024      0.020     75.601      0.000       1.463       1.541
+C(type, Treatment('Water heater'))[T.Disaster repair]                        2.3244      0.040     57.658      0.000       2.245       2.403
+C(type, Treatment('Water heater'))[T.Electrical wiring / panel]              0.1248      0.029      4.292      0.000       0.068       0.182
+C(type, Treatment('Water heater'))[T.Exterior stairs / chimney]              0.7433      0.044     16.782      0.000       0.656       0.830
+C(type, Treatment('Water heater'))[T.Flooring / ceilings]                    1.0280      0.021     49.266      0.000       0.987       1.069
+C(type, Treatment('Water heater'))[T.Heating equipment (furnace/boiler)]     1.1970      0.023     53.174      0.000       1.153       1.241
+C(type, Treatment('Water heater'))[T.Insulation]                             0.4962      0.035     14.056      0.000       0.427       0.565
+C(type, Treatment('Water heater'))[T.Other interior repair]                  0.7557      0.041     18.500      0.000       0.676       0.836
+C(type, Treatment('Water heater'))[T.Plumbing fixtures]                     -0.1753      0.028     -6.232      0.000      -0.230      -0.120
+C(type, Treatment('Water heater'))[T.Porch / deck / patio]                   1.6232      0.032     50.622      0.000       1.560       1.686
+C(type, Treatment('Water heater'))[T.Roof replacement]                       1.9861      0.020    100.722      0.000       1.947       2.025
+C(type, Treatment('Water heater'))[T.Siding]                                 1.5440      0.042     36.640      0.000       1.461       1.627
+C(type, Treatment('Water heater'))[T.Water pipes]                            0.2744      0.037      7.512      0.000       0.203       0.346
+C(type, Treatment('Water heater'))[T.Windows / doors]                        0.9591      0.026     37.248      0.000       0.909       1.010
+C(era)[T.1940-59]                                                            0.0050      0.022      0.227      0.820      -0.038       0.048
+C(era)[T.1960-79]                                                            0.0139      0.021      0.674      0.500      -0.026       0.054
+C(era)[T.1980-99]                                                            0.0292      0.021      1.372      0.170      -0.013       0.071
+C(era)[T.2000+]                                                             -0.0572      0.023     -2.457      0.014      -0.103      -0.012
+C(DIVISION)[T.2]                                                            -0.0527      0.029     -1.816      0.069      -0.110       0.004
+C(DIVISION)[T.3]                                                            -0.0825      0.028     -2.953      0.003      -0.137      -0.028
+C(DIVISION)[T.4]                                                            -0.0662      0.033     -2.029      0.042      -0.130      -0.002
+C(DIVISION)[T.5]                                                            -0.1330      0.027     -4.857      0.000      -0.187      -0.079
+C(DIVISION)[T.6]                                                            -0.2295      0.037     -6.268      0.000      -0.301      -0.158
+C(DIVISION)[T.7]                                                            -0.1009      0.029     -3.424      0.001      -0.159      -0.043
+C(DIVISION)[T.8]                                                            -0.1709      0.032     -5.282      0.000      -0.234      -0.107
+C(DIVISION)[T.9]                                                            -0.0619      0.028     -2.187      0.029      -0.117      -0.006
+C(year)[T.2021]                                                             -0.0260      0.014     -1.918      0.055      -0.053       0.001
+C(year)[T.2023]                                                              0.0840      0.014      6.102      0.000       0.057       0.111
+lval                                                                         0.2680      0.011     24.669      0.000       0.247       0.289
+linc                                                                         0.0619      0.005     12.394      0.000       0.052       0.072
+BEDROOMS                                                                     0.0123      0.009      1.434      0.152      -0.005       0.029
+BATHROOMS                                                                    0.0599      0.007      9.113      0.000       0.047       0.073
+==============================================================================
+Omnibus:                    10245.388   Durbin-Watson:                   1.746
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            72713.944
+Skew:                          -0.669   Prob(JB):                         0.00
+Kurtosis:                       8.328   Cond. No.                         394.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)

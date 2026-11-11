@@ -1,0 +1,6 @@
+program,bcr_low,bcr_high,source
+Lead hazard control,17.0,221.0,"Gould 2009, Environ. Health Perspect. 117(7) — health, IQ/earnings, tax, crime benefits"
+Aging-in-place modifications (CAPABLE model),2.9,5.2,"Szanton et al. / Bishai et al. 2018 JAGS: ~$867/mo lower Medicaid spend x 17-mo avg follow-up (~$14.7K) vs ~$2,825-$5,000 program cost"
+Weatherization (incl. health & safety),4.1,4.1,DOE/ORNL WAP Retrospective Evaluation PY2008 — benefit-cost ratio
+Weatherization (energy savings only),1.4,1.5,DOE/ORNL WAP evaluations — savings-to-investment ratio (SIR)
+Roof / furnace / major systems,,,No rigorous published ROI; value is avoided damage & displacement (UMSL 2023 qualitative)

@@ -1,0 +1,9 @@
+rank,improvement,bcr_low,bcr_high,roi_basis,stl_federal_funding,stl_prime_grants,typical_job,note,owner_occupied_repair_pool
+1,Lead hazard control,17.0,221.0,"Measured (health/earnings, Gould 2009)",17945624.0,36384997.0,,"HUD lead grants go straight to contractors (Bozikis, Maurice-Benjamin, United Infrastructure). Needs EPA/MO lead abatement certification.",26896168.0
+2,"Aging-in-place: accessibility, safety, minor repair",3.0,5.0,"Measured (Medicaid savings, CAPABLE)",17613831.0,999897.0,3000.0,"Grab bars, railings, ramps, lighting, small fixes. Low ticket, high volume; Senior Home Security is the largest local sub-recipient.",26896168.0
+3,Weatherization: insulation & air sealing,1.0,4.0,"Measured (energy SIR 1.4; 4.1 with health & safety, DOE/ORNL)",19550864.0,,2353.0,"Most common St. Louis need with the largest total dollar need (UMSL). Flows via Urban League, CAASTLC, Senior Home Security.",26896168.0
+4,Roof replacement,,,Not measured; highest value per job,,,10437.0,Largest U.S. repair spend category and #2 most expensive St. Louis need. Funded inside Healthy Home Repair and CDBG-DR/tornado programs.,26896168.0
+5,Flood / disaster repair (CDBG-DR),,,Not measured; largest open funding pool,,82259000.0,14640.0,"$82M HUD CDBG-DR to City + County for the July 2022 floods, available through 2030.",26896168.0
+6,Heating equipment (furnace/boiler),,,Not measured; part of WAP health & safety,,,4742.0,"Most expensive single repair in the UMSL St. Louis survey ($4,655).",26896168.0
+7,Exterior wall / tuckpointing,,,Not measured; hedonic +4.3% (p=0.09),,,6708.0,St. Louis brick stock: #2 total need in UMSL survey; CDBG tuckpointing programs (Harambee).,26896168.0
+8,"Electrical wiring, panels & outlets",,,Hedonic +4.5% (p=0.003),,,1623.0,"Most common St. Louis need (82% of older homeowners). Small ticket, fire-safety priority.",26896168.0

@@ -1,0 +1,11 @@
+category,home_repair_market,n,total,mean,median
+"Other CDBG/HOME (services, econ. dev., infrastructure)",False,545,77857171.28,142857.19500917432,70000.0
+Energy bill / crisis assistance (non-repair),False,44,77458619.74,1760423.1759090908,1223951.4649999999
+Rental / multi-unit rehab,False,87,50552489.41,581063.0966666667,174945.9
+"Vacant property: demolition, board-up, stabilization",False,125,50277322.56,402218.58048,86700.0
+Down-payment assistance,False,57,30597952.41,536806.182631579,556322.18
+Owner-occupied home repair / rehab,True,233,26896167.66,115434.19596566523,65490.0
+Weatherization / energy efficiency,True,33,19550864.0,592450.4242424242,491119.0
+Lead hazard control,True,91,17945624.37,197204.6634065934,159162.0
+"Aging-in-place: minor repair, accessibility & safety",True,43,17613831.27,409623.98302325583,50000.0
+New construction / development,False,48,15642616.33,325887.84020833333,200993.95

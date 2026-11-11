@@ -1,0 +1,309 @@
+<meta name="dash-one-writer">
+<style>
+.hr { display: flex; flex-direction: column; gap: var(--cds-gap-xl); max-width: 1100px; }
+.hr h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+.hr h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; text-wrap: balance; }
+.hr .lede { font-size: var(--cds-font-size-body); line-height: 1.55; max-width: 68ch; margin: 0; }
+.hr .sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.5; margin: 0; max-width: 75ch; }
+.hr section { display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.hr .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: var(--cds-gap-md); }
+.hr .tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.hr .tile .k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .02em; }
+.hr .tile .v { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: 2rem; font-variant-numeric: tabular-nums; }
+.hr .tile .n { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.45; }
+.hr .tw { overflow-x: auto; }
+.hr table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.hr th, .hr td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.hr th { color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); white-space: nowrap; }
+.hr td.num, .hr th.num { text-align: right; white-space: nowrap; }
+.hr td.note { min-width: 260px; color: var(--color-fg-muted); line-height: 1.45; }
+.hr .chart { position: relative; min-height: 220px; width: 100%; }
+.hr .chart svg { display: block; overflow: visible; }
+.hr .chart text { fill: var(--cds-text-secondary); font-size: 11px; }
+.hr .chart .lbl { fill: var(--color-fg); font-size: 12px; }
+.hr .tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); border-radius: var(--cds-radius); padding: 6px 9px; font-size: 12px; line-height: 1.4; max-width: 260px; z-index: 2; }
+.hr .legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.hr .legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; background: var(--sw); }
+.hr .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--cds-gap-xl); }
+.hr .pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 11px; border: 1px solid var(--color-border-line); white-space: nowrap; }
+.hr .pill.m { color: var(--color-ok); border-color: var(--color-ok); }
+.hr details { font-size: var(--cds-font-size-caption); line-height: 1.55; color: var(--color-fg-muted); }
+.hr details summary { cursor: pointer; color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.hr details li { margin-bottom: 4px; }
+.hr [data-dash-source-state=refreshing] { opacity: .5; }
+</style>
+
+<div class="hr" data-read lang="en">
+  <header id="top" style="display:flex;flex-direction:column;gap:var(--cds-gap-sm)">
+    <h1>St. Louis Home Repair Grant ROI</h1>
+    <p class="lede">Lead hazard control has the highest measured return of any federally funded home repair: <b data-draw="lead-bcr" data-source="ranking" data-field="bcr_low" data-where="rank=1">—</b>–<b data-draw="lead-bcr-hi" data-source="ranking" data-field="bcr_high" data-where="rank=1">—</b> dollars of benefit per dollar spent. Aging-in-place modifications and weatherization follow. Where no ROI study exists, roof replacement and flood repair carry the most value per job, and flood repair has the largest open pool of money.</p>
+    <p class="sub">For a contractor doing federally funded repairs in St. Louis City and County. ROI here means public benefit per $1 of grant (health, energy, Medicaid savings) from published evaluations, plus a home-value model built for this page. Contractor profit margins are not in any public data.</p>
+  </header>
+
+  <div class="tiles" id="tiles">
+    <div class="tile"><span class="k">Highest measured ROI · lead hazard control</span><span class="v">$<span data-draw="t-lead" data-source="ranking" data-field="bcr_low" data-where="rank=1">—</span>+ per $1</span><span class="n">Health, lifetime earnings and tax benefits (Gould 2009)</span></div>
+    <div class="tile"><span class="k">Largest value per job · roof replacement</span><span class="v" data-draw="t-roof" data-source="ranking" data-field="typical_job" data-where="rank=4">—</span><span class="n">Model-predicted cost for a pre-1940, $90K Midwest home</span></div>
+    <div class="tile"><span class="k">Largest open pool · flood recovery (CDBG-DR)</span><span class="v" data-draw="t-dr" data-source="ranking" data-field="stl_prime_grants" data-where="rank=5">—</span><span class="n">HUD awards to City + County, available through 2030</span></div>
+    <div class="tile"><span class="k">Owner-occupied repair sub-awards since 2011</span><span class="v" data-draw="t-pool" data-source="ranking" data-field="owner_occupied_repair_pool" data-where="rank=1">—</span><span class="n">Healthy Home Repair, home improvement loans, minor repair</span></div>
+  </div>
+
+  <section id="ranking-section">
+    <h2>Ranked by measured ROI, then by value per job</h2>
+    <p class="sub">Benefit per $1 comes from published evaluations. Local federal dollars are USAspending sub-awards to St. Louis organizations (FY2011–2026). Typical job is this page's cost model (M1), except aging-in-place, which uses the CAPABLE program cost.</p>
+    <div class="tw">
+      <table id="ranking-table" data-source="ranking" data-row-key="rank">
+        <thead><tr><th data-field="rank">#</th><th data-field="improvement">Improvement</th><th class="num" data-field="bcr_low">Benefit per $1</th><th data-field="roi_basis">ROI basis</th><th class="num" data-field="stl_federal_funding">Local sub-awards</th><th class="num" data-field="stl_prime_grants">Direct federal grants</th><th class="num" data-field="typical_job">Typical job</th><th data-field="note">Why it ranks here</th></tr></thead>
+        <tbody data-draw="ranking-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="funding-section">
+    <h2>Where federal repair money lands in St. Louis</h2>
+    <p class="sub">1,311 federal sub-awards to St. Louis City and County organizations, sorted into improvement types by their descriptions. Highlighted bars are home repair work a contractor can bid on.</p>
+    <div class="chart" id="funding-chart" data-draw="funding" data-source="subawards" style="min-height:330px"></div>
+  </section>
+
+  <div class="two">
+    <section id="trend-section">
+      <h2>Home repair sub-awards by year</h2>
+      <p class="sub">Lead money spiked in 2022; weatherization came back in 2025.</p>
+      <div class="legend" data-draw="trend-legend"></div>
+      <div class="chart" id="trend-chart" data-draw="trend" data-source="subyear" style="min-height:260px"></div>
+    </section>
+    <section id="prime-section">
+      <h2>Direct federal grants by program</h2>
+      <p class="sub">Prime awards to St. Louis City and County recipients since FY2008.</p>
+      <div class="tw">
+        <table id="prime-table" data-source="primes" data-row-key="CFDA Number">
+          <thead><tr><th data-field="CFDA Number">Listing</th><th data-field="program">Program</th><th class="num" data-field="n_awards">Awards</th><th class="num" data-field="total">Total</th><th class="num" data-field="average">Average</th></tr></thead>
+          <tbody data-draw="prime-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <section id="cost-section">
+    <h2>Average cost by improvement type</h2>
+    <p class="sub">American Housing Survey 2019–2023, contractor-done jobs on owner-occupied single-family homes, in 2024 dollars. The St. Louis-like subset is Midwest homes built before 1960, worth under $200K, with household income under $60K.</p>
+    <div class="legend"><span style="--sw: var(--cds-chart-muted)">U.S. median</span><span class="stl-swatch">St. Louis-like median</span></div>
+    <div class="chart" id="cost-chart" data-draw="cost" data-source="ahs" style="min-height:420px"></div>
+  </section>
+
+  <div class="two">
+    <section id="hedonic-section">
+      <h2>Home value gain after each repair</h2>
+      <p class="sub">Model M2: percent difference in owner-reported home value for homes with each repair in the last two years, holding age, size, region, income and year fixed. Bars cross zero where the effect is not distinguishable from none. Correlation only; owners who fix one thing tend to keep up the whole house.</p>
+      <div class="chart" id="hedonic-chart" data-draw="hedonic" data-source="hedonic" style="min-height:380px"></div>
+    </section>
+    <section id="need-section">
+      <h2>What St. Louis homeowners need most</h2>
+      <p class="sub">UMSL survey of 583 older St. Louis homeowners (2023): number who need each repair times its cost. This is the dollar need, and so the total value of the work.</p>
+      <div class="chart" id="need-chart" data-draw="need" data-source="need" style="min-height:300px"></div>
+    </section>
+  </div>
+
+  <section id="caper-section">
+    <h2>City of St. Louis CDBG spending by HUD activity code</h2>
+    <p class="sub">IDIS PR26 vouchers in the City's annual CAPER reports, program years 2018–2025 (2021's report is scanned and could not be read). Single-unit rehab (14A) is the Healthy Home Repair Program.</p>
+    <div class="tw">
+      <table id="caper-table" data-source="caper" data-row-key="matrix_code">
+        <thead><tr><th data-field="matrix_code">Code</th><th data-field="matrix_desc">Activity</th><th class="num" data-field="total">Disbursed</th><th class="num" data-field="activities">Activities</th><th class="num" data-field="avg_per_activity">Avg per activity</th></tr></thead>
+        <tbody data-draw="caper-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="models-section">
+    <h2>How well the models fit</h2>
+    <p class="lede">The cost model (M1) explains <b data-draw="m1r2" data-source="fit" data-field="value" data-where="metric=M1_ols_r2_in_sample">—</b> of the variation in job cost across <b data-draw="m1n" data-source="fit" data-field="value" data-where="metric=M1_n">—</b> jobs. Improvement type is the main driver; home value and income add a little. A gradient-boosted model scores <b data-draw="gbm" data-source="fit" data-field="value" data-where="metric=M3_gbm_r2_test">—</b> on held-out jobs against <b data-draw="olst" data-source="fit" data-field="value" data-where="metric=M3_ols_r2_test">—</b> for plain regression, so the simple model is close to the best these fields allow. The home-value model (M2) explains <b data-draw="m2r2" data-source="fit" data-field="value" data-where="metric=M2_r2">—</b> across <b data-draw="m2n" data-source="fit" data-field="value" data-where="metric=M2_n">—</b> homes.</p>
+  </section>
+
+  <details id="methods">
+    <summary>Sources, methods and limits</summary>
+    <ul>
+      <li><b>USAspending.gov API</b>: prime awards and sub-awards for CDBG (14.218), CDBG-DR (14.228), HOME (14.239), Lead Hazard Control (14.900, 14.905), Healthy Homes (14.906, 14.913), Older Adult Home Modification (14.921), Weatherization (81.042), LIHEAP (93.568) and USDA 504 (10.417, 10.433), for recipients or places of performance in St. Louis City (29510) and County (29189).</li>
+      <li><b>City of St. Louis CAPERs 2018–2025</b> (Community Development Administration): IDIS PR26 voucher detail and Healthy Home Repair narratives. In 2025, CDBG paid for 415 repairs across 57 homeowners, about $22K per home and 7 repairs each.</li>
+      <li><b>HUD CPD open data</b> (CDBG and HOME activity layers) was checked. It leaves out single-family rehab, so it is not used for costs.</li>
+      <li><b>American Housing Survey</b> 2019, 2021, 2023 national files: 82,656 contractor-done jobs. No St. Louis metro sample exists in these years, so the Midwest older-home subset stands in.</li>
+      <li><b>UMSL Community Innovation and Action Center</b>, Home Repair Study (May 2023): repair needs and costs for older St. Louis homeowners.</li>
+      <li><b>ROI evidence</b>: Gould (2009), Environmental Health Perspectives 117(7), lead hazard control returns $17–$221 per $1. DOE/ORNL Weatherization Assistance Program national evaluations: energy savings-to-investment ratio 1.4, benefit-cost 4.1 with health and safety. CAPABLE (Johns Hopkins; Bishai et al. 2018, JAGS): about $867 per month lower Medicaid spending against a $2,825–$5,000 program cost.</li>
+      <li><b>Limits</b>: sub-awards are often annual program allocations, not single jobs. The keyword classification is approximate. The value model is correlational. Roof, furnace and electrical work have no published ROI study; they rank on value per job and local need.</li>
+    </ul>
+  </details>
+</div>
+
+<script>
+window.HR = (() => {
+  const money = (v) => v == null || isNaN(v) ? '—' : (Math.abs(v) >= 1e6 ? '$' + d3.format('.1f')(v / 1e6) + 'M' : Math.abs(v) >= 1e4 ? '$' + d3.format(',.0f')(v / 1e3) + 'K' : '$' + d3.format(',.0f')(v));
+  const num = (v) => v == null || v === '' ? null : +v;
+  function rows(id) { const r = dash.data(id); return r.status === 'ok' ? r.data : null; }
+  function text(el, id, fn) { const r = rows(id); el.textContent = r ? fn(r) : '—'; }
+  function tip(el) {
+    let t = el.querySelector('.tip'); if (!t) { t = document.createElement('div'); t.className = 'tip'; t.hidden = true; el.appendChild(t); }
+    return {
+      show(ev, lines) { t.replaceChildren(...lines.map((l, i) => { const d = document.createElement('div'); d.textContent = l; if (i === 0) d.style.fontWeight = '600'; return d; }));
+        t.hidden = false; const b = el.getBoundingClientRect(); let x = ev.clientX - b.left + 12, y = ev.clientY - b.top + 12;
+        if (x + t.offsetWidth > b.width) x = Math.max(0, ev.clientX - b.left - t.offsetWidth - 12); t.style.left = x + 'px'; t.style.top = y + 'px'; },
+      hide() { t.hidden = true; } };
+  }
+  function measure(svg, labels, cls) {
+    const g = svg.append('g'); let w = 0;
+    labels.forEach((l) => { const n = g.append('text').attr('class', cls || '').text(l).node(); w = Math.max(w, n.getComputedTextLength()); });
+    g.remove(); return w;
+  }
+  // horizontal bar chart; items: [{label, value, color, tipLines}]
+  function hbar(el, items, opt = {}) {
+    const W = el.clientWidth || 600; const bh = opt.bh || 24;
+    d3.select(el).selectAll('svg').remove();
+    const svg = d3.select(el).append('svg').attr('role', 'img').attr('aria-label', opt.aria || 'Bar chart');
+    const lw = Math.min(measure(svg, items.map((d) => d.label), 'lbl') + 10, W * 0.45);
+    const vw = measure(svg, items.map((d) => opt.fmt(d.value))) + 8;
+    const H = items.length * bh + 8; svg.attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3.scaleLinear().domain([0, d3.max(items, (d) => d.value) || 1]).range([0, Math.max(40, W - lw - vw - 4)]);
+    const tt = tip(el);
+    const g = svg.selectAll('g.r').data(items).join('g').attr('class', 'r').attr('transform', (d, i) => `translate(0,${i * bh})`);
+    g.append('text').attr('class', 'lbl').attr('x', lw - 8).attr('y', bh / 2).attr('dy', '.35em').attr('text-anchor', 'end').text((d) => d.label)
+      .each(function () { let s = this.textContent; while (this.getComputedTextLength() > lw - 10 && s.length > 4) { s = s.slice(0, -2); this.textContent = s + '…'; } });
+    g.append('rect').attr('x', lw).attr('y', 4).attr('height', bh - 8).attr('rx', 2).attr('width', (d) => Math.max(1, x(d.value))).style('fill', (d) => d.color)
+      .on('mousemove', (ev, d) => tt.show(ev, d.tipLines)).on('mouseleave', () => tt.hide());
+    g.append('text').attr('x', (d) => lw + x(d.value) + 5).attr('y', bh / 2).attr('dy', '.35em').text((d) => opt.fmt(d.value));
+  }
+  function failed(el, id) { const s = dash.data(id).status; d3.select(el).selectAll('svg').remove(); if (s === 'error') { const p = document.createElement('p'); p.className = 'sub'; p.textContent = 'Failed to load'; el.replaceChildren(p); } else el.replaceChildren(); }
+  return { money, num, rows, text, tip, hbar, measure, failed };
+})();
+</script>
+
+<script>
+const { money, num, rows, text } = window.HR;
+dash.onData(() => { document.querySelectorAll('.stl-swatch').forEach((e) => e.style.setProperty('--sw', dash.colors[0])); });
+const rk = (n) => (r) => r.find((x) => +x.rank === n);
+dash.draw('lead-bcr', (el) => text(el, 'ranking', (r) => '$' + num(rk(1)(r).bcr_low)));
+dash.draw('lead-bcr-hi', (el) => text(el, 'ranking', (r) => '$' + num(rk(1)(r).bcr_high)));
+dash.draw('t-lead', (el) => text(el, 'ranking', (r) => num(rk(1)(r).bcr_low)));
+dash.draw('t-roof', (el) => text(el, 'ranking', (r) => '$' + d3.format(',.0f')(num(rk(4)(r).typical_job))));
+dash.draw('t-dr', (el) => text(el, 'ranking', (r) => money(num(rk(5)(r).stl_prime_grants))));
+dash.draw('t-pool', (el) => text(el, 'ranking', (r) => money(num(rk(1)(r).owner_occupied_repair_pool))));
+
+dash.draw('ranking-body', (tb) => {
+  const r = rows('ranking'); tb.replaceChildren(); if (!r) return;
+  r.slice().sort((a, b) => a.rank - b.rank).forEach((d) => {
+    const tr = document.createElement('tr'); tr.dataset.key = d.rank;
+    const td = (v, cls) => { const c = document.createElement('td'); if (cls) c.className = cls; if (v instanceof Node) c.appendChild(v); else c.textContent = v; tr.appendChild(c); };
+    td(d.rank); td(d.improvement);
+    const lo = num(d.bcr_low), hi = num(d.bcr_high);
+    td(lo == null ? '—' : (lo === hi ? '$' + lo : '$' + lo + '–$' + hi), 'num');
+    const p = document.createElement('span'); p.className = 'pill' + (lo != null ? ' m' : ''); p.textContent = d.roi_basis; td(p);
+    td(money(num(d.stl_federal_funding)), 'num'); td(money(num(d.stl_prime_grants)), 'num');
+    td(num(d.typical_job) == null ? '—' : '$' + d3.format(',.0f')(num(d.typical_job)), 'num'); td(d.note, 'note');
+    tb.appendChild(tr);
+  });
+});
+
+dash.draw('funding', (el) => {
+  const r = rows('subawards'); if (!r) return window.HR.failed(el, 'subawards');
+  const items = r.map((d) => ({ label: d.category, value: num(d.total), color: d.home_repair_market === 'True' ? dash.colors[0] : 'var(--cds-chart-muted)',
+    tipLines: [d.category, money(num(d.total)) + ' across ' + d.n + ' sub-awards', 'Average ' + money(num(d.mean)) + ', median ' + money(num(d.median))] }))
+    .sort((a, b) => b.value - a.value);
+  window.HR.hbar(el, items, { fmt: money, bh: 30, aria: 'Federal sub-awards to St. Louis organizations by improvement type' });
+});
+
+dash.draw('trend-legend', (el) => {
+  const r = rows('subyear'); el.replaceChildren(); if (!r) return;
+  [...new Set(r.map((d) => d.category))].forEach((c, i) => { const s = document.createElement('span'); s.style.setProperty('--sw', dash.colors[i % dash.colors.length]); s.textContent = c; el.appendChild(s); });
+});
+dash.draw('trend', (el) => {
+  const r = rows('subyear'); if (!r) return window.HR.failed(el, 'subyear');
+  const cats = [...new Set(r.map((d) => d.category))]; const years = d3.range(2011, 2026);
+  const W = el.clientWidth || 500, H = 240, m = { t: 8, r: 10, b: 24, l: 0 };
+  d3.select(el).selectAll('svg').remove();
+  const svg = d3.select(el).append('svg').attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Home repair sub-awards per year by type, 2011 to 2025');
+  const y = d3.scaleLinear().domain([0, d3.max(r, (d) => +d.amount)]).nice().range([H - m.b, m.t]);
+  m.l = window.HR.measure(svg, y.ticks(4).map((t) => money(t))) + 8;
+  const x = d3.scalePoint().domain(years).range([m.l, W - m.r]);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickFormat(money).tickSize(-(W - m.l - m.r))).call((g) => { g.select('.domain').remove(); g.selectAll('line').style('stroke', 'var(--cds-chart-grid)'); });
+  const step = W < 450 ? 4 : 2;
+  svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickValues(years.filter((yy) => yy % step === 1 || yy === 2025)).tickFormat(d3.format('d'))).call((g) => { g.select('.domain').style('stroke', 'var(--cds-chart-axis)'); g.selectAll('line').style('stroke', 'var(--cds-chart-axis)'); });
+  const tt = window.HR.tip(el);
+  cats.forEach((c, i) => {
+    const pts = years.map((yy) => ({ yy, v: +(r.find((d) => +d.year === yy && d.category === c)?.amount || 0) }));
+    svg.append('path').datum(pts).attr('fill', 'none').style('stroke', dash.colors[i % dash.colors.length]).attr('stroke-width', 2).attr('d', d3.line().x((d) => x(d.yy)).y((d) => y(d.v)));
+    svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', (d) => x(d.yy)).attr('cy', (d) => y(d.v)).attr('r', 3).style('fill', dash.colors[i % dash.colors.length])
+      .on('mousemove', (ev, d) => tt.show(ev, [c, d.yy + ': ' + money(d.v)])).on('mouseleave', () => tt.hide());
+  });
+});
+
+dash.draw('prime-body', (tb) => {
+  const r = rows('primes'); tb.replaceChildren(); if (!r) return;
+  r.forEach((d) => { const tr = document.createElement('tr'); tr.dataset.key = d['CFDA Number'];
+    [[d['CFDA Number']], [d.program], [d3.format(',')(+d.n_awards), 'num'], [money(+d.total), 'num'], [money(+d.average), 'num']].forEach(([v, c]) => { const td = document.createElement('td'); td.textContent = v; if (c) td.className = c; tr.appendChild(td); });
+    tb.appendChild(tr); });
+});
+
+dash.draw('cost', (el) => {
+  const r = rows('ahs'); if (!r) return window.HR.failed(el, 'ahs');
+  const d0 = r.filter((d) => d.grant_eligible === 'True').map((d) => ({ t: d.type, us: num(d.median), stl: num(d.stl_like_median), n: num(d.jobs_n), sn: num(d.stl_like_n), mean: num(d.wtd_mean) })).sort((a, b) => b.us - a.us);
+  const W = el.clientWidth || 600, bh = 26;
+  d3.select(el).selectAll('svg').remove();
+  const svg = d3.select(el).append('svg').attr('role', 'img').attr('aria-label', 'Median contractor cost by improvement type, U.S. and St. Louis-like homes');
+  const lw = Math.min(window.HR.measure(svg, d0.map((d) => d.t), 'lbl') + 10, W * 0.42);
+  const vw = window.HR.measure(svg, ['$00,000']) + 6;
+  const H = d0.length * bh + 24; svg.attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+  const x = d3.scaleLinear().domain([0, d3.max(d0, (d) => Math.max(d.us, d.stl || 0))]).nice().range([lw, W - vw]);
+  svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).ticks(W < 450 ? 3 : 5).tickFormat(money).tickSize(-(H - 20))).call((g) => { g.select('.domain').remove(); g.selectAll('line').style('stroke', 'var(--cds-chart-grid)'); });
+  const tt = window.HR.tip(el);
+  const g = svg.selectAll('g.r').data(d0).join('g').attr('class', 'r').attr('transform', (d, i) => `translate(0,${i * bh})`);
+  g.append('text').attr('class', 'lbl').attr('x', lw - 8).attr('y', bh / 2).attr('dy', '.35em').attr('text-anchor', 'end').text((d) => d.t)
+    .each(function () { let s = this.textContent; while (this.getComputedTextLength() > lw - 10 && s.length > 4) { s = s.slice(0, -2); this.textContent = s + '…'; } });
+  g.append('line').attr('x1', (d) => x(Math.min(d.us, d.stl ?? d.us))).attr('x2', (d) => x(Math.max(d.us, d.stl ?? d.us))).attr('y1', bh / 2).attr('y2', bh / 2).style('stroke', 'var(--cds-chart-reference)');
+  g.append('circle').attr('cx', (d) => x(d.us)).attr('cy', bh / 2).attr('r', 5).style('fill', 'var(--cds-chart-muted)');
+  g.filter((d) => d.stl != null).append('circle').attr('cx', (d) => x(d.stl)).attr('cy', bh / 2).attr('r', 5).style('fill', dash.colors[0]);
+  g.append('text').attr('x', (d) => x(Math.max(d.us, d.stl ?? 0)) + 9).attr('y', bh / 2).attr('dy', '.35em').text((d) => money(d.us));
+  g.append('rect').attr('x', 0).attr('width', W).attr('height', bh).style('fill', 'transparent')
+    .on('mousemove', (ev, d) => tt.show(ev, [d.t, 'U.S. median ' + money(d.us) + ' (' + d3.format(',')(d.n) + ' jobs)', 'U.S. weighted mean ' + money(d.mean), 'St. Louis-like median ' + money(d.stl) + ' (' + d.sn + ' jobs)'])).on('mouseleave', () => tt.hide());
+});
+
+dash.draw('hedonic', (el) => {
+  const r = rows('hedonic'); if (!r) return window.HR.failed(el, 'hedonic');
+  const d0 = r.map((d) => ({ t: d.type, c: +d.coef_all, lo: +d.coef_all - 1.96 * d.se_all, hi: +d.coef_all + 1.96 * d.se_all, p: +d.p_all })).sort((a, b) => b.c - a.c);
+  const W = el.clientWidth || 500, bh = 22;
+  d3.select(el).selectAll('svg').remove();
+  const svg = d3.select(el).append('svg').attr('role', 'img').attr('aria-label', 'Estimated home value premium by repair type with 95% intervals');
+  const lw = Math.min(window.HR.measure(svg, d0.map((d) => d.t), 'lbl') + 10, W * 0.48);
+  const H = d0.length * bh + 24; svg.attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`);
+  const pct = (v) => d3.format('+.0%')(Math.exp(v) - 1);
+  const x = d3.scaleLinear().domain([d3.min(d0, (d) => d.lo), d3.max(d0, (d) => d.hi)]).nice().range([lw, W - 10]);
+  svg.append('g').attr('transform', `translate(0,${H - 20})`).call(d3.axisBottom(x).ticks(W < 450 ? 3 : 5).tickFormat(pct).tickSize(-(H - 20))).call((g) => { g.select('.domain').remove(); g.selectAll('line').style('stroke', 'var(--cds-chart-grid)'); });
+  svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', 0).attr('y2', H - 20).style('stroke', 'var(--cds-chart-reference)');
+  const tt = window.HR.tip(el);
+  const g = svg.selectAll('g.r').data(d0).join('g').attr('class', 'r').attr('transform', (d, i) => `translate(0,${i * bh})`);
+  g.append('text').attr('class', 'lbl').attr('x', lw - 8).attr('y', bh / 2).attr('dy', '.35em').attr('text-anchor', 'end').text((d) => d.t)
+    .each(function () { let s = this.textContent; while (this.getComputedTextLength() > lw - 10 && s.length > 4) { s = s.slice(0, -2); this.textContent = s + '…'; } });
+  g.append('line').attr('x1', (d) => x(d.lo)).attr('x2', (d) => x(d.hi)).attr('y1', bh / 2).attr('y2', bh / 2).attr('stroke-width', 2).style('stroke', (d) => d.p < 0.05 ? dash.colors[0] : 'var(--cds-chart-muted)');
+  g.append('circle').attr('cx', (d) => x(d.c)).attr('cy', bh / 2).attr('r', 4).style('fill', (d) => d.p < 0.05 ? dash.colors[0] : 'var(--cds-chart-muted)');
+  g.append('rect').attr('x', 0).attr('width', W).attr('height', bh).style('fill', 'transparent')
+    .on('mousemove', (ev, d) => tt.show(ev, [d.t, 'Value premium ' + pct(d.c), '95% range ' + pct(d.lo) + ' to ' + pct(d.hi), d.p < 0.05 ? 'Distinguishable from zero' : 'Not distinguishable from zero'])).on('mouseleave', () => tt.hide());
+});
+
+dash.draw('need', (el) => {
+  const r = rows('need'); if (!r) return window.HR.failed(el, 'need');
+  const items = r.filter((d) => num(d.umsl_total_need) != null).map((d) => ({ label: d.improvement, value: num(d.umsl_total_need), color: dash.colors[0],
+    tipLines: [d.improvement, d3.format(',')(num(d.umsl_instances)) + ' homeowners need it', money(num(d.umsl_cost_each)) + ' each (UMSL estimate)', 'Total ' + money(num(d.umsl_total_need))] })).sort((a, b) => b.value - a.value);
+  window.HR.hbar(el, items, { fmt: money, bh: 28, aria: 'Total dollar need by repair type among surveyed St. Louis homeowners' });
+});
+
+dash.draw('caper-body', (tb) => {
+  const r = rows('caper'); tb.replaceChildren(); if (!r) return;
+  r.filter((d) => d.matrix_desc !== 'Other').slice(0, 12).forEach((d) => { const tr = document.createElement('tr'); tr.dataset.key = d.matrix_code;
+    [[d.matrix_code], [d.matrix_desc], [money(+d.total), 'num'], [d.activities, 'num'], [money(+d.avg_per_activity), 'num']].forEach(([v, c]) => { const td = document.createElement('td'); td.textContent = v; if (c) td.className = c; tr.appendChild(td); });
+    tb.appendChild(tr); });
+});
+
+const fit = (k, f) => (el) => text(el, 'fit', (r) => f(+r.find((d) => d.metric === k).value));
+dash.draw('m1r2', fit('M1_ols_r2_in_sample', d3.format('.0%')));
+dash.draw('m1n', fit('M1_n', d3.format(',')));
+dash.draw('gbm', fit('M3_gbm_r2_test', d3.format('.0%')));
+dash.draw('olst', fit('M3_ols_r2_test', d3.format('.0%')));
+dash.draw('m2r2', fit('M2_r2', d3.format('.0%')));
+dash.draw('m2n', fit('M2_n', d3.format(',')));
+</script>

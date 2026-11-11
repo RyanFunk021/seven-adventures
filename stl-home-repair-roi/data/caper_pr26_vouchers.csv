@@ -1,0 +1,1642 @@
+caper_year,plan_year,project,activity,voucher,activity_name,matrix_code,national_objective,amount,matrix_desc
+2025,2018,23,8976,6895445,2932 University,14A,LMH,24602.84,Rehab: single-unit residential
+2025,2018,23,8976,6922177,2932 University,14A,LMH,8695.34,Rehab: single-unit residential
+2025,2018,23,8976,6929376,2932 University,14A,LMH,23463.24,Rehab: single-unit residential
+2025,2018,23,8976,6944761,2932 University,14A,LMH,36825.89,Rehab: single-unit residential
+2025,2018,23,8976,6956615,2932 University,14A,LMH,32806.01,Rehab: single-unit residential
+2025,2023,14,9052,6895548,CDBG 2023 Grant,03T,LMC,150000.0,Other
+2025,2023,57,9043,6895445,Genesis Shelter Program,03T,LMC,1239.13,Other
+2025,2023,57,9043,6956612,Genesis Shelter Program,03T,LMC,21945.81,Other
+2025,2024,65,9137,6996858,Interfaith Residence Comprehensive Flex Housing,03T,LMC,65803.08,Other
+2025,2023,12,9067,6895548,Senior Services,05A,LMC,7093.0,Senior services
+2025,2023,39,9030,6895445,North Neighborhoods Elderly Services,05A,LMC,7520.0,Senior services
+2025,2023,43,9038,6929376,Elderly Services,05A,LMC,273780.55,Senior services
+2025,2024,8,9127,6996858,Senior Services,05A,LMC,63725.0,Senior services
+2025,2024,18,9141,6996858,Northside Senior Meal Program,05A,LMC,59926.2,Senior services
+2025,2022,10,8951,6929376,Internship Salaries for Youth,05D,LMC,71552.02,Youth services
+2025,2023,1,9001,6895445,Youth Mentoring and Wraparound Support - 2023,05D,LMC,35714.4,Youth services
+2025,2023,1,9001,6895548,Youth Mentoring and Wraparound Support - 2023,05D,LMC,8333.04,Youth services
+2025,2023,9,9036,6929376,Internships,05D,LMC,83732.36,Youth services
+2025,2023,55,9055,6895445,Beyond School,05D,LMC,89003.32,Youth services
+2025,2023,55,9055,6922177,Beyond School,05D,LMC,8697.99,Youth services
+2025,2024,4,9123,6995936,Youth Mentoring & Wraparound Support,05D,LMC,83334.0,Youth services
+2025,2024,10,9135,6996858,GSGBC- Dutchtown Campus,05D,LMC,66482.34,Youth services
+2025,2024,28,9140,6996858,Beyond School,05D,LMC,20540.52,Youth services
+2025,2023,17,9022,6895548,Competitive Employment Program,05H,LMC,10000.0,Other
+2025,2023,17,9022,6895585,Competitive Employment Program,05H,LMC,22000.0,Other
+2025,2023,18,9045,6895548,Re-Entry,05H,LMC,1000.0,Other
+2025,2023,18,9045,6895585,Re-Entry,05H,LMC,53993.77,Other
+2025,2023,44,9059,6895445,Workforce Development Program,05H,LMC,4300.02,Other
+2025,2023,44,9059,6944761,Workforce Development Program,05H,LMC,12299.82,Other
+2025,2023,54,9056,6895445,EACH1,05H,LMC,6698.6,Other
+2025,2023,54,9056,6895585,EACH1,05H,LMC,4148.52,Other
+2025,2024,2,9112,6944966,Competitive Employment Program,05H,LMC,73500.0,Other
+2025,2024,12,9119,6996858,Reentry,05H,LMC,89500.0,Other
+2025,2023,37,9032,6895445,North Neighborhoods Safety Initiative,05I,LMA,12500.0,Other
+2025,2023,37,9032,6895548,North Neighborhoods Safety Initiative,05I,LMA,5000.0,Other
+2025,2023,97,9037,6949661,Knowing the History to Perfect Our Future in Fair Housing - Yesterday and Tomorrow,05J,LMA,4575.0,Other
+2025,2023,97,9037,6956612,Knowing the History to Perfect Our Future in Fair Housing - Yesterday and Tomorrow,05J,LMA,725.46,Other
+2025,2024,64,9121,6996858,Childcare,05L,LMC,50000.0,Other
+2025,2023,49,9058,6895445,St. Patrick Center- Shamrock Club,05O,LMC,8850.88,Other
+2025,2023,49,9058,6944761,St. Patrick Center- Shamrock Club,05O,LMC,1876.95,Other
+2025,2023,38,9040,6895445,North Neighborhoods Beautification,05V,LMA,4058.0,Other
+2025,2024,40,9133,6996858,Operation Brightside,05V,LMA,179872.4,Other
+2025,2023,10,9077,6895548,CCBF Food & Nutritional Services,05W,LMA,6575.88,Other
+2025,2023,10,9077,6922177,CCBF Food & Nutritional Services,05W,LMA,7632.49,Other
+2025,2023,13,9068,6895445,Food Pantry,05W,LMC,2500.0,Other
+2025,2023,51,9050,6895445,Food Pantry,05W,LMC,9207.11,Other
+2025,2023,100,9057,6895548,Food Access,05W,LMA,5658.39,Other
+2025,2023,100,9057,6895585,Food Access,05W,LMA,72224.44,Other
+2025,2023,100,9057,6929376,Food Access,05W,LMA,10313.05,Other
+2025,2024,6,9125,6995936,CCBF Food & Nutritional Services,05W,LMA,52709.62,Other
+2025,2024,9,9128,6996858,Food Pantry,05W,LMC,25000.0,Other
+2025,2024,14,9120,6995936,Food Outreach Inc.,05W,LMC,158076.04,Other
+2025,2024,55,9149,6996858,ARCH by HomeScreen: At-risk Renters Connection,05X,LMC,42000.0,Other
+2025,2023,11,9018,6895445,Problem Property Team Program,05Z,LMA,18829.38,Other public services
+2025,2023,11,9018,6929376,Problem Property Team Program,05Z,LMA,42876.71,Other public services
+2025,2023,15,9047,6895445,Dutchtown Afterschool and Summer Programs,05Z,LMA,2558.16,Other public services
+2025,2023,31,9044,6895548,Out of School Time,05Z,LMA,8560.19,Other public services
+2025,2023,31,9044,6895585,Out of School Time,05Z,LMA,78588.05,Other public services
+2025,2023,31,9044,6922177,Out of School Time,05Z,LMA,3258.86,Other public services
+2025,2023,31,9044,6929376,Out of School Time,05Z,LMA,7592.9,Other public services
+2025,2023,42,9023,6895445,Expanded Recreation Program,05Z,LMA,7872.31,Other public services
+2025,2023,52,9048,6895445,Transitional Housing Program,05Z,LMC,13200.0,Other public services
+2025,2023,56,9070,6895445,Northside-Southside Collaborative Landlord & Rehabber Training,05Z,LMA,10000.0,Other public services
+2025,2023,101,9025,6895585,SLACO Keeping It Clean Neighborhood Beautification and Employment Initiative,05Z,LMC,16666.7,Other public services
+2025,2023,102,9027,6895445,SLACO Development and Engagement Insititute,05Z,LMA,5550.0,Other public services
+2025,2023,102,9027,6895548,SLACO Development and Engagement Insititute,05Z,LMA,7800.0,Other public services
+2025,2023,103,9039,6895585,SLACO Emerging Leaders Institute,05Z,LMC,3636.36,Other public services
+2025,2024,3,9113,6949661,Transitional Housing Program,05Z,LMC,74649.0,Other public services
+2025,2024,3,9113,6956615,Transitional Housing Program,05Z,LMC,37212.75,Other public services
+2025,2024,7,9126,6996858,Problem Property Team,05Z,LMA,219547.75,Other public services
+2025,2024,20,9116,6995936,Expanded Recreation Program,05Z,LMA,172245.67,Other public services
+2025,2024,46,9142,6996858,Building Communities Through Agriculture,05Z,LMA,61819.0,Other public services
+2025,2023,60,9034,6895585,LRA Property Maintenance and Vacancy Support Program,06,LMA,580597.4,Interim assistance
+2025,2023,60,9034,6956615,LRA Property Maintenance and Vacancy Support Program,06,LMA,750000.0,Interim assistance
+2025,2023,60,9034,6957801,LRA Property Maintenance and Vacancy Support Program,06,LMA,56660.23,Interim assistance
+2025,2018,23,9009,6895445,2900-02 Michigan,12,LMH,1944.92,Construction of housing
+2025,2018,23,9009,6895548,2900-02 Michigan,12,LMH,26286.26,Construction of housing
+2025,2018,23,9009,6922177,2900-02 Michigan,12,LMH,84031.6,Construction of housing
+2025,2018,23,9009,6929376,2900-02 Michigan,12,LMH,114876.25,Construction of housing
+2025,2018,23,9009,6944761,2900-02 Michigan,12,LMH,25000.0,Construction of housing
+2025,2018,23,9009,6956615,2900-02 Michigan,12,LMH,8967.55,Construction of housing
+2025,2019,23,9008,6895445,"3025, 3141-43 Ohio",12,LMH,11212.23,Construction of housing
+2025,2019,23,9008,6895548,"3025, 3141-43 Ohio",12,LMH,11256.54,Construction of housing
+2025,2019,23,9008,6922177,"3025, 3141-43 Ohio",12,LMH,70248.42,Construction of housing
+2025,2019,23,9008,6929376,"3025, 3141-43 Ohio",12,LMH,19537.25,Construction of housing
+2025,2019,23,9008,6949661,"3025, 3141-43 Ohio",12,LMH,18332.36,Construction of housing
+2025,2019,23,9008,6956615,"3025, 3141-43 Ohio",12,LMH,322304.82,Construction of housing
+2025,2019,79,9011,6895548,St. Henry Ph II,12,LMH,48043.47,Construction of housing
+2025,2019,79,9011,6895585,St. Henry Ph II,12,LMH,26374.59,Construction of housing
+2025,2019,79,9011,6910977,St. Henry Ph II,12,LMH,140000.0,Construction of housing
+2025,2019,79,9011,6929376,St. Henry Ph II,12,LMH,89773.4,Construction of housing
+2025,2019,79,9011,6958349,St. Henry Ph II,12,LMH,4411.5,Construction of housing
+2025,2020,135,9105,6956615,West End Court IV,12,LMH,530246.94,Construction of housing
+2025,2022,60,8946,6895445,Homebuyer Services DPA 2022,13A,LMH,23000.0,Other
+2025,2022,60,8946,6895585,Homebuyer Services DPA 2022,13A,LMH,19500.0,Other
+2025,2023,48,9073,6895585,Homebuyer Services DPA 2023,13A,LMH,3500.0,Other
+2025,2023,48,9073,6910977,Homebuyer Services DPA 2023,13A,LMH,46000.0,Other
+2025,2023,48,9073,6929376,Homebuyer Services DPA 2023,13A,LMH,23000.0,Other
+2025,2023,48,9073,6944761,Homebuyer Services DPA 2023,13A,LMH,34500.0,Other
+2025,2023,48,9073,6949661,Homebuyer Services DPA 2023,13A,LMH,11500.0,Other
+2025,2023,48,9073,6956612,Homebuyer Services DPA 2023,13A,LMH,17260.27,Other
+2025,2023,48,9073,6956615,Homebuyer Services DPA 2023,13A,LMH,11500.0,Other
+2025,2024,59,9166,6995936,Downpayment Assistance Program,13A,LMH,8760.0,Other
+2025,2018,96,9094,6895548,8706 Annetta,14A,LMH,47058.19,Rehab: single-unit residential
+2025,2018,96,9094,6895585,8706 Annetta,14A,LMH,23975.7,Rehab: single-unit residential
+2025,2018,96,9094,6922177,8706 Annetta,14A,LMH,24489.13,Rehab: single-unit residential
+2025,2018,96,9094,6929376,8706 Annetta,14A,LMH,40116.95,Rehab: single-unit residential
+2025,2018,96,9094,6949661,8706 Annetta,14A,LMH,10504.92,Rehab: single-unit residential
+2025,2018,96,9094,6956961,8706 Annetta,14A,LMH,47182.4,Rehab: single-unit residential
+2025,2019,23,8815,6895445,3415-17 Louisiana,14A,LMH,59832.0,Rehab: single-unit residential
+2025,2019,23,8815,6895548,3415-17 Louisiana,14A,LMH,31809.2,Rehab: single-unit residential
+2025,2019,30,8593,6922177,Healthy Home Repair Program Loan Pool,14A,LMH,2749.0,Rehab: single-unit residential
+2025,2020,50,8754,6929376,CDA Healthy Home Repair Program Loan Pool,14A,LMH,2670.0,Rehab: single-unit residential
+2025,2021,61,8824,6895548,Home Repair Program Loan Pool,14A,LMH,8307.0,Rehab: single-unit residential
+2025,2021,61,8824,6922177,Home Repair Program Loan Pool,14A,LMH,990.0,Rehab: single-unit residential
+2025,2021,61,8824,6929376,Home Repair Program Loan Pool,14A,LMH,21685.0,Rehab: single-unit residential
+2025,2022,4,8929,6895445,Healthy Home Repair Program Loan Pool,14A,LMH,23880.0,Rehab: single-unit residential
+2025,2022,4,8929,6929376,Healthy Home Repair Program Loan Pool,14A,LMH,47150.0,Rehab: single-unit residential
+2025,2023,2,9072,6895445,Building Division Healthy Home Repair Program Inspection Services,14A,LMH,12960.36,Rehab: single-unit residential
+2025,2023,4,9062,6895445,Home Repair Loan Pool,14A,LMH,37420.0,Rehab: single-unit residential
+2025,2023,4,9062,6895548,Home Repair Loan Pool,14A,LMH,31725.0,Rehab: single-unit residential
+2025,2023,4,9062,6895585,Home Repair Loan Pool,14A,LMH,124892.0,Rehab: single-unit residential
+2025,2023,4,9062,6922177,Home Repair Loan Pool,14A,LMH,145543.0,Rehab: single-unit residential
+2025,2023,4,9062,6929376,Home Repair Loan Pool,14A,LMH,58614.0,Rehab: single-unit residential
+2025,2023,4,9062,6944761,Home Repair Loan Pool,14A,LMH,60191.0,Rehab: single-unit residential
+2025,2023,4,9062,6949661,Home Repair Loan Pool,14A,LMH,60255.0,Rehab: single-unit residential
+2025,2023,4,9062,6956612,Home Repair Loan Pool,14A,LMH,6005.0,Rehab: single-unit residential
+2025,2023,4,9062,6956615,Home Repair Loan Pool,14A,LMH,33795.0,Rehab: single-unit residential
+2025,2023,4,9062,6957801,Home Repair Loan Pool,14A,LMH,41935.0,Rehab: single-unit residential
+2025,2023,34,9061,6895585,Mission: St. Louis Healthy Home Repair Program (2023),14A,LMH,150611.36,Rehab: single-unit residential
+2025,2024,17,9163,6995936,Healthy Home Repair Program and Construction Management,14A,LMH,484163.78,Rehab: single-unit residential
+2025,2024,29,9164,6995936,Healthy Home Repair Program Loan Pool,14A,LMH,478253.0,Rehab: single-unit residential
+2025,2024,32,9165,6995936,Healthy Home Repair Inspection Program,14A,LMH,337030.66,Rehab: single-unit residential
+2025,2018,38,8509,6922177,CDA Rehabilitation Administration (CDBG),14H,LMH,5042.15,Rehab administration
+2025,2019,8,8604,6922177,CDA Rehabilitation Administration (CDBG),14H,LMH,8830.0,Rehab administration
+2025,2019,8,8604,6929376,CDA Rehabilitation Administration (CDBG),14H,LMH,2935.3,Rehab administration
+2025,2019,8,8604,6949661,CDA Rehabilitation Administration (CDBG),14H,LMH,19577.0,Rehab administration
+2025,2020,55,8690,6922177,CDA Rehabilitation Administration,14H,LMH,4421.28,Rehab administration
+2025,2020,55,8690,6949661,CDA Rehabilitation Administration,14H,LMH,1130.0,Rehab administration
+2025,2021,66,8856,6895445,CDA Rehabilitation Administration,14H,LMH,6173.92,Rehab administration
+2025,2021,66,8856,6895548,CDA Rehabilitation Administration,14H,LMH,713.14,Rehab administration
+2025,2021,66,8856,6895585,CDA Rehabilitation Administration,14H,LMH,31317.0,Rehab administration
+2025,2021,66,8856,6910977,CDA Rehabilitation Administration,14H,LMH,804.88,Rehab administration
+2025,2021,66,8856,6922177,CDA Rehabilitation Administration,14H,LMH,1355.97,Rehab administration
+2025,2021,66,8856,6929376,CDA Rehabilitation Administration,14H,LMH,312.49,Rehab administration
+2025,2021,66,8856,6949661,CDA Rehabilitation Administration,14H,LMH,1168.9,Rehab administration
+2025,2021,66,8856,6956615,CDA Rehabilitation Administration,14H,LMH,7748.54,Rehab administration
+2025,2022,6,8931,6895548,CDA Rehabilitation Administration,14H,LMH,29727.35,Rehab administration
+2025,2022,6,8931,6895585,CDA Rehabilitation Administration,14H,LMH,22051.6,Rehab administration
+2025,2022,6,8931,6910977,CDA Rehabilitation Administration,14H,LMH,12551.95,Rehab administration
+2025,2022,6,8931,6922177,CDA Rehabilitation Administration,14H,LMH,16712.01,Rehab administration
+2025,2022,6,8931,6929376,CDA Rehabilitation Administration,14H,LMH,7884.38,Rehab administration
+2025,2022,6,8931,6949661,CDA Rehabilitation Administration,14H,LMH,1457.63,Rehab administration
+2025,2022,6,8931,6956612,CDA Rehabilitation Administration,14H,LMH,9840.0,Rehab administration
+2025,2022,6,8931,6956615,CDA Rehabilitation Administration,14H,LMH,3276.58,Rehab administration
+2025,2023,6,9066,6895445,CDA Rehabilitation Administration,14H,LMA,34501.2,Rehab administration
+2025,2023,6,9066,6895548,CDA Rehabilitation Administration,14H,LMA,7500.0,Rehab administration
+2025,2023,6,9066,6895585,CDA Rehabilitation Administration,14H,LMA,8774.88,Rehab administration
+2025,2023,6,9066,6910977,CDA Rehabilitation Administration,14H,LMA,7500.0,Rehab administration
+2025,2023,6,9066,6922177,CDA Rehabilitation Administration,14H,LMA,18252.52,Rehab administration
+2025,2023,6,9066,6929376,CDA Rehabilitation Administration,14H,LMA,7500.0,Rehab administration
+2025,2023,6,9066,6944761,CDA Rehabilitation Administration,14H,LMA,7500.0,Rehab administration
+2025,2023,6,9066,6956615,CDA Rehabilitation Administration,14H,LMA,36000.0,Rehab administration
+2025,2024,30,9158,6996858,Rehabilitation Administration,14H,LMH,661986.14,Rehab administration
+2025,2024,1,9111,6944762,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,190249.98,Other
+2025,2024,1,9111,6944763,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,27316.66,Other
+2025,2024,1,9111,6956961,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,33499.98,Other
+2025,2024,2,9112,6944966,No Competitive Employment Program B17MC290006 EN,05H,LMC,38968.0,Other
+2025,2024,2,9112,6944966,No Competitive Employment Program B20MC290006 EN,05H,LMC,34532.0,Other
+2024,2018,23,8976,6895445,2932 University,14A,LMH,24602.84,Rehab: single-unit residential
+2024,2018,23,8976,6922177,2932 University,14A,LMH,8695.34,Rehab: single-unit residential
+2024,2018,23,8976,6929376,2932 University,14A,LMH,23463.24,Rehab: single-unit residential
+2024,2018,23,8976,6944761,2932 University,14A,LMH,36825.89,Rehab: single-unit residential
+2024,2018,23,8976,6956615,2932 University,14A,LMH,32806.01,Rehab: single-unit residential
+2024,2023,14,9052,6895548,CDBG 2023 Grant,03T,LMC,150000.0,Other
+2024,2023,57,9043,6895445,Genesis Shelter Program,03T,LMC,1239.13,Other
+2024,2023,57,9043,6956612,Genesis Shelter Program,03T,LMC,21945.81,Other
+2024,2024,65,9137,6996858,Interfaith Residence Comprehensive Flex Housing,03T,LMC,65803.08,Other
+2024,2023,12,9067,6895548,Senior Services,05A,LMC,7093.0,Senior services
+2024,2023,39,9030,6895445,North Neighborhoods Elderly Services,05A,LMC,7520.0,Senior services
+2024,2023,43,9038,6929376,Elderly Services,05A,LMC,273780.55,Senior services
+2024,2024,8,9127,6996858,Senior Services,05A,LMC,63725.0,Senior services
+2024,2024,18,9141,6996858,Northside Senior Meal Program,05A,LMC,59926.2,Senior services
+2024,2022,10,8951,6929376,Internship Salaries for Youth,05D,LMC,71552.02,Youth services
+2024,2023,1,9001,6895445,Youth Mentoring and Wraparound Support - 2023,05D,LMC,35714.4,Youth services
+2024,2023,1,9001,6895548,Youth Mentoring and Wraparound Support - 2023,05D,LMC,8333.04,Youth services
+2024,2023,9,9036,6929376,Internships,05D,LMC,83732.36,Youth services
+2024,2023,55,9055,6895445,Beyond School,05D,LMC,89003.32,Youth services
+2024,2023,55,9055,6922177,Beyond School,05D,LMC,8697.99,Youth services
+2024,2024,4,9123,6995936,Youth Mentoring & Wraparound Support,05D,LMC,83334.0,Youth services
+2024,2024,10,9135,6996858,GSGBC- Dutchtown Campus,05D,LMC,66482.34,Youth services
+2024,2024,28,9140,6996858,Beyond School,05D,LMC,20540.52,Youth services
+2024,2023,17,9022,6895548,Competitive Employment Program,05H,LMC,10000.0,Other
+2024,2023,17,9022,6895585,Competitive Employment Program,05H,LMC,22000.0,Other
+2024,2023,18,9045,6895548,Re-Entry,05H,LMC,1000.0,Other
+2024,2023,18,9045,6895585,Re-Entry,05H,LMC,53993.77,Other
+2024,2023,44,9059,6895445,Workforce Development Program,05H,LMC,4300.02,Other
+2024,2023,44,9059,6944761,Workforce Development Program,05H,LMC,12299.82,Other
+2024,2023,54,9056,6895445,EACH1,05H,LMC,6698.6,Other
+2024,2023,54,9056,6895585,EACH1,05H,LMC,4148.52,Other
+2024,2024,2,9112,6944966,Competitive Employment Program,05H,LMC,73500.0,Other
+2024,2024,12,9119,6996858,Reentry,05H,LMC,89500.0,Other
+2024,2023,37,9032,6895445,North Neighborhoods Safety Initiative,05I,LMA,12500.0,Other
+2024,2023,37,9032,6895548,North Neighborhoods Safety Initiative,05I,LMA,5000.0,Other
+2024,2023,97,9037,6949661,Knowing the History to Perfect Our Future in Fair Housing - Yesterday and Tomorrow,05J,LMA,4575.0,Other
+2024,2023,97,9037,6956612,Knowing the History to Perfect Our Future in Fair Housing - Yesterday and Tomorrow,05J,LMA,725.46,Other
+2024,2024,64,9121,6996858,Childcare,05L,LMC,50000.0,Other
+2024,2023,49,9058,6895445,St. Patrick Center- Shamrock Club,05O,LMC,8850.88,Other
+2024,2023,49,9058,6944761,St. Patrick Center- Shamrock Club,05O,LMC,1876.95,Other
+2024,2023,38,9040,6895445,North Neighborhoods Beautification,05V,LMA,4058.0,Other
+2024,2024,40,9133,6996858,Operation Brightside,05V,LMA,179872.4,Other
+2024,2023,10,9077,6895548,CCBF Food & Nutritional Services,05W,LMA,6575.88,Other
+2024,2023,10,9077,6922177,CCBF Food & Nutritional Services,05W,LMA,7632.49,Other
+2024,2023,13,9068,6895445,Food Pantry,05W,LMC,2500.0,Other
+2024,2023,51,9050,6895445,Food Pantry,05W,LMC,9207.11,Other
+2024,2023,100,9057,6895548,Food Access,05W,LMA,5658.39,Other
+2024,2023,100,9057,6895585,Food Access,05W,LMA,72224.44,Other
+2024,2023,100,9057,6929376,Food Access,05W,LMA,10313.05,Other
+2024,2024,6,9125,6995936,CCBF Food & Nutritional Services,05W,LMA,52709.62,Other
+2024,2024,9,9128,6996858,Food Pantry,05W,LMC,25000.0,Other
+2024,2024,14,9120,6995936,Food Outreach Inc.,05W,LMC,158076.04,Other
+2024,2024,55,9149,6996858,ARCH by HomeScreen: At-risk Renters Connection,05X,LMC,42000.0,Other
+2024,2023,11,9018,6895445,Problem Property Team Program,05Z,LMA,18829.38,Other public services
+2024,2023,11,9018,6929376,Problem Property Team Program,05Z,LMA,42876.71,Other public services
+2024,2023,15,9047,6895445,Dutchtown Afterschool and Summer Programs,05Z,LMA,2558.16,Other public services
+2024,2023,31,9044,6895548,Out of School Time,05Z,LMA,8560.19,Other public services
+2024,2023,31,9044,6895585,Out of School Time,05Z,LMA,78588.05,Other public services
+2024,2023,31,9044,6922177,Out of School Time,05Z,LMA,3258.86,Other public services
+2024,2023,31,9044,6929376,Out of School Time,05Z,LMA,7592.9,Other public services
+2024,2023,42,9023,6895445,Expanded Recreation Program,05Z,LMA,7872.31,Other public services
+2024,2023,52,9048,6895445,Transitional Housing Program,05Z,LMC,13200.0,Other public services
+2024,2023,56,9070,6895445,Northside-Southside Collaborative Landlord & Rehabber Training,05Z,LMA,10000.0,Other public services
+2024,2023,101,9025,6895585,SLACO Keeping It Clean Neighborhood Beautification and Employment Initiative,05Z,LMC,16666.7,Other public services
+2024,2023,102,9027,6895445,SLACO Development and Engagement Insititute,05Z,LMA,5550.0,Other public services
+2024,2023,102,9027,6895548,SLACO Development and Engagement Insititute,05Z,LMA,7800.0,Other public services
+2024,2023,103,9039,6895585,SLACO Emerging Leaders Institute,05Z,LMC,3636.36,Other public services
+2024,2024,3,9113,6949661,Transitional Housing Program,05Z,LMC,74649.0,Other public services
+2024,2024,3,9113,6956615,Transitional Housing Program,05Z,LMC,37212.75,Other public services
+2024,2024,7,9126,6996858,Problem Property Team,05Z,LMA,219547.75,Other public services
+2024,2024,20,9116,6995936,Expanded Recreation Program,05Z,LMA,172245.67,Other public services
+2024,2024,46,9142,6996858,Building Communities Through Agriculture,05Z,LMA,61819.0,Other public services
+2024,2023,60,9034,6895585,LRA Property Maintenance and Vacancy Support Program,06,LMA,580597.4,Interim assistance
+2024,2023,60,9034,6956615,LRA Property Maintenance and Vacancy Support Program,06,LMA,750000.0,Interim assistance
+2024,2023,60,9034,6957801,LRA Property Maintenance and Vacancy Support Program,06,LMA,56660.23,Interim assistance
+2024,2018,23,9009,6895445,2900-02 Michigan,12,LMH,1944.92,Construction of housing
+2024,2018,23,9009,6895548,2900-02 Michigan,12,LMH,26286.26,Construction of housing
+2024,2018,23,9009,6922177,2900-02 Michigan,12,LMH,84031.6,Construction of housing
+2024,2018,23,9009,6929376,2900-02 Michigan,12,LMH,114876.25,Construction of housing
+2024,2018,23,9009,6944761,2900-02 Michigan,12,LMH,25000.0,Construction of housing
+2024,2018,23,9009,6956615,2900-02 Michigan,12,LMH,8967.55,Construction of housing
+2024,2019,23,9008,6895445,"3025, 3141-43 Ohio",12,LMH,11212.23,Construction of housing
+2024,2019,23,9008,6895548,"3025, 3141-43 Ohio",12,LMH,11256.54,Construction of housing
+2024,2019,23,9008,6922177,"3025, 3141-43 Ohio",12,LMH,70248.42,Construction of housing
+2024,2019,23,9008,6929376,"3025, 3141-43 Ohio",12,LMH,19537.25,Construction of housing
+2024,2019,23,9008,6949661,"3025, 3141-43 Ohio",12,LMH,18332.36,Construction of housing
+2024,2019,23,9008,6956615,"3025, 3141-43 Ohio",12,LMH,322304.82,Construction of housing
+2024,2019,79,9011,6895548,St. Henry Ph II,12,LMH,48043.47,Construction of housing
+2024,2019,79,9011,6895585,St. Henry Ph II,12,LMH,26374.59,Construction of housing
+2024,2019,79,9011,6910977,St. Henry Ph II,12,LMH,140000.0,Construction of housing
+2024,2019,79,9011,6929376,St. Henry Ph II,12,LMH,89773.4,Construction of housing
+2024,2019,79,9011,6958349,St. Henry Ph II,12,LMH,4411.5,Construction of housing
+2024,2020,135,9105,6956615,West End Court IV,12,LMH,530246.94,Construction of housing
+2024,2022,60,8946,6895445,Homebuyer Services DPA 2022,13A,LMH,23000.0,Other
+2024,2022,60,8946,6895585,Homebuyer Services DPA 2022,13A,LMH,19500.0,Other
+2024,2023,48,9073,6895585,Homebuyer Services DPA 2023,13A,LMH,3500.0,Other
+2024,2023,48,9073,6910977,Homebuyer Services DPA 2023,13A,LMH,46000.0,Other
+2024,2023,48,9073,6929376,Homebuyer Services DPA 2023,13A,LMH,23000.0,Other
+2024,2023,48,9073,6944761,Homebuyer Services DPA 2023,13A,LMH,34500.0,Other
+2024,2023,48,9073,6949661,Homebuyer Services DPA 2023,13A,LMH,11500.0,Other
+2024,2023,48,9073,6956612,Homebuyer Services DPA 2023,13A,LMH,17260.27,Other
+2024,2023,48,9073,6956615,Homebuyer Services DPA 2023,13A,LMH,11500.0,Other
+2024,2024,59,9166,6995936,Downpayment Assistance Program,13A,LMH,8760.0,Other
+2024,2018,96,9094,6895548,8706 Annetta,14A,LMH,47058.19,Rehab: single-unit residential
+2024,2018,96,9094,6895585,8706 Annetta,14A,LMH,23975.7,Rehab: single-unit residential
+2024,2018,96,9094,6922177,8706 Annetta,14A,LMH,24489.13,Rehab: single-unit residential
+2024,2018,96,9094,6929376,8706 Annetta,14A,LMH,40116.95,Rehab: single-unit residential
+2024,2018,96,9094,6949661,8706 Annetta,14A,LMH,10504.92,Rehab: single-unit residential
+2024,2018,96,9094,6956961,8706 Annetta,14A,LMH,47182.4,Rehab: single-unit residential
+2024,2019,23,8815,6895445,3415-17 Louisiana,14A,LMH,59832.0,Rehab: single-unit residential
+2024,2019,23,8815,6895548,3415-17 Louisiana,14A,LMH,31809.2,Rehab: single-unit residential
+2024,2019,30,8593,6922177,Healthy Home Repair Program Loan Pool,14A,LMH,2749.0,Rehab: single-unit residential
+2024,2020,50,8754,6929376,CDA Healthy Home Repair Program Loan Pool,14A,LMH,2670.0,Rehab: single-unit residential
+2024,2021,61,8824,6895548,Home Repair Program Loan Pool,14A,LMH,8307.0,Rehab: single-unit residential
+2024,2021,61,8824,6922177,Home Repair Program Loan Pool,14A,LMH,990.0,Rehab: single-unit residential
+2024,2021,61,8824,6929376,Home Repair Program Loan Pool,14A,LMH,21685.0,Rehab: single-unit residential
+2024,2022,4,8929,6895445,Healthy Home Repair Program Loan Pool,14A,LMH,23880.0,Rehab: single-unit residential
+2024,2022,4,8929,6929376,Healthy Home Repair Program Loan Pool,14A,LMH,47150.0,Rehab: single-unit residential
+2024,2023,2,9072,6895445,Building Division Healthy Home Repair Program Inspection Services,14A,LMH,12960.36,Rehab: single-unit residential
+2024,2023,4,9062,6895445,Home Repair Loan Pool,14A,LMH,37420.0,Rehab: single-unit residential
+2024,2023,4,9062,6895548,Home Repair Loan Pool,14A,LMH,31725.0,Rehab: single-unit residential
+2024,2023,4,9062,6895585,Home Repair Loan Pool,14A,LMH,124892.0,Rehab: single-unit residential
+2024,2023,4,9062,6922177,Home Repair Loan Pool,14A,LMH,145543.0,Rehab: single-unit residential
+2024,2023,4,9062,6929376,Home Repair Loan Pool,14A,LMH,58614.0,Rehab: single-unit residential
+2024,2023,4,9062,6944761,Home Repair Loan Pool,14A,LMH,60191.0,Rehab: single-unit residential
+2024,2023,4,9062,6949661,Home Repair Loan Pool,14A,LMH,60255.0,Rehab: single-unit residential
+2024,2023,4,9062,6956612,Home Repair Loan Pool,14A,LMH,6005.0,Rehab: single-unit residential
+2024,2023,4,9062,6956615,Home Repair Loan Pool,14A,LMH,33795.0,Rehab: single-unit residential
+2024,2023,4,9062,6957801,Home Repair Loan Pool,14A,LMH,41935.0,Rehab: single-unit residential
+2024,2023,34,9061,6895585,Mission: St. Louis Healthy Home Repair Program (2023),14A,LMH,150611.36,Rehab: single-unit residential
+2024,2024,17,9163,6995936,Healthy Home Repair Program and Construction Management,14A,LMH,484163.78,Rehab: single-unit residential
+2024,2024,29,9164,6995936,Healthy Home Repair Program Loan Pool,14A,LMH,478253.0,Rehab: single-unit residential
+2024,2024,32,9165,6995936,Healthy Home Repair Inspection Program,14A,LMH,337030.66,Rehab: single-unit residential
+2024,2018,38,8509,6922177,CDA Rehabilitation Administration (CDBG),14H,LMH,5042.15,Rehab administration
+2024,2019,8,8604,6922177,CDA Rehabilitation Administration (CDBG),14H,LMH,8830.0,Rehab administration
+2024,2019,8,8604,6929376,CDA Rehabilitation Administration (CDBG),14H,LMH,2935.3,Rehab administration
+2024,2019,8,8604,6949661,CDA Rehabilitation Administration (CDBG),14H,LMH,19577.0,Rehab administration
+2024,2020,55,8690,6922177,CDA Rehabilitation Administration,14H,LMH,4421.28,Rehab administration
+2024,2020,55,8690,6949661,CDA Rehabilitation Administration,14H,LMH,1130.0,Rehab administration
+2024,2021,66,8856,6895445,CDA Rehabilitation Administration,14H,LMH,6173.92,Rehab administration
+2024,2021,66,8856,6895548,CDA Rehabilitation Administration,14H,LMH,713.14,Rehab administration
+2024,2021,66,8856,6895585,CDA Rehabilitation Administration,14H,LMH,31317.0,Rehab administration
+2024,2021,66,8856,6910977,CDA Rehabilitation Administration,14H,LMH,804.88,Rehab administration
+2024,2021,66,8856,6922177,CDA Rehabilitation Administration,14H,LMH,1355.97,Rehab administration
+2024,2021,66,8856,6929376,CDA Rehabilitation Administration,14H,LMH,312.49,Rehab administration
+2024,2021,66,8856,6949661,CDA Rehabilitation Administration,14H,LMH,1168.9,Rehab administration
+2024,2021,66,8856,6956615,CDA Rehabilitation Administration,14H,LMH,7748.54,Rehab administration
+2024,2022,6,8931,6895548,CDA Rehabilitation Administration,14H,LMH,29727.35,Rehab administration
+2024,2022,6,8931,6895585,CDA Rehabilitation Administration,14H,LMH,22051.6,Rehab administration
+2024,2022,6,8931,6910977,CDA Rehabilitation Administration,14H,LMH,12551.95,Rehab administration
+2024,2022,6,8931,6922177,CDA Rehabilitation Administration,14H,LMH,16712.01,Rehab administration
+2024,2022,6,8931,6929376,CDA Rehabilitation Administration,14H,LMH,7884.38,Rehab administration
+2024,2022,6,8931,6949661,CDA Rehabilitation Administration,14H,LMH,1457.63,Rehab administration
+2024,2022,6,8931,6956612,CDA Rehabilitation Administration,14H,LMH,9840.0,Rehab administration
+2024,2022,6,8931,6956615,CDA Rehabilitation Administration,14H,LMH,3276.58,Rehab administration
+2024,2023,6,9066,6895445,CDA Rehabilitation Administration,14H,LMA,34501.2,Rehab administration
+2024,2023,6,9066,6895548,CDA Rehabilitation Administration,14H,LMA,7500.0,Rehab administration
+2024,2023,6,9066,6895585,CDA Rehabilitation Administration,14H,LMA,8774.88,Rehab administration
+2024,2023,6,9066,6910977,CDA Rehabilitation Administration,14H,LMA,7500.0,Rehab administration
+2024,2023,6,9066,6922177,CDA Rehabilitation Administration,14H,LMA,18252.52,Rehab administration
+2024,2023,6,9066,6929376,CDA Rehabilitation Administration,14H,LMA,7500.0,Rehab administration
+2024,2023,6,9066,6944761,CDA Rehabilitation Administration,14H,LMA,7500.0,Rehab administration
+2024,2023,6,9066,6956615,CDA Rehabilitation Administration,14H,LMA,36000.0,Rehab administration
+2024,2024,30,9158,6996858,Rehabilitation Administration,14H,LMH,661986.14,Rehab administration
+2024,2024,1,9111,6944762,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,190249.98,Other
+2024,2024,1,9111,6944763,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,27316.66,Other
+2024,2024,1,9111,6956961,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,33499.98,Other
+2024,2024,2,9112,6944966,No Competitive Employment Program B17MC290006 EN,05H,LMC,38968.0,Other
+2024,2024,2,9112,6944966,No Competitive Employment Program B20MC290006 EN,05H,LMC,34532.0,Other
+2024,2020,101,9000,6757481,Care STL Health Wellness Campus,03P,LMA,907593.0,Other
+2024,2021,107,8903,6594509,Youth Services COVID-19,05Z,LMA,214649.44,Other public services
+2024,2021,107,8903,6863137,Youth Services COVID-19,05Z,LMA,131129.85,Other public services
+2024,2020,102,8764,6530633,Beyond Jobs COVID-19,05H,LMC,47720.0,Other
+2023,2018,23,8976,6774021,2932 University,14A,LMH,149963.05,Rehab: single-unit residential
+2023,2018,23,8976,6826543,2932 University,14A,LMH,34972.32,Rehab: single-unit residential
+2023,2018,23,8976,6826554,2932 University,14A,LMH,16099.04,Rehab: single-unit residential
+2023,2018,23,8976,6826578,2932 University,14A,LMH,58777.17,Rehab: single-unit residential
+2023,2018,23,8976,6828290,2932 University,14A,LMH,24343.82,Rehab: single-unit residential
+2023,2022,16,8939,6755968,Interfaith Residence Emergency Housing,03T,LMC,35290.56,Other
+2023,2022,69,8959,6774021,Covenant House - Genesis Shelter Program,03T,LMC,16718.82,Other
+2023,2023,57,9043,6844790,Genesis Shelter Program,03T,LMC,18920.32,Other
+2023,2023,57,9043,6874099,Genesis Shelter Program,03T,LMC,2893.4,Other
+2023,2020,65,8775,6826554,Techforce Center: Boosting the Economy with High-Paying Careers,03Z,LMA,50000.0,Other public improvements
+2023,2022,13,8935,6755968,Senior Services,05A,LMC,9180.0,Senior services
+2023,2022,47,8978,6755968,North Neighborhoods Elderly Services,05A,LMC,1423.67,Senior services
+2023,2022,48,8941,6755968,Northside Senior Meal Program,05A,LMC,4243.27,Senior services
+2023,2022,48,8941,6831824,Northside Senior Meal Program,05A,LMC,1505.81,Senior services
+2023,2022,48,8941,6854457,Northside Senior Meal Program,05A,LMC,1956.3,Senior services
+2023,2022,48,8941,6874099,Northside Senior Meal Program,05A,LMC,765.47,Senior services
+2023,2022,53,8983,6826578,Elderly Services,05A,LMC,197384.44,Senior services
+2023,2023,12,9067,6844790,Senior Services,05A,LMC,56669.0,Senior services
+2023,2023,12,9067,6854457,Senior Services,05A,LMC,8573.0,Senior services
+2023,2023,12,9067,6874099,Senior Services,05A,LMC,12660.0,Senior services
+2023,2023,39,9030,6844790,North Neighborhoods Elderly Services,05A,LMC,15240.0,Senior services
+2023,2023,39,9030,6854457,North Neighborhoods Elderly Services,05A,LMC,2060.0,Senior services
+2023,2023,40,9033,6844790,Northside Senior Meal Program,05A,LMC,30000.0,Senior services
+2023,2022,1,8972,6755968,Comprehensive Mentoring Services for At-Risk Youth 2022,05D,LMC,8333.04,Youth services
+2023,2022,34,8948,6826543,Out of School Time Services for Youth,05D,LMC,43777.74,Youth services
+2023,2022,67,8957,6755968,Mission: St. Louis - Beyond School,05D,LMC,24292.5,Youth services
+2023,2023,1,9001,6844790,Youth Mentoring and Wraparound Support - 2023,05D,LMC,54166.84,Youth services
+2023,2023,1,9001,6854457,Youth Mentoring and Wraparound Support - 2023,05D,LMC,1785.72,Youth services
+2023,2023,55,9055,6874099,Beyond School,05D,LMC,1585.54,Youth services
+2023,2022,19,8981,6755968,Competitive Employment Program,05H,LMC,78000.0,Other
+2023,2022,20,8982,6755968,Re-Entry,05H,LMC,21000.0,Other
+2023,2022,20,8982,6826543,Re-Entry,05H,LMC,54995.6,Other
+2023,2022,54,8945,6828289,Workforce Development,05H,LMC,9716.47,Other
+2023,2022,57,8947,6755968,Job Training - Save Our Sons,05H,LMC,12999.31,Other
+2023,2022,66,8956,6755968,Mission: St. Louis - Beyond Jobs,05H,LMC,15268.14,Other
+2023,2023,17,9022,6854457,Competitive Employment Program,05H,LMC,56000.0,Other
+2023,2023,17,9022,6874099,Competitive Employment Program,05H,LMC,35000.0,Other
+2023,2023,18,9045,6854457,Re-Entry,05H,LMC,36500.0,Other
+2023,2023,18,9045,6874099,Re-Entry,05H,LMC,15500.0,Other
+2023,2023,44,9059,6844790,Workforce Development Program,05H,LMC,4216.67,Other
+2023,2023,44,9059,6854457,Workforce Development Program,05H,LMC,53933.49,Other
+2023,2023,45,9069,6844790,Save Our Sons (SOS) Job Training Program,05H,LMC,77200.0,Other
+2023,2023,54,9056,6874099,EACH1,05H,LMC,30186.31,Other
+2023,2022,45,8975,6755968,North Neighborhoods Safety Initiative,05I,LMA,16800.0,Other
+2023,2023,37,9032,6844790,North Neighborhoods Safety Initiative,05I,LMA,37500.0,Other
+2023,2023,37,9032,6854457,North Neighborhoods Safety Initiative,05I,LMA,15000.0,Other
+2023,2023,104,9071,6854457,Federation of Block Units Resident Leadership Training & Development,05I,LMA,46850.0,Other
+2023,2022,59,8940,6755968,Fair Housing Education and Tenant Counseling,05J,LMA,2937.4,Other
+2023,2022,59,8940,6826543,Fair Housing Education and Tenant Counseling,05J,LMA,3323.9,Other
+2023,2022,59,8940,6826554,Fair Housing Education and Tenant Counseling,05J,LMA,1855.2,Other
+2023,2022,59,8940,6826578,Fair Housing Education and Tenant Counseling,05J,LMA,773.0,Other
+2023,2022,59,8940,6828286,Fair Housing Education and Tenant Counseling,05J,LMA,927.6,Other
+2023,2022,59,8940,6828290,Fair Housing Education and Tenant Counseling,05J,LMA,3169.3,Other
+2023,2022,59,8940,6828292,Fair Housing Education and Tenant Counseling,05J,LMA,773.0,Other
+2023,2022,59,8940,6854457,Fair Housing Education and Tenant Counseling,05J,LMA,309.2,Other
+2023,2023,22,9051,6844790,Childcare,05L,LMC,50000.0,Other
+2023,2022,8,8965,6755968,CHIPS Health Care Beyond Walls,05M,LMA,2752.96,Other
+2023,2022,75,8966,6755968,CHIPS Health and Wellness,05M,LMC,2345.01,Other
+2023,2022,61,8950,6828286,Shamrock Club,05O,LMC,99985.6,Other
+2023,2023,49,9058,6854457,St. Patrick Center- Shamrock Club,05O,LMC,89257.77,Other
+2023,2021,42,8878,6750102,Operation Brightside,05V,LMA,3606.12,Other
+2023,2022,46,8974,6755968,North Neighborhoods Beautification,05V,LMA,4828.56,Other
+2023,2022,70,8960,6755968,Dept. of Parks - Operation Brightside,05V,LMA,41802.17,Other
+2023,2022,70,8960,6758902,Dept. of Parks - Operation Brightside,05V,LMA,20629.21,Other
+2023,2022,70,8960,6774021,Dept. of Parks - Operation Brightside,05V,LMA,22225.88,Other
+2023,2022,70,8960,6826578,Dept. of Parks - Operation Brightside,05V,LMA,5546.3,Other
+2023,2023,38,9040,6844790,North Neighborhoods Beautification,05V,LMA,28906.0,Other
+2023,2023,38,9040,6854457,North Neighborhoods Beautification,05V,LMA,3286.0,Other
+2023,2023,58,9060,6844790,Operation Brightside,05V,LMA,185000.0,Other
+2023,2022,11,8933,6755968,CCBF Food & Nutritional Services,05W,LMC,17794.54,Other
+2023,2022,14,8934,6755968,Food Pantry,05W,LMC,5000.0,Other
+2023,2022,63,8953,6755968,Guardian Angel Settlement Association - Food Pantry,05W,LMC,47658.43,Other
+2023,2023,10,9077,6854457,CCBF Food & Nutritional Services,05W,LMA,27947.49,Other
+2023,2023,13,9068,6844790,Food Pantry,05W,LMC,20000.0,Other
+2023,2023,13,9068,6854457,Food Pantry,05W,LMC,5000.0,Other
+2023,2023,13,9068,6874099,Food Pantry,05W,LMC,2500.0,Other
+2023,2023,20,9049,6844790,Public Service- Food Access,05W,LMC,100000.0,Other
+2023,2023,51,9050,6844790,Food Pantry,05W,LMC,35416.85,Other
+2023,2023,51,9050,6854457,Food Pantry,05W,LMC,3955.45,Other
+2023,2021,51,8863,6750102,Expanded Recreation Program,05Z,LMA,597.73,Other public services
+2023,2022,12,8979,6755968,Problem Property Team Program,05Z,LMA,5335.3,Other public services
+2023,2022,12,8979,6826543,Problem Property Team Program,05Z,LMA,50892.22,Other public services
+2023,2022,12,8979,6826554,Problem Property Team Program,05Z,LMA,2640.22,Other public services
+2023,2022,17,8938,6755968,Dutchtown Campus Operations,05Z,LMA,20860.42,Other public services
+2023,2022,33,8928,6755968,Harambee Tuckpointing Youth Job Training Program,05Z,LMC,24999.96,Other public services
+2023,2022,51,8984,6755968,Expanded Recreation Program,05Z,LMA,7834.26,Other public services
+2023,2022,51,8984,6758902,Expanded Recreation Program,05Z,LMA,4382.0,Other public services
+2023,2022,51,8984,6774021,Expanded Recreation Program,05Z,LMA,20000.0,Other public services
+2023,2022,51,8984,6831824,Expanded Recreation Program,05Z,LMA,20069.95,Other public services
+2023,2022,51,8984,6854457,Expanded Recreation Program,05Z,LMA,9524.95,Other public services
+2023,2022,68,8958,6755968,Tower Grove Neighborhood CDC - Northside-Southside Collaborative Landlord Training,05Z,LMA,11000.0,Other public services
+2023,2022,73,8963,6755968,Criminal Justice Ministries - Release to Rent,05Z,LMC,30356.61,Other public services
+2023,2023,11,9018,6826554,Problem Property Team Program,05Z,LMA,16246.97,Other public services
+2023,2023,11,9018,6826578,Problem Property Team Program,05Z,LMA,18395.21,Other public services
+2023,2023,11,9018,6831188,Problem Property Team Program,05Z,LMA,19503.08,Other public services
+2023,2023,11,9018,6831189,Problem Property Team Program,05Z,LMA,20179.23,Other public services
+2023,2023,11,9018,6831823,Problem Property Team Program,05Z,LMA,30268.84,Other public services
+2023,2023,11,9018,6844790,Problem Property Team Program,05Z,LMA,101719.73,Other public services
+2023,2023,11,9018,6844834,Problem Property Team Program,05Z,LMA,20179.22,Other public services
+2023,2023,11,9018,6854457,Problem Property Team Program,05Z,LMA,44760.62,Other public services
+2023,2023,11,9018,6874099,Problem Property Team Program,05Z,LMA,44717.6,Other public services
+2023,2023,15,9047,6844790,Dutchtown Afterschool and Summer Programs,05Z,LMA,40721.48,Other public services
+2023,2023,15,9047,6854457,Dutchtown Afterschool and Summer Programs,05Z,LMA,7674.48,Other public services
+2023,2023,15,9047,6874099,Dutchtown Afterschool and Summer Programs,05Z,LMA,2777.04,Other public services
+2023,2023,42,9023,6844790,Expanded Recreation Program,05Z,LMA,190446.45,Other public services
+2023,2023,42,9023,6854457,Expanded Recreation Program,05Z,LMA,15645.48,Other public services
+2023,2023,42,9023,6874099,Expanded Recreation Program,05Z,LMA,15736.92,Other public services
+2023,2023,52,9048,6844790,Transitional Housing Program,05Z,LMC,96700.0,Other public services
+2023,2023,52,9048,6854457,Transitional Housing Program,05Z,LMC,9700.0,Other public services
+2023,2023,52,9048,6874099,Transitional Housing Program,05Z,LMC,10400.0,Other public services
+2023,2023,56,9070,6844790,Northside-Southside Collaborative Landlord & Rehabber Training,05Z,LMA,28000.0,Other public services
+2023,2023,56,9070,6854458,Northside-Southside Collaborative Landlord & Rehabber Training,05Z,LMA,7000.0,Other public services
+2023,2023,101,9025,6844790,SLACO Keeping It Clean Neighborhood Beautification and Employment Initiative,05Z,LMC,13333.0,Other public services
+2023,2023,102,9027,6844790,SLACO Development and Engagement Insititute,05Z,LMA,9250.0,Other public services
+2023,2023,102,9027,6854457,SLACO Development and Engagement Insititute,05Z,LMA,5550.0,Other public services
+2023,2023,103,9039,6844790,SLACO Emerging Leaders Institute,05Z,LMC,5136.36,Other public services
+2023,2023,103,9039,6854457,SLACO Emerging Leaders Institute,05Z,LMC,2000.0,Other public services
+2023,2022,72,8962,6755968,St. Louis Development Corporation - LRA Maintenance,06,LMA,95375.0,Interim assistance
+2023,2022,72,8962,6826543,St. Louis Development Corporation - LRA Maintenance,06,LMA,783600.0,Interim assistance
+2023,2022,72,8962,6826554,St. Louis Development Corporation - LRA Maintenance,06,LMA,72100.0,Interim assistance
+2023,2022,72,8962,6826578,St. Louis Development Corporation - LRA Maintenance,06,LMA,602685.23,Interim assistance
+2023,2022,72,8962,6828286,St. Louis Development Corporation - LRA Maintenance,06,LMA,76870.0,Interim assistance
+2023,2022,72,8962,6828289,St. Louis Development Corporation - LRA Maintenance,06,LMA,10090.0,Interim assistance
+2023,2022,72,8962,6828290,St. Louis Development Corporation - LRA Maintenance,06,LMA,44385.0,Interim assistance
+2023,2022,72,8962,6831824,St. Louis Development Corporation - LRA Maintenance,06,LMA,7500.0,Interim assistance
+2023,2022,72,8962,6854457,St. Louis Development Corporation - LRA Maintenance,06,LMA,21560.0,Interim assistance
+2023,2022,72,8962,6874099,St. Louis Development Corporation - LRA Maintenance,06,LMA,35834.77,Interim assistance
+2023,2018,23,9009,6826578,2900-02 Michigan,12,LMH,88421.62,Construction of housing
+2023,2018,23,9009,6828289,2900-02 Michigan,12,LMH,25435.54,Construction of housing
+2023,2018,23,9009,6828290,2900-02 Michigan,12,LMH,37958.97,Construction of housing
+2023,2018,23,9009,6831824,2900-02 Michigan,12,LMH,24354.68,Construction of housing
+2023,2019,23,9008,6826578,"3025, 3141-43 Ohio",12,LMH,75360.02,Construction of housing
+2023,2019,23,9008,6828289,"3025, 3141-43 Ohio",12,LMH,36611.88,Construction of housing
+2023,2019,23,9008,6828290,"3025, 3141-43 Ohio",12,LMH,12885.82,Construction of housing
+2023,2019,23,9008,6831824,"3025, 3141-43 Ohio",12,LMH,72284.55,Construction of housing
+2023,2019,79,9011,6828286,St. Henry Ph II,12,LMH,37058.8,Construction of housing
+2023,2019,79,9011,6828292,St. Henry Ph II,12,LMH,32855.84,Construction of housing
+2023,2019,79,9011,6854457,St. Henry Ph II,12,LMH,30830.91,Construction of housing
+2023,2019,79,9011,6874099,St. Henry Ph II,12,LMH,25055.92,Construction of housing
+2023,2022,60,8946,6755968,Homebuyer Services DPA 2022,13A,LMH,25000.0,Other
+2023,2022,60,8946,6774021,Homebuyer Services DPA 2022,13A,LMH,5000.0,Other
+2023,2022,60,8946,6826578,Homebuyer Services DPA 2022,13A,LMH,20000.0,Other
+2023,2022,60,8946,6828289,Homebuyer Services DPA 2022,13A,LMH,5000.0,Other
+2023,2022,60,8946,6854457,Homebuyer Services DPA 2022,13A,LMH,41000.0,Other
+2023,2022,60,8946,6874099,Homebuyer Services DPA 2022,13A,LMH,11500.0,Other
+2023,2019,23,8815,6810907,3415-17 Louisiana,14A,LMH,45420.39,Rehab: single-unit residential
+2023,2019,23,8815,6826578,3415-17 Louisiana,14A,LMH,45420.39,Rehab: single-unit residential
+2023,2019,23,8815,6828289,3415-17 Louisiana,14A,LMH,81058.88,Rehab: single-unit residential
+2023,2019,23,8815,6828292,3415-17 Louisiana,14A,LMH,59727.6,Rehab: single-unit residential
+2023,2019,30,8593,6755968,Healthy Home Repair Program Loan Pool,14A,LMH,576.0,Rehab: single-unit residential
+2023,2019,30,8593,6757104,Healthy Home Repair Program Loan Pool,14A,LMH,10543.0,Rehab: single-unit residential
+2023,2020,50,8754,6774021,CDA Healthy Home Repair Program Loan Pool,14A,LMH,1000.0,Rehab: single-unit residential
+2023,2020,50,8754,6828292,CDA Healthy Home Repair Program Loan Pool,14A,LMH,4000.0,Rehab: single-unit residential
+2023,2021,61,8824,6728496,Home Repair Program Loan Pool,14A,LMH,18000.0,Rehab: single-unit residential
+2023,2021,61,8824,6728518,Home Repair Program Loan Pool,14A,LMH,121066.0,Rehab: single-unit residential
+2023,2021,61,8824,6755968,Home Repair Program Loan Pool,14A,LMH,149572.0,Rehab: single-unit residential
+2023,2021,61,8824,6774021,Home Repair Program Loan Pool,14A,LMH,2450.0,Rehab: single-unit residential
+2023,2021,61,8824,6828289,Home Repair Program Loan Pool,14A,LMH,2095.0,Rehab: single-unit residential
+2023,2021,61,8824,6828290,Home Repair Program Loan Pool,14A,LMH,12077.0,Rehab: single-unit residential
+2023,2022,2,8944,6755968,Healthy Home Repair Inspection Program,14A,LMH,12454.49,Rehab: single-unit residential
+2023,2022,4,8929,6755968,Healthy Home Repair Program Loan Pool,14A,LMH,33352.0,Rehab: single-unit residential
+2023,2022,4,8929,6774021,Healthy Home Repair Program Loan Pool,14A,LMH,221474.0,Rehab: single-unit residential
+2023,2022,4,8929,6826543,Healthy Home Repair Program Loan Pool,14A,LMH,83238.0,Rehab: single-unit residential
+2023,2022,4,8929,6826554,Healthy Home Repair Program Loan Pool,14A,LMH,228204.0,Rehab: single-unit residential
+2023,2022,4,8929,6826578,Healthy Home Repair Program Loan Pool,14A,LMH,130245.0,Rehab: single-unit residential
+2023,2022,4,8929,6828286,Healthy Home Repair Program Loan Pool,14A,LMH,6050.0,Rehab: single-unit residential
+2023,2022,4,8929,6828289,Healthy Home Repair Program Loan Pool,14A,LMH,17384.0,Rehab: single-unit residential
+2023,2022,4,8929,6828290,Healthy Home Repair Program Loan Pool,14A,LMH,19081.0,Rehab: single-unit residential
+2023,2022,4,8929,6828292,Healthy Home Repair Program Loan Pool,14A,LMH,13595.0,Rehab: single-unit residential
+2023,2022,4,8929,6854457,Healthy Home Repair Program Loan Pool,14A,LMH,32107.0,Rehab: single-unit residential
+2023,2022,4,8929,6874099,Healthy Home Repair Program Loan Pool,14A,LMH,22155.0,Rehab: single-unit residential
+2023,2022,42,8942,6755968,Mission: St. Louis Healthy Home Repair Program (2022),14A,LMH,97629.59,Rehab: single-unit residential
+2023,2022,43,8943,6755968,Mission: St. Louis Weatherization and Energy Services (EEWAP) (2022),14A,LMH,40795.34,Rehab: single-unit residential
+2023,2022,43,8943,6826543,Mission: St. Louis Weatherization and Energy Services (EEWAP) (2022),14A,LMH,40861.3,Rehab: single-unit residential
+2023,2023,2,9072,6844790,Building Division Healthy Home Repair Program Inspection Services,14A,LMH,266383.31,Rehab: single-unit residential
+2023,2023,2,9072,6854457,Building Division Healthy Home Repair Program Inspection Services,14A,LMH,25909.12,Rehab: single-unit residential
+2023,2023,2,9072,6874099,Building Division Healthy Home Repair Program Inspection Services,14A,LMH,26055.3,Rehab: single-unit residential
+2023,2023,4,9062,6844790,Home Repair Loan Pool,14A,LMH,90364.0,Rehab: single-unit residential
+2023,2023,4,9062,6874099,Home Repair Loan Pool,14A,LMH,101810.0,Rehab: single-unit residential
+2023,2023,34,9061,6844790,Mission: St. Louis Healthy Home Repair Program (2023),14A,LMH,190444.18,Rehab: single-unit residential
+2023,2023,34,9061,6854457,Mission: St. Louis Healthy Home Repair Program (2023),14A,LMH,14406.49,Rehab: single-unit residential
+2023,2023,34,9061,6874099,Mission: St. Louis Healthy Home Repair Program (2023),14A,LMH,181071.69,Rehab: single-unit residential
+2023,2020,59,8758,6755968,Neighborhood Commercial District Program,14E,LMA,14523.0,Rehab: commercial/industrial
+2023,2020,59,8758,6826554,Neighborhood Commercial District Program,14E,LMA,18894.0,Rehab: commercial/industrial
+2023,2020,59,8758,6826578,Neighborhood Commercial District Program,14E,LMA,30000.0,Rehab: commercial/industrial
+2023,2020,59,8758,6828286,Neighborhood Commercial District Program,14E,LMA,29124.5,Rehab: commercial/industrial
+2023,2017,64,8345,6874099,CDA Rehabilitation Administration,14H,LMH,6700.0,Rehab administration
+2023,2018,38,8509,6828290,CDA Rehabilitation Administration (CDBG),14H,LMH,2462.06,Rehab administration
+2023,2019,8,8604,6728518,CDA Rehabilitation Administration (CDBG),14H,LMH,1300.0,Rehab administration
+2023,2019,8,8604,6758902,CDA Rehabilitation Administration (CDBG),14H,LMH,1300.0,Rehab administration
+2023,2019,8,8604,6826543,CDA Rehabilitation Administration (CDBG),14H,LMH,1300.0,Rehab administration
+2023,2020,55,8690,6728518,CDA Rehabilitation Administration,14H,LMH,180.0,Rehab administration
+2023,2021,66,8856,6728496,CDA Rehabilitation Administration,14H,LMH,176.82,Rehab administration
+2023,2021,66,8856,6755968,CDA Rehabilitation Administration,14H,LMH,246.12,Rehab administration
+2023,2021,66,8856,6758902,CDA Rehabilitation Administration,14H,LMH,1956.07,Rehab administration
+2023,2021,66,8856,6774021,CDA Rehabilitation Administration,14H,LMH,576.06,Rehab administration
+2023,2021,66,8856,6826543,CDA Rehabilitation Administration,14H,LMH,382.97,Rehab administration
+2023,2021,66,8856,6826554,CDA Rehabilitation Administration,14H,LMH,15442.2,Rehab administration
+2023,2021,66,8856,6826578,CDA Rehabilitation Administration,14H,LMH,11741.31,Rehab administration
+2023,2021,66,8856,6828286,CDA Rehabilitation Administration,14H,LMH,9537.18,Rehab administration
+2023,2021,66,8856,6828289,CDA Rehabilitation Administration,14H,LMH,7638.64,Rehab administration
+2023,2021,66,8856,6828290,CDA Rehabilitation Administration,14H,LMH,9876.98,Rehab administration
+2023,2021,66,8856,6828292,CDA Rehabilitation Administration,14H,LMH,407.75,Rehab administration
+2023,2021,66,8856,6831824,CDA Rehabilitation Administration,14H,LMH,529.02,Rehab administration
+2023,2021,66,8856,6854457,CDA Rehabilitation Administration,14H,LMH,11185.99,Rehab administration
+2023,2021,66,8856,6874099,CDA Rehabilitation Administration,14H,LMH,640.62,Rehab administration
+2023,2022,6,8931,6755968,CDA Rehabilitation Administration,14H,LMH,32701.23,Rehab administration
+2023,2022,6,8931,6758902,CDA Rehabilitation Administration,14H,LMH,7500.0,Rehab administration
+2023,2022,6,8931,6774021,CDA Rehabilitation Administration,14H,LMH,7844.24,Rehab administration
+2023,2022,6,8931,6826543,CDA Rehabilitation Administration,14H,LMH,11335.92,Rehab administration
+2023,2022,6,8931,6826554,CDA Rehabilitation Administration,14H,LMH,7508.67,Rehab administration
+2023,2022,6,8931,6826578,CDA Rehabilitation Administration,14H,LMH,17445.32,Rehab administration
+2023,2022,6,8931,6828286,CDA Rehabilitation Administration,14H,LMH,7500.0,Rehab administration
+2023,2022,6,8931,6828289,CDA Rehabilitation Administration,14H,LMH,298.13,Rehab administration
+2023,2022,6,8931,6854457,CDA Rehabilitation Administration,14H,LMH,12382.0,Rehab administration
+2023,2022,6,8931,6874099,CDA Rehabilitation Administration,14H,LMH,3000.0,Rehab administration
+2023,2023,6,9066,6844790,CDA Rehabilitation Administration,14H,LMA,612293.98,Rehab administration
+2023,2023,6,9066,6854457,CDA Rehabilitation Administration,14H,LMA,63852.39,Rehab administration
+2023,2023,6,9066,6874099,CDA Rehabilitation Administration,14H,LMA,69791.86,Rehab administration
+2023,2022,65,8955,6755968,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,86095.81,Other
+2023,2022,65,8955,6826543,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,27262.46,Other
+2023,2023,53,9076,6844790,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,192916.63,Other
+2023,2023,53,9076,6854457,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,27083.33,Other
+2023,2023,11,9018,6844790,No Problem Property Team Program B19MC290006 EN,05Z,LMA,45406.67,Other public services
+2023,2023,11,9018,6844790,No Problem Property Team Program B23MC290006 EN,05Z,LMA,56313.06,Other public services
+2023,2020,101,9000,6757481,Care STL Health Wellness Campus,03P,LMA,907593.0,Other
+2023,2021,107,8903,6594509,Youth Services COVID-19,05Z,LMA,214649.44,Other public services
+2023,2021,107,8903,6865511,Youth Services COVID-19,05Z,LMA,38316.16,Other public services
+2023,2020,102,8764,6530633,Beyond Jobs COVID-19,05H,LMC,47720.0,Other
+2022,2021,35,8850,6607569,Interfaith Residence Emergency Housing,03T,LMC,16626.56,Other
+2022,2022,16,8939,6741147,Interfaith Residence Emergency Housing,03T,LMC,34709.44,Other
+2022,2022,69,8959,6741147,Covenant House - Genesis Shelter Program,03T,LMC,13687.04,Other
+2022,2020,65,8775,6691034,Techforce Center: Boosting the Economy with High-Paying Careers,03Z,LMC,250000.0,Other public improvements
+2022,2020,65,8775,6697402,Techforce Center: Boosting the Economy with High-Paying Careers,03Z,LMC,200000.0,Other public improvements
+2022,2021,11,8851,6603719,Northside Senior Meal Program,05A,LMC,3842.38,Senior services
+2022,2021,11,8851,6607569,Northside Senior Meal Program,05A,LMC,2658.11,Senior services
+2022,2021,21,8832,6607569,Senior Services,05A,LMC,4583.37,Senior services
+2022,2021,31,8843,6607569,North Neighborhoods Elderly Services,05A,LMC,1666.62,Senior services
+2022,2022,13,8935,6741147,Senior Services,05A,LMC,39000.0,Senior services
+2022,2022,13,8935,6741392,Senior Services,05A,LMC,6820.0,Senior services
+2022,2022,47,8978,6741147,North Neighborhoods Elderly Services,05A,LMC,16891.7,Senior services
+2022,2022,47,8978,6741392,North Neighborhoods Elderly Services,05A,LMC,3837.34,Senior services
+2022,2022,48,8941,6741147,Northside Senior Meal Program,05A,LMC,19494.57,Senior services
+2022,2022,48,8941,6741392,Northside Senior Meal Program,05A,LMC,2034.58,Senior services
+2022,2022,53,8983,6741147,Elderly Services,05A,LMC,191061.86,Senior services
+2022,2021,49,8860,6602042,Comprehensive Mentoring Services for At-Risk Youth 2021,05D,LMC,32142.24,Youth services
+2022,2021,52,8841,6594538,Out-of-School Youth Development Services,05D,LMC,10930.52,Youth services
+2022,2021,52,8841,6607569,Out-of-School Youth Development Services,05D,LMC,4264.08,Youth services
+2022,2021,54,8876,6640878,Beyond School,05D,LMC,13182.9,Youth services
+2022,2021,103,8854,6694166,YFCs Out of School Program,05D,LMC,26389.15,Youth services
+2022,2021,103,8854,6697402,YFCs Out of School Program,05D,LMC,373.5,Youth services
+2022,2022,1,8972,6741157,Comprehensive Mentoring Services for At-Risk Youth 2022,05D,LMC,41369.18,Youth services
+2022,2022,1,8972,6741392,Comprehensive Mentoring Services for At-Risk Youth 2022,05D,LMC,50297.78,Youth services
+2022,2022,34,8948,6741147,Out of School Time Services for Youth,05D,LMC,21246.35,Youth services
+2022,2022,34,8948,6741392,Out of School Time Services for Youth,05D,LMC,32975.91,Youth services
+2022,2022,67,8957,6741318,Mission: St. Louis - Beyond School,05D,LMC,17467.5,Youth services
+2022,2022,67,8957,6741392,Mission: St. Louis - Beyond School,05D,LMC,3240.0,Youth services
+2022,2021,37,8835,6607569,Competitive Employment Program,05H,LMC,14500.0,Other
+2022,2021,37,8835,6672658,Competitive Employment Program,05H,LMC,51500.0,Other
+2022,2021,39,8853,6607569,Job Training - SOS,05H,LMC,77118.0,Other
+2022,2021,44,8840,6607569,Re-entry Services,05H,LMC,4000.0,Other
+2022,2021,44,8840,6640878,Re-entry Services,05H,LMC,40000.0,Other
+2022,2021,99,8852,6691034,Workforce Development,05H,LMC,74970.48,Other
+2022,2022,19,8981,6741147,Competitive Employment Program,05H,LMC,52000.0,Other
+2022,2022,20,8982,6741147,Re-Entry,05H,LMC,28000.0,Other
+2022,2022,57,8947,6741392,Job Training - Save Our Sons,05H,LMC,79320.6,Other
+2022,2022,66,8956,6741147,Mission: St. Louis - Beyond Jobs,05H,LMC,9086.54,Other
+2022,2022,66,8956,6741392,Mission: St. Louis - Beyond Jobs,05H,LMC,4735.94,Other
+2022,2021,6,8842,6607569,North Neighborhoods Safety Initiative,05I,LMA,8000.0,Other
+2022,2022,45,8975,6741147,North Neighborhoods Safety Initiative,05I,LMA,39200.0,Other
+2022,2022,45,8975,6741392,North Neighborhoods Safety Initiative,05I,LMA,6000.0,Other
+2022,2022,59,8940,6741147,Fair Housing Education and Tenant Counseling,05J,LMA,33319.8,Other
+2022,2022,59,8940,6741392,Fair Housing Education and Tenant Counseling,05J,LMA,1082.2,Other
+2022,2022,24,8952,6741157,Guardian Angel Settlement Association - Childcare,05L,LMC,25000.0,Other
+2022,2022,24,8952,6741318,Guardian Angel Settlement Association - Childcare,05L,LMC,0.9,Other
+2022,2022,24,8952,6741392,Guardian Angel Settlement Association - Childcare,05L,LMC,24999.1,Other
+2022,2021,33,8836,6607569,Health Care Beyond Walls,05M,LMA,8387.54,Other
+2022,2022,8,8965,6741147,CHIPS Health Care Beyond Walls,05M,LMA,46708.48,Other
+2022,2022,8,8965,6741392,CHIPS Health Care Beyond Walls,05M,LMA,538.56,Other
+2022,2022,75,8966,6741147,CHIPS Health and Wellness,05M,LMC,102062.31,Other
+2022,2022,75,8966,6741392,CHIPS Health and Wellness,05M,LMC,8714.68,Other
+2022,2021,41,8844,6607569,North Neighborhoods Beautification,05V,LMA,2000.0,Other
+2022,2021,41,8844,6647692,North Neighborhoods Beautification,05V,LMA,2000.0,Other
+2022,2021,42,8878,6594538,Operation Brightside,05V,LMA,7938.22,Other
+2022,2021,42,8878,6603719,Operation Brightside,05V,LMA,2809.62,Other
+2022,2021,42,8878,6607569,Operation Brightside,05V,LMA,2883.4,Other
+2022,2021,42,8878,6647692,Operation Brightside,05V,LMA,15233.55,Other
+2022,2022,46,8974,6741147,North Neighborhoods Beautification,05V,LMA,21196.36,Other
+2022,2022,46,8974,6741392,North Neighborhoods Beautification,05V,LMA,4587.5,Other
+2022,2022,70,8960,6741147,Dept. of Parks - Operation Brightside,05V,LMA,252715.6,Other
+2022,2022,70,8960,6741392,Dept. of Parks - Operation Brightside,05V,LMA,27053.3,Other
+2022,2021,27,8847,6607569,Food Pantry,05W,LMC,2500.0,Other
+2022,2021,30,8872,6603719,Food Pantry (GASA),05W,LMC,5621.29,Other
+2022,2022,11,8933,6741147,CCBF Food & Nutritional Services,05W,LMC,21039.71,Other
+2022,2022,14,8934,6741147,Food Pantry,05W,LMC,22500.0,Other
+2022,2022,14,8934,6741392,Food Pantry,05W,LMC,2500.0,Other
+2022,2022,22,8936,6741147,Public Services - Food Access,05W,LMC,100000.0,Other
+2022,2021,5,8862,6594538,Problem Property Team Program,05Z,LMA,8533.18,Other public services
+2022,2021,29,8864,6594538,Building Communities through Agriculture,05Z,LMA,3000.0,Other public services
+2022,2021,40,8826,6603719,Northside-Southside Collaborative Landlord and Rehabber Training,05Z,LMA,5500.0,Other public services
+2022,2021,43,8839,6607569,Release to Rent - Reentry Housing & Services,05Z,LMC,10350.4,Other public services
+2022,2021,45,8868,6602042,SLACO Community Development and Engagement Institute,05Z,LMA,5550.0,Other public services
+2022,2021,45,8868,6607569,SLACO Community Development and Engagement Institute,05Z,LMA,5950.0,Other public services
+2022,2021,46,8855,6691034,Resident Leadership Training and Development 1,05Z,LMA,70160.04,Other public services
+2022,2021,50,8837,6607569,Youth Leadership Development Training,05Z,LMA,5554.0,Other public services
+2022,2021,51,8863,6594538,Expanded Recreation Program,05Z,LMA,24907.37,Other public services
+2022,2021,51,8863,6602042,Expanded Recreation Program,05Z,LMA,1395.1,Other public services
+2022,2021,51,8863,6603719,Expanded Recreation Program,05Z,LMA,741.85,Other public services
+2022,2021,51,8863,6607569,Expanded Recreation Program,05Z,LMA,561.15,Other public services
+2022,2021,51,8863,6672658,Expanded Recreation Program,05Z,LMA,3818.25,Other public services
+2022,2021,51,8863,6684177,Expanded Recreation Program,05Z,LMA,3377.35,Other public services
+2022,2021,63,8822,6603719,Harambee Tuckpointing Youth Job Training Program,05Z,LMC,8333.26,Other public services
+2022,2021,90,8859,6633546,Innovative Concept Academy Program for At Risk Youth,05Z,LMA,35109.73,Other public services
+2022,2021,90,8859,6640878,Innovative Concept Academy Program for At Risk Youth,05Z,LMA,3191.61,Other public services
+2022,2021,90,8859,6741147,Innovative Concept Academy Program for At Risk Youth,05Z,LMA,17779.2,Other public services
+2022,2021,97,8869,6602042,SLACO Emerging Leaders Institute,05Z,LMC,3636.36,Other public services
+2022,2021,97,8869,6607569,SLACO Emerging Leaders Institute,05Z,LMC,5236.36,Other public services
+2022,2021,100,8849,6603719,Dutchtown Campus,05Z,LMA,5234.88,Other public services
+2022,2022,12,8979,6741147,Problem Property Team Program,05Z,LMA,158461.66,Other public services
+2022,2022,12,8979,6741392,Problem Property Team Program,05Z,LMA,10670.6,Other public services
+2022,2022,17,8938,6741147,Dutchtown Campus Operations,05Z,LMA,17532.72,Other public services
+2022,2022,23,8977,6741157,Building Gardens and Communities,05Z,LMA,23000.0,Other public services
+2022,2022,23,8977,6741392,Building Gardens and Communities,05Z,LMA,12000.0,Other public services
+2022,2022,33,8928,6741147,Harambee Tuckpointing Youth Job Training Program,05Z,LMC,112499.82,Other public services
+2022,2022,33,8928,6741392,Harambee Tuckpointing Youth Job Training Program,05Z,LMC,12499.98,Other public services
+2022,2022,51,8984,6741147,Expanded Recreation Program,05Z,LMA,110139.93,Other public services
+2022,2022,51,8984,6741392,Expanded Recreation Program,05Z,LMA,16671.13,Other public services
+2022,2022,64,8954,6741147,Hope House STL - Transitional Housing,05Z,LMC,128400.0,Other public services
+2022,2022,64,8954,6741392,Hope House STL - Transitional Housing,05Z,LMC,1600.0,Other public services
+2022,2022,68,8958,6741318,Tower Grove Neighborhood CDC - Northside-Southside Collaborative Landlord Training,05Z,LMA,54500.0,Other public services
+2022,2022,73,8963,6741392,Criminal Justice Ministries - Release to Rent,05Z,LMC,47643.39,Other public services
+2022,2021,57,8882,6633546,LRA Maintenance,06,LMA,333480.05,Interim assistance
+2022,2021,57,8882,6640878,LRA Maintenance,06,LMA,202929.27,Interim assistance
+2022,2021,57,8882,6647692,LRA Maintenance,06,LMA,63590.68,Interim assistance
+2022,2017,53,8788,6602042,5024 Dewey,12,LMH,10970.32,Construction of housing
+2022,2017,53,8788,6640878,5024 Dewey,12,LMH,2698.14,Construction of housing
+2022,2017,53,8810,6603719,3156 & 3158 Nebraska,12,LMH,15681.54,Construction of housing
+2022,2017,53,8810,6688473,3156 & 3158 Nebraska,12,LMH,24784.49,Construction of housing
+2022,2020,47,8741,6594538,Homebuyer Services 2020,13B,LMH,3500.0,Homeownership assistance
+2022,2020,47,8741,6647692,Homebuyer Services 2020,13B,LMH,12098.0,Homeownership assistance
+2022,2020,47,8741,6684177,Homebuyer Services 2020,13B,LMH,7000.0,Homeownership assistance
+2022,2020,47,8741,6688473,Homebuyer Services 2020,13B,LMH,3500.0,Homeownership assistance
+2022,2020,47,8741,6691034,Homebuyer Services 2020,13B,LMH,15902.0,Homeownership assistance
+2022,2014,16,8654,6741377,3509 Pennsylvania & 3857-59 Virginia,14A,LMH,26563.1,Rehab: single-unit residential
+2022,2019,23,8815,6640878,3415-17 Louisiana,14A,LMH,11557.2,Rehab: single-unit residential
+2022,2019,40,8676,6603719,Minor Home Repair Program (Urban League),14A,LMH,18180.64,Rehab: single-unit residential
+2022,2020,50,8754,6594538,CDA Healthy Home Repair Program Loan Pool,14A,LMH,26119.0,Rehab: single-unit residential
+2022,2020,50,8754,6607569,CDA Healthy Home Repair Program Loan Pool,14A,LMH,800.0,Rehab: single-unit residential
+2022,2020,50,8754,6647692,CDA Healthy Home Repair Program Loan Pool,14A,LMH,365.0,Rehab: single-unit residential
+2022,2021,59,8821,6594538,Healthy Home Repair Inspection Program,14A,LMH,11782.97,Rehab: single-unit residential
+2022,2021,60,8823,6603719,Healthy Home Repair Program,14A,LMH,53347.81,Rehab: single-unit residential
+2022,2021,61,8824,6594538,Home Repair Program Loan Pool,14A,LMH,104908.0,Rehab: single-unit residential
+2022,2021,61,8824,6602042,Home Repair Program Loan Pool,14A,LMH,55956.0,Rehab: single-unit residential
+2022,2021,61,8824,6603719,Home Repair Program Loan Pool,14A,LMH,59073.0,Rehab: single-unit residential
+2022,2021,61,8824,6633546,Home Repair Program Loan Pool,14A,LMH,34827.0,Rehab: single-unit residential
+2022,2021,61,8824,6640878,Home Repair Program Loan Pool,14A,LMH,103356.0,Rehab: single-unit residential
+2022,2021,61,8824,6647692,Home Repair Program Loan Pool,14A,LMH,121216.0,Rehab: single-unit residential
+2022,2021,61,8824,6672658,Home Repair Program Loan Pool,14A,LMH,253507.0,Rehab: single-unit residential
+2022,2021,61,8824,6684177,Home Repair Program Loan Pool,14A,LMH,18045.0,Rehab: single-unit residential
+2022,2021,61,8824,6688473,Home Repair Program Loan Pool,14A,LMH,131318.0,Rehab: single-unit residential
+2022,2021,61,8824,6691034,Home Repair Program Loan Pool,14A,LMH,153320.0,Rehab: single-unit residential
+2022,2021,61,8824,6694166,Home Repair Program Loan Pool,14A,LMH,201162.0,Rehab: single-unit residential
+2022,2021,61,8824,6697402,Home Repair Program Loan Pool,14A,LMH,74373.0,Rehab: single-unit residential
+2022,2021,61,8824,6741377,Home Repair Program Loan Pool,14A,LMH,85026.0,Rehab: single-unit residential
+2022,2021,96,8825,6603719,Weatherization and Energy Services (EEWAP),14A,LMH,18297.04,Rehab: single-unit residential
+2022,2020,59,8758,6602042,Neighborhood Commercial District Program,14E,LMA,20000.0,Rehab: commercial/industrial
+2022,2020,59,8758,6640878,Neighborhood Commercial District Program,14E,LMA,23844.43,Rehab: commercial/industrial
+2022,2020,59,8758,6672658,Neighborhood Commercial District Program,14E,LMA,36158.0,Rehab: commercial/industrial
+2022,2020,59,8758,6684177,Neighborhood Commercial District Program,14E,LMA,12332.35,Rehab: commercial/industrial
+2022,2021,70,8866,6647692,Neighborhood Commercial District Program,14E,LMA,59605.51,Rehab: commercial/industrial
+2022,2020,55,8690,6602042,CDA Rehabilitation Administration,14H,LMH,7500.0,Rehab administration
+2022,2020,55,8690,6603719,CDA Rehabilitation Administration,14H,LMH,7500.0,Rehab administration
+2022,2020,55,8690,6640878,CDA Rehabilitation Administration,14H,LMH,15000.0,Rehab administration
+2022,2020,55,8690,6647692,CDA Rehabilitation Administration,14H,LMH,11280.0,Rehab administration
+2022,2020,55,8690,6672658,CDA Rehabilitation Administration,14H,LMH,7500.0,Rehab administration
+2022,2020,55,8690,6688473,CDA Rehabilitation Administration,14H,LMH,360.0,Rehab administration
+2022,2020,55,8690,6691034,CDA Rehabilitation Administration,14H,LMH,600.0,Rehab administration
+2022,2020,55,8690,6697405,CDA Rehabilitation Administration,14H,LMH,6700.0,Rehab administration
+2022,2020,55,8690,6741377,CDA Rehabilitation Administration,14H,LMH,180.0,Rehab administration
+2022,2021,66,8856,6594538,CDA Rehabilitation Administration,14H,LMH,19071.79,Rehab administration
+2022,2021,66,8856,6602042,CDA Rehabilitation Administration,14H,LMH,457.63,Rehab administration
+2022,2021,66,8856,6603719,CDA Rehabilitation Administration,14H,LMH,730.29,Rehab administration
+2022,2021,66,8856,6607569,CDA Rehabilitation Administration,14H,LMH,961.52,Rehab administration
+2022,2021,66,8856,6647692,CDA Rehabilitation Administration,14H,LMH,366.6,Rehab administration
+2022,2021,66,8856,6672658,CDA Rehabilitation Administration,14H,LMH,18023.59,Rehab administration
+2022,2021,66,8856,6684177,CDA Rehabilitation Administration,14H,LMH,234.0,Rehab administration
+2022,2021,66,8856,6688473,CDA Rehabilitation Administration,14H,LMH,167.16,Rehab administration
+2022,2021,66,8856,6691034,CDA Rehabilitation Administration,14H,LMH,260.04,Rehab administration
+2022,2021,66,8856,6694166,CDA Rehabilitation Administration,14H,LMH,794.36,Rehab administration
+2022,2021,66,8856,6697402,CDA Rehabilitation Administration,14H,LMH,367.92,Rehab administration
+2022,2021,66,8856,6741377,CDA Rehabilitation Administration,14H,LMH,10393.1,Rehab administration
+2022,2022,6,8931,6741147,CDA Rehabilitation Administration,14H,LMH,505515.24,Rehab administration
+2022,2022,6,8931,6741392,CDA Rehabilitation Administration,14H,LMH,60060.36,Rehab administration
+2022,2022,65,8955,6741147,Justine Petersen - Microenterprise Technical Assistance & Training,18C,LMC,86641.69,Other
+2022,2021,100,8849,6603719,No Dutchtown Campus B19MC290006 EN,05Z,LMA,2931.36,Other public services
+2022,2021,100,8849,6603719,No Dutchtown Campus B20MC290006 EN,05Z,LMA,2303.52,Other public services
+2022,2020,102,8764,6530633,Beyond Jobs COVID-19,05H,LMC,47720.0,Other
+2022,2021,107,8903,6594509,Youth Services COVID-19,05Z,LMA,214649.44,Other public services
+2022,2020,115,8773,6700409,Workforce Development Program,05H,LMC,6735.36,Other
+2021,2020,102,8764,6530633,Beyond Jobs COVID-19,05H,LMC,47720.0,Other
+2021,2021,107,8903,6594509,Youth Services COVID-19,05Z,LMA,214649.44,Other public services
+2020,2016,87,8563,6346174,Expanded Recreation - Public Facilities Improvements,03F,LMA,1622.28,Other
+2020,2016,87,8563,6351253,Expanded Recreation - Public Facilities Improvements,03F,LMA,2138.62,Other
+2020,2016,87,8563,6358330,Expanded Recreation - Public Facilities Improvements,03F,LMA,2812.95,Other
+2020,2016,87,8563,6379650,Expanded Recreation - Public Facilities Improvements,03F,LMA,7030.32,Other
+2020,2016,87,8563,6398603,Expanded Recreation - Public Facilities Improvements,03F,LMA,12944.1,Other
+2020,2016,87,8563,6405972,Expanded Recreation - Public Facilities Improvements,03F,LMA,777.98,Other
+2020,2016,87,8563,6410009,Expanded Recreation - Public Facilities Improvements,03F,LMA,66081.83,Other
+2020,2016,87,8563,6433937,Expanded Recreation - Public Facilities Improvements,03F,LMA,26878.97,Other
+2020,2016,87,8563,6437405,Expanded Recreation - Public Facilities Improvements,03F,LMA,100904.6,Other
+2020,2016,87,8563,6445564,Expanded Recreation - Public Facilities Improvements,03F,LMA,23036.37,Other
+2020,2019,14,8616,6339710,Covenant House Missouri's Crisis Program,03T,LMC,890.0,Other
+2020,2019,33,8615,6356393,Interfaith Residency Emergency Housing,03T,LMC,17580.0,Other
+2020,2020,24,8727,6473328,Interfaith Residence Emergency Housing,03T,LMC,14895.45,Other
+2020,2019,47,8621,6346174,Northside Senior Meal Program,05A,LMC,1340.25,Senior services
+2020,2019,47,8621,6351253,Northside Senior Meal Program,05A,LMC,1483.8,Senior services
+2020,2019,47,8621,6361156,Northside Senior Meal Program,05A,LMC,1617.0,Senior services
+2020,2019,60,8637,6346174,Senior Services,05A,LMC,1500.0,Senior services
+2020,2019,60,8637,6356393,Senior Services,05A,LMC,4500.0,Senior services
+2020,2020,10,8691,6473328,Senior Services,05A,LMC,22580.0,Senior services
+2020,2020,12,8706,6473328,Elderly Services,05A,LMC,277322.77,Senior services
+2020,2018,77,8546,6346174,St. Louis Youth Jobs,05D,LMC,2.0,Youth services
+2020,2019,13,8624,6339710,Comprehensive Mentoring Services for At-Risk Youth 2019,05D,LMC,9622.37,Youth services
+2020,2019,13,8624,6351253,Comprehensive Mentoring Services for At-Risk Youth 2019,05D,LMC,7086.93,Youth services
+2020,2019,50,8614,6339710,Out-of-School Youth Development Services,05D,LMC,7285.38,Youth services
+2020,2019,50,8614,6346174,Out-of-School Youth Development Services,05D,LMC,5654.82,Youth services
+2020,2019,50,8614,6356393,Out-of-School Youth Development Services,05D,LMC,4253.36,Youth services
+2020,2019,54,8609,6351253,Public Services,05D,LMC,5989.66,Youth services
+2020,2019,63,8649,6351253,St. Louis ArtWorks - 2019 CDBG,05D,LMC,370.08,Youth services
+2020,2019,64,8635,6339710,STL Youth Jobs,05D,LMC,7405.15,Youth services
+2020,2019,64,8635,6346174,STL Youth Jobs,05D,LMC,60126.11,Youth services
+2020,2019,64,8635,6356393,STL Youth Jobs,05D,LMC,1070.32,Youth services
+2020,2020,38,8686,6473328,Comprehensive Mentoring Services for At-Risk Youth 2020,05D,LMC,57322.04,Youth services
+2020,2020,43,8731,6473328,Beyond School,05D,LMC,16590.08,Youth services
+2020,2020,44,8707,6473328,St. Louis ArtWorks - 2020 CDBG,05D,LMC,4606.64,Youth services
+2020,2019,12,8611,6346174,Competitive Employment Program,05H,LMC,15000.0,Other
+2020,2019,12,8611,6356393,Competitive Employment Program,05H,LMC,3500.0,Other
+2020,2019,35,8626,6356393,Job Training - SOS,05H,LMC,33396.78,Other
+2020,2019,56,8612,6339710,Reentry Services,05H,LMC,1000.0,Other
+2020,2019,56,8612,6351253,Reentry Services,05H,LMC,11000.0,Other
+2020,2020,26,8716,6473328,Competitive Employment Program,05H,LMC,50500.0,Other
+2020,2020,33,8717,6473328,Re-entry Services,05H,LMC,38000.0,Other
+2020,2019,41,8601,6346174,Neighborhood Alliance Model with Neighborhood Trauma Centers,05I,LMA,3198.8,Other
+2020,2019,41,8601,6361156,Neighborhood Alliance Model with Neighborhood Trauma Centers,05I,LMA,93409.81,Other
+2020,2019,46,8636,6339710,North Neighborhoods Safety Initiative,05I,LMA,5972.22,Other
+2020,2019,46,8636,6351253,North Neighborhoods Safety Initiative,05I,LMA,4083.33,Other
+2020,2020,3,8728,6473328,Neighborhood Alliance with Trauma Centers Expansion,05I,LMA,80404.12,Other
+2020,2020,6,8732,6473328,North Neighborhoods Safety Initiative,05I,LMA,34790.0,Other
+2020,2019,1,8603,6346174,2018-19 Fair Housing Assistance Program,05J,LMA,1600.25,Other
+2020,2020,13,8730,6473328,Fair Housing Education and Tenant Counseling,05J,LMA,13196.22,Other
+2020,2019,10,8629,6339710,Childcare,05L,LMC,3479.2,Other
+2020,2019,10,8629,6351253,Childcare,05L,LMC,1787.47,Other
+2020,2019,27,8600,6346174,Health Care Beyond Walls,05M,LMA,3300.0,Other
+2020,2019,27,8600,6351253,Health Care Beyond Walls,05M,LMA,1100.0,Other
+2020,2019,67,8610,6346174,Youth Leadership Training Program,05M,LMA,1500.0,Other
+2020,2019,67,8610,6351253,Youth Leadership Training Program,05M,LMA,250.0,Other
+2020,2019,43,8641,6351253,North Neighborhoods Beautification,05V,LMA,1200.0,Other
+2020,2019,49,8627,6339710,Operation Brightside,05V,LMA,12059.11,Other
+2020,2019,49,8627,6346174,Operation Brightside,05V,LMA,11808.83,Other
+2020,2019,49,8627,6358330,Operation Brightside,05V,LMA,5606.27,Other
+2020,2020,30,8702,6473328,North Neighborhoods Beautification,05V,LMA,23380.88,Other
+2020,2020,31,8724,6473328,Operation Brightside,05V,LMA,321228.65,Other
+2020,2019,6,8602,6346174,CCBF Food and Nutritional Services,05W,LMC,3340.45,Other
+2020,2019,6,8602,6356393,CCBF Food and Nutritional Services,05W,LMC,4294.69,Other
+2020,2019,22,8633,6346174,Food Pantry,05W,LMC,2083.33,Other
+2020,2019,22,8633,6356393,Food Pantry,05W,LMC,2083.33,Other
+2020,2019,55,8630,6339710,Food Pantry,05W,LMC,5229.56,Other
+2020,2019,55,8630,6351253,Food Pantry,05W,LMC,4680.57,Other
+2020,2020,15,8687,6473328,CCBF Food & Nutritional Services,05W,LMC,31884.93,Other
+2020,2020,16,8692,6473328,Food Pantry,05W,LMC,20833.3,Other
+2020,2020,17,8696,6473328,Public Services - Food Access,05W,LMC,100000.0,Other
+2020,2020,19,8698,6473328,Food Pantry,05W,LMC,45284.83,Other
+2020,2019,2,8613,6339710,Build Communities Through Urban Agriculture,05Z,LMA,3000.0,Other public services
+2020,2019,2,8613,6346174,Build Communities Through Urban Agriculture,05Z,LMA,2500.0,Other public services
+2020,2019,17,8596,6339710,Expanded Recreation Program,05Z,LMA,12716.04,Other public services
+2020,2019,17,8596,6358330,Expanded Recreation Program,05Z,LMA,8964.64,Other public services
+2020,2019,20,8642,6339710,Financial Capability 2019,05Z,LMA,2275.77,Other public services
+2020,2019,20,8642,6351253,Financial Capability 2019,05Z,LMA,3019.87,Other public services
+2020,2019,25,8638,6346174,Gravois Jefferson Historic Neighborhoods Leadership Academy,05Z,LMA,4999.98,Other public services
+2020,2019,25,8638,6351253,Gravois Jefferson Historic Neighborhoods Leadership Academy,05Z,LMA,4999.98,Other public services
+2020,2019,25,8638,6402643,Gravois Jefferson Historic Neighborhoods Leadership Academy,05Z,LMA,5000.04,Other public services
+2020,2019,32,8597,6339710,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,436.71,Other public services
+2020,2019,32,8597,6346174,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,53652.65,Other public services
+2020,2019,32,8597,6356393,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,32907.5,Other public services
+2020,2019,48,8643,6339710,Northside-Southside Collaborative Landlord Training Program,05Z,LMA,24100.0,Other public services
+2020,2019,52,8632,6339710,Problem Property Team Program - City Counselor's Office,05Z,LMA,6300.37,Other public services
+2020,2019,52,8632,6358330,Problem Property Team Program - City Counselor's Office,05Z,LMA,9557.69,Other public services
+2020,2019,57,8618,6339710,Release to Rent - Reentry Housing & Services,05Z,LMC,3987.5,Other public services
+2020,2019,57,8618,6351253,Release to Rent - Reentry Housing & Services,05Z,LMC,4664.3,Other public services
+2020,2019,58,8625,6351253,Resident Leadership Training and Development 1,05Z,LMA,2772.66,Other public services
+2020,2019,58,8625,6356393,Resident Leadership Training and Development 1,05Z,LMA,1054.09,Other public services
+2020,2019,58,8625,6358330,Resident Leadership Training and Development 1,05Z,LMA,1144.0,Other public services
+2020,2019,61,8650,6346174,SLACO Community Development and Engagement Institute,05Z,LMA,5550.0,Other public services
+2020,2019,61,8650,6351253,SLACO Community Development and Engagement Institute,05Z,LMA,2250.0,Other public services
+2020,2019,66,8639,6351253,Tenant Rights Education and Outreach,05Z,LMA,12024.58,Other public services
+2020,2019,66,8639,6356393,Tenant Rights Education and Outreach,05Z,LMA,2975.42,Other public services
+2020,2020,5,8722,6473328,Problem Property Team Program,05Z,LMA,197739.08,Other public services
+2020,2020,14,8734,6473328,Financial Capability 2020,05Z,LMA,5295.7,Other public services
+2020,2020,18,8726,6473328,Building Communities Through Agriculture,05Z,LMA,33000.0,Other public services
+2020,2020,29,8736,6473328,Northside-Southside Collaborative Landlord Training,05Z,LMA,60000.0,Other public services
+2020,2020,32,8729,6473328,Release to Rent,05Z,LMC,57645.15,Other public services
+2020,2020,35,8737,6473328,Resident Leadership Training and Development 1,05Z,LMA,25100.0,Other public services
+2020,2020,40,8725,6473328,Expanded Recreation Program,05Z,LMA,283539.33,Other public services
+2020,2020,52,8783,6473328,Harambee Job Training Program,05Z,LMC,78968.26,Other public services
+2020,2014,63,8116,6372501,Dr. Martin Luther King Corridor Pre-Development,06,LMA,10950.21,Interim assistance
+2020,2014,63,8116,6398603,Dr. Martin Luther King Corridor Pre-Development,06,LMA,34985.84,Interim assistance
+2020,2019,38,8646,6339710,LRA Property Maintenance and Vacancy Support,06,LMA,1801.92,Interim assistance
+2020,2019,38,8646,6351253,LRA Property Maintenance and Vacancy Support,06,LMA,19665.0,Interim assistance
+2020,2019,38,8646,6361156,LRA Property Maintenance and Vacancy Support,06,LMA,153040.0,Interim assistance
+2020,2020,46,8757,6473328,LRA Property Maintenance and Vacancy Support Program,06,LMA,754432.84,Interim assistance
+2020,2015,96,8569,6339710,3835 Ohio,12,LMH,4779.06,Construction of housing
+2020,2015,96,8569,6351253,3835 Ohio,12,LMH,25664.49,Construction of housing
+2020,2015,96,8569,6356393,3835 Ohio,12,LMH,16010.83,Construction of housing
+2020,2015,96,8569,6367534,3835 Ohio,12,LMH,8067.13,Construction of housing
+2020,2015,96,8569,6376389,3835 Ohio,12,LMH,15086.62,Construction of housing
+2020,2015,96,8569,6383516,3835 Ohio,12,LMH,9550.47,Construction of housing
+2020,2015,96,8569,6394292,3835 Ohio,12,LMH,4704.58,Construction of housing
+2020,2019,31,8744,6346174,Homebuyers Counseling Program,13A,LMH,4500.0,Other
+2020,2019,31,8744,6356393,Homebuyers Counseling Program,13A,LMH,3000.0,Other
+2020,2019,31,8744,6361156,Homebuyers Counseling Program,13A,LMH,6000.0,Other
+2020,2019,31,8586,6346174,Homebuyer Services DPA 2019,13B,LMH,10500.0,Homeownership assistance
+2020,2019,31,8586,6356393,Homebuyer Services DPA 2019,13B,LMH,7000.0,Homeownership assistance
+2020,2019,31,8586,6361156,Homebuyer Services DPA 2019,13B,LMH,14000.0,Homeownership assistance
+2020,2020,47,8745,6473328,Homebuyers Counseling Program,13B,LMH,35000.0,Homeownership assistance
+2020,2014,16,8654,6434879,3509 Pennsylvania & 3857-59 Virginia,14A,LMH,151431.42,Rehab: single-unit residential
+2020,2015,51,8045,6346174,Healthy Home Repair Loan Pool,14A,LMH,58.0,Rehab: single-unit residential
+2020,2015,96,8568,6351253,3501 Nebraska,14A,LMH,648.28,Rehab: single-unit residential
+2020,2017,51,8353,6361156,Healthy Home Repair Loan Pool,14A,LMH,30000.0,Rehab: single-unit residential
+2020,2017,51,8353,6394292,Healthy Home Repair Loan Pool,14A,LMH,1411.0,Rehab: single-unit residential
+2020,2018,17,8579,6346174,Minor Home Repair,14A,LMH,20044.83,Rehab: single-unit residential
+2020,2018,27,8501,6367534,Choice Home Repair,14A,LMH,2000.0,Rehab: single-unit residential
+2020,2018,27,8501,6402643,Choice Home Repair,14A,LMH,2000.0,Rehab: single-unit residential
+2020,2018,58,8494,6361156,Healthy Home Repair Program Loan Pool,14A,LMH,8566.0,Rehab: single-unit residential
+2020,2018,58,8494,6398603,Healthy Home Repair Program Loan Pool,14A,LMH,4960.0,Rehab: single-unit residential
+2020,2018,58,8494,6424376,Healthy Home Repair Program Loan Pool,14A,LMH,1095.0,Rehab: single-unit residential
+2020,2018,58,8494,6431393,Healthy Home Repair Program Loan Pool,14A,LMH,750.0,Rehab: single-unit residential
+2020,2018,58,8494,6447309,Healthy Home Repair Program Loan Pool,14A,LMH,1233.0,Rehab: single-unit residential
+2020,2018,58,8583,6351253,Choice/CDA Home Repair,14A,LMH,10000.0,Rehab: single-unit residential
+2020,2018,58,8583,6358330,Choice/CDA Home Repair,14A,LMH,6335.0,Rehab: single-unit residential
+2020,2018,58,8583,6367534,Choice/CDA Home Repair,14A,LMH,7650.0,Rehab: single-unit residential
+2020,2018,58,8583,6372501,Choice/CDA Home Repair,14A,LMH,4200.0,Rehab: single-unit residential
+2020,2018,58,8583,6413905,Choice/CDA Home Repair,14A,LMH,3850.0,Rehab: single-unit residential
+2020,2018,58,8583,6445564,Choice/CDA Home Repair,14A,LMH,8150.0,Rehab: single-unit residential
+2020,2018,80,8567,6346174,UL Minor Home Repair 2018,14A,LMH,1083.98,Rehab: single-unit residential
+2020,2018,80,8567,6383516,UL Minor Home Repair 2018,14A,LMH,3573.82,Rehab: single-unit residential
+2020,2018,80,8567,6383570,UL Minor Home Repair 2018,14A,LMH,30041.91,Rehab: single-unit residential
+2020,2019,5,8590,6346174,Carondelet Minor Home Repair Program,14A,LMH,5793.03,Rehab: single-unit residential
+2020,2019,5,8590,6356393,Carondelet Minor Home Repair Program,14A,LMH,2485.99,Rehab: single-unit residential
+2020,2019,5,8590,6361156,Carondelet Minor Home Repair Program,14A,LMH,2102.06,Rehab: single-unit residential
+2020,2019,5,8590,6372501,Carondelet Minor Home Repair Program,14A,LMH,2936.46,Rehab: single-unit residential
+2020,2019,5,8590,6379650,Carondelet Minor Home Repair Program,14A,LMH,3266.32,Rehab: single-unit residential
+2020,2019,5,8590,6388702,Carondelet Minor Home Repair Program,14A,LMH,725.13,Rehab: single-unit residential
+2020,2019,5,8590,6394292,Carondelet Minor Home Repair Program,14A,LMH,319.88,Rehab: single-unit residential
+2020,2019,5,8590,6405972,Carondelet Minor Home Repair Program,14A,LMH,759.93,Rehab: single-unit residential
+2020,2019,5,8590,6410009,Carondelet Minor Home Repair Program,14A,LMH,2963.82,Rehab: single-unit residential
+2020,2019,5,8590,6424376,Carondelet Minor Home Repair Program,14A,LMH,3454.46,Rehab: single-unit residential
+2020,2019,5,8590,6437405,Carondelet Minor Home Repair Program,14A,LMH,3388.93,Rehab: single-unit residential
+2020,2019,5,8590,6445564,Carondelet Minor Home Repair Program,14A,LMH,2539.13,Rehab: single-unit residential
+2020,2019,26,8589,6346174,Harambee Tuckpointing Youth Job Training Program,14A,LMH,8333.28,Rehab: single-unit residential
+2020,2019,26,8589,6351253,Harambee Tuckpointing Youth Job Training Program,14A,LMH,8257.2,Rehab: single-unit residential
+2020,2019,28,8588,6424540,Healthy Home Repair Inspections,14A,LMH,15654.88,Rehab: single-unit residential
+2020,2019,29,8592,6346174,Healthy Home Repair Program,14A,LMH,43381.18,Rehab: single-unit residential
+2020,2019,29,8592,6351253,Healthy Home Repair Program,14A,LMH,34727.82,Rehab: single-unit residential
+2020,2019,29,8592,6361156,Healthy Home Repair Program,14A,LMH,16249.28,Rehab: single-unit residential
+2020,2019,29,8592,6376389,Healthy Home Repair Program,14A,LMH,10680.27,Rehab: single-unit residential
+2020,2019,30,8593,6339710,Healthy Home Repair Program Loan Pool,14A,LMH,4200.0,Rehab: single-unit residential
+2020,2019,30,8593,6346174,Healthy Home Repair Program Loan Pool,14A,LMH,61851.0,Rehab: single-unit residential
+2020,2019,30,8593,6351253,Healthy Home Repair Program Loan Pool,14A,LMH,102254.0,Rehab: single-unit residential
+2020,2019,30,8593,6356393,Healthy Home Repair Program Loan Pool,14A,LMH,58622.0,Rehab: single-unit residential
+2020,2019,30,8593,6358330,Healthy Home Repair Program Loan Pool,14A,LMH,16196.0,Rehab: single-unit residential
+2020,2019,30,8593,6361156,Healthy Home Repair Program Loan Pool,14A,LMH,140048.0,Rehab: single-unit residential
+2020,2019,30,8593,6367534,Healthy Home Repair Program Loan Pool,14A,LMH,6750.0,Rehab: single-unit residential
+2020,2019,30,8593,6372501,Healthy Home Repair Program Loan Pool,14A,LMH,12482.0,Rehab: single-unit residential
+2020,2019,30,8593,6376389,Healthy Home Repair Program Loan Pool,14A,LMH,21702.0,Rehab: single-unit residential
+2020,2019,30,8593,6379650,Healthy Home Repair Program Loan Pool,14A,LMH,4633.0,Rehab: single-unit residential
+2020,2019,30,8593,6388702,Healthy Home Repair Program Loan Pool,14A,LMH,3699.0,Rehab: single-unit residential
+2020,2019,30,8593,6398603,Healthy Home Repair Program Loan Pool,14A,LMH,960.0,Rehab: single-unit residential
+2020,2019,30,8593,6424376,Healthy Home Repair Program Loan Pool,14A,LMH,16668.0,Rehab: single-unit residential
+2020,2019,30,8593,6431393,Healthy Home Repair Program Loan Pool,14A,LMH,10691.0,Rehab: single-unit residential
+2020,2019,39,8677,6346174,Minor Home Repair Program,14A,LMH,7745.73,Rehab: single-unit residential
+2020,2019,39,8677,6351253,Minor Home Repair Program,14A,LMH,9378.5,Rehab: single-unit residential
+2020,2019,39,8677,6361156,Minor Home Repair Program,14A,LMH,9228.27,Rehab: single-unit residential
+2020,2019,39,8677,6372501,Minor Home Repair Program,14A,LMH,9293.99,Rehab: single-unit residential
+2020,2019,39,8677,6379650,Minor Home Repair Program,14A,LMH,9487.82,Rehab: single-unit residential
+2020,2019,39,8677,6383516,Minor Home Repair Program,14A,LMH,8970.3,Rehab: single-unit residential
+2020,2019,39,8677,6402643,Minor Home Repair Program,14A,LMH,12798.63,Rehab: single-unit residential
+2020,2019,39,8677,6405972,Minor Home Repair Program,14A,LMH,17211.4,Rehab: single-unit residential
+2020,2019,39,8677,6413905,Minor Home Repair Program,14A,LMH,16278.88,Rehab: single-unit residential
+2020,2019,39,8677,6424376,Minor Home Repair Program,14A,LMH,16537.25,Rehab: single-unit residential
+2020,2019,39,8677,6431393,Minor Home Repair Program,14A,LMH,9119.55,Rehab: single-unit residential
+2020,2019,39,8677,6437405,Minor Home Repair Program,14A,LMH,15870.25,Rehab: single-unit residential
+2020,2019,39,8677,6447309,Minor Home Repair Program,14A,LMH,2674.48,Rehab: single-unit residential
+2020,2019,40,8676,6339710,Minor Home Repair Program (Urban League),14A,LMH,3320.03,Rehab: single-unit residential
+2020,2019,40,8676,6346174,Minor Home Repair Program (Urban League),14A,LMH,4927.35,Rehab: single-unit residential
+2020,2019,40,8676,6351253,Minor Home Repair Program (Urban League),14A,LMH,5758.39,Rehab: single-unit residential
+2020,2019,40,8676,6372501,Minor Home Repair Program (Urban League),14A,LMH,5524.83,Rehab: single-unit residential
+2020,2019,40,8676,6376389,Minor Home Repair Program (Urban League),14A,LMH,3774.39,Rehab: single-unit residential
+2020,2019,45,8587,6346174,North Neighborhoods Minor Home Repair,14A,LMH,6782.59,Rehab: single-unit residential
+2020,2019,45,8587,6351253,North Neighborhoods Minor Home Repair,14A,LMH,8246.07,Rehab: single-unit residential
+2020,2019,45,8587,6361156,North Neighborhoods Minor Home Repair,14A,LMH,8354.42,Rehab: single-unit residential
+2020,2019,45,8587,6376389,North Neighborhoods Minor Home Repair,14A,LMH,15532.11,Rehab: single-unit residential
+2020,2019,45,8587,6383516,North Neighborhoods Minor Home Repair,14A,LMH,8736.12,Rehab: single-unit residential
+2020,2019,45,8587,6405972,North Neighborhoods Minor Home Repair,14A,LMH,17776.95,Rehab: single-unit residential
+2020,2019,45,8587,6410009,North Neighborhoods Minor Home Repair,14A,LMH,3567.51,Rehab: single-unit residential
+2020,2019,45,8587,6419561,North Neighborhoods Minor Home Repair,14A,LMH,3421.68,Rehab: single-unit residential
+2020,2020,48,8753,6473328,Building Division Healthy Home Repair Program Inspection Services,14A,LMH,273640.47,Rehab: single-unit residential
+2020,2020,49,8752,6473328,Mission: St.Louis Healthy Home Repair Program Construction Management,14A,LMH,362502.21,Rehab: single-unit residential
+2020,2020,50,8754,6473328,CDA Healthy Home Repair Program Loan Pool,14A,LMH,809618.0,Rehab: single-unit residential
+2020,2018,65,8519,6398603,Neighborhood Commercial District Program,14E,LMA,12251.85,Rehab: commercial/industrial
+2020,2018,65,8519,6437405,Neighborhood Commercial District Program,14E,LMA,19192.57,Rehab: commercial/industrial
+2020,2018,65,8519,6445564,Neighborhood Commercial District Program,14E,LMA,4784.0,Rehab: commercial/industrial
+2020,2019,42,8623,6361156,Neighborhood Commercial District Program,14E,LMA,70460.66,Rehab: commercial/industrial
+2020,2020,59,8758,6473328,Neighborhood Commercial District Program,14E,LMA,131272.23,Rehab: commercial/industrial
+2020,2017,64,8345,6351253,CDA Rehabilitation Administration,14H,LMH,33400.36,Rehab administration
+2020,2017,64,8345,6356393,CDA Rehabilitation Administration,14H,LMH,13118.82,Rehab administration
+2020,2017,64,8345,6361156,CDA Rehabilitation Administration,14H,LMH,37015.81,Rehab administration
+2020,2017,64,8345,6367534,CDA Rehabilitation Administration,14H,LMH,21808.93,Rehab administration
+2020,2017,64,8345,6376389,CDA Rehabilitation Administration,14H,LMH,28265.38,Rehab administration
+2020,2017,64,8345,6383516,CDA Rehabilitation Administration,14H,LMH,9734.83,Rehab administration
+2020,2017,64,8345,6394292,CDA Rehabilitation Administration,14H,LMH,7762.14,Rehab administration
+2020,2017,64,8345,6405972,CDA Rehabilitation Administration,14H,LMH,5802.74,Rehab administration
+2020,2017,64,8345,6447309,CDA Rehabilitation Administration,14H,LMH,39934.42,Rehab administration
+2020,2018,38,8509,6346174,CDA Rehabilitation Administration (CDBG),14H,LMH,2265.24,Rehab administration
+2020,2018,38,8509,6356393,CDA Rehabilitation Administration (CDBG),14H,LMH,1966.45,Rehab administration
+2020,2018,38,8509,6358330,CDA Rehabilitation Administration (CDBG),14H,LMH,608.94,Rehab administration
+2020,2018,38,8509,6361156,CDA Rehabilitation Administration (CDBG),14H,LMH,2670.0,Rehab administration
+2020,2018,38,8509,6376389,CDA Rehabilitation Administration (CDBG),14H,LMH,6625.0,Rehab administration
+2020,2018,38,8509,6394292,CDA Rehabilitation Administration (CDBG),14H,LMH,203.87,Rehab administration
+2020,2018,38,8509,6410009,CDA Rehabilitation Administration (CDBG),14H,LMH,17749.0,Rehab administration
+2020,2018,38,8509,6419561,CDA Rehabilitation Administration (CDBG),14H,LMH,7478.1,Rehab administration
+2020,2018,38,8509,6431393,CDA Rehabilitation Administration (CDBG),14H,LMH,11512.5,Rehab administration
+2020,2018,38,8509,6437405,CDA Rehabilitation Administration (CDBG),14H,LMH,7397.5,Rehab administration
+2020,2018,38,8509,6447309,CDA Rehabilitation Administration (CDBG),14H,LMH,13489.41,Rehab administration
+2020,2019,8,8604,6339710,CDA Rehabilitation Administration (CDBG),14H,LMH,16472.06,Rehab administration
+2020,2019,8,8604,6346174,CDA Rehabilitation Administration (CDBG),14H,LMH,18684.9,Rehab administration
+2020,2019,8,8604,6361156,CDA Rehabilitation Administration (CDBG),14H,LMH,196.0,Rehab administration
+2020,2019,8,8604,6367534,CDA Rehabilitation Administration (CDBG),14H,LMH,56.0,Rehab administration
+2020,2019,8,8604,6376389,CDA Rehabilitation Administration (CDBG),14H,LMH,4003.29,Rehab administration
+2020,2019,8,8604,6379650,CDA Rehabilitation Administration (CDBG),14H,LMH,1516.26,Rehab administration
+2020,2019,8,8604,6410009,CDA Rehabilitation Administration (CDBG),14H,LMH,195.0,Rehab administration
+2020,2019,8,8604,6413905,CDA Rehabilitation Administration (CDBG),14H,LMH,57.0,Rehab administration
+2020,2019,8,8604,6437405,CDA Rehabilitation Administration (CDBG),14H,LMH,10000.0,Rehab administration
+2020,2019,8,8604,6445564,CDA Rehabilitation Administration (CDBG),14H,LMH,10000.0,Rehab administration
+2020,2019,36,8644,6339710,Justine PETERSEN Microenterprise Technical Assistance and Training,18C,LMC,4668.0,Other
+2020,2019,36,8644,6351253,Justine PETERSEN Microenterprise Technical Assistance and Training,18C,LMC,10417.0,Other
+2020,2020,57,8756,6473328,Microenterprise Development,18C,LMC,18416.81,Other
+2020,2020,58,8723,6473328,Justine Petersen Microenterprise Technical Assistance and Training,18C,LMC,104243.81,Other
+2020,2020,23,8694,6473328,No The Genesis Program at CHMO B20MC290006 EN,03T,LMC,32575.32,Other
+2020,2020,11,8719,6473328,No Northside Senior Meal Program B20MC290006 EN,05A,LMC,22000.0,Senior services
+2020,2020,20,8708,6473328,No North Neighborhoods Elderly Services B20MC290006 EN,05A,LMC,6666.68,Senior services
+2020,2020,27,8703,6473328,No Job and Leadership Training B20MC290006 EN,05H,LMC,21625.0,Other
+2020,2020,1,8697,6473328,No Child Care B20MC290006 EN,05L,LMC,21133.8,Other
+2020,2020,21,8693,6473328,No CHIPS Health and Wellness Center B20MC290006 EN,05M,LMC,85000.0,Other
+2020,2020,22,8711,6473328,No Health Care Beyond Walls B20MC290006 EN,05M,LMC,11988.52,Other
+2020,2020,25,8701,6473328,No Transitional Housing Program B20MC290006 EN,05Z,LMC,83426.09,Other public services
+2020,2020,36,8721,6473328,No Innovative Concept Academy Program for At Risk Youth B20MC290006 EN,05Z,LMA,17838.46,Other public services
+2020,2020,39,8713,6473328,No Youth Leadership Development Training B20MC290006 EN,05Z,LMC,12000.0,Other public services
+2019,2014,16,8493,6235392,3152 Nebraska,01,LMH,5689.5,Acquisition
+2019,2014,16,8493,6243122,3152 Nebraska,01,LMH,11023.43,Acquisition
+2019,2014,16,8493,6254102,3152 Nebraska,01,LMH,4271.49,Acquisition
+2019,2014,16,8493,6295763,3152 Nebraska,01,LMH,3000.0,Acquisition
+2019,2014,16,8493,6311380,3152 Nebraska,01,LMH,4052.98,Acquisition
+2019,2016,87,8563,6235392,Expanded Recreation - Public Facilities Improvements,03F,LMA,2385.57,Other
+2019,2016,87,8563,6268703,Expanded Recreation - Public Facilities Improvements,03F,LMA,16611.07,Other
+2019,2013,61,8086,6235392,Red Sea Eritrean Community Center,03G,LMA,12114.0,Other
+2019,2013,61,8086,6243122,Red Sea Eritrean Community Center,03G,LMA,4711.0,Other
+2019,2013,61,8086,6260799,Red Sea Eritrean Community Center,03G,LMA,4711.0,Other
+2019,2013,61,8086,6264359,Red Sea Eritrean Community Center,03G,LMA,2019.0,Other
+2019,2013,61,8086,6268703,Red Sea Eritrean Community Center,03G,LMA,2692.0,Other
+2019,2013,61,8086,6277745,Red Sea Eritrean Community Center,03G,LMA,5140.0,Other
+2019,2013,61,8086,6295763,Red Sea Eritrean Community Center,03G,LMA,7796.8,Other
+2019,2013,61,8086,6299399,Red Sea Eritrean Community Center,03G,LMA,10240.2,Other
+2019,2013,61,8086,6306617,Red Sea Eritrean Community Center,03G,LMA,8533.5,Other
+2019,2013,61,8086,6319504,Red Sea Eritrean Community Center,03G,LMA,2560.05,Other
+2019,2018,20,8517,6241052,Interfaith Residency Emergency Housing,03T,LMC,7740.0,Other
+2019,2019,14,8616,6308678,Covenant House Missouri's Crisis Program,03T,LMC,20750.0,Other
+2019,2019,14,8616,6329658,Covenant House Missouri's Crisis Program,03T,LMC,8360.0,Other
+2019,2019,33,8615,6308678,Interfaith Residency Emergency Housing,03T,LMC,12420.0,Other
+2019,2016,86,8371,6243122,Public Facility-Economic Development,03Z,LMC,36386.91,Other public improvements
+2019,2016,86,8371,6260799,Public Facility-Economic Development,03Z,LMC,34183.84,Other public improvements
+2019,2016,86,8371,6273650,Public Facility-Economic Development,03Z,LMC,21655.77,Other public improvements
+2019,2016,86,8371,6291049,Public Facility-Economic Development,03Z,LMC,25481.92,Other public improvements
+2019,2016,86,8371,6299399,Public Facility-Economic Development,03Z,LMC,364390.0,Other public improvements
+2019,2016,86,8371,6311380,Public Facility-Economic Development,03Z,LMC,2491.56,Other public improvements
+2019,2017,62,8617,6277286,T-REX Building Renovation Project,03Z,LMJ,113502.43,Other public improvements
+2019,2017,62,8617,6284525,T-REX Building Renovation Project,03Z,LMJ,5585.58,Other public improvements
+2019,2017,62,8617,6306617,T-REX Building Renovation Project,03Z,LMJ,93319.74,Other public improvements
+2019,2018,73,8527,6225158,Senior Services,05A,LMC,3000.0,Senior services
+2019,2018,73,8527,6241052,Senior Services,05A,LMC,1500.0,Senior services
+2019,2019,16,8622,6308678,Elderly Services,05A,LMC,160466.88,Senior services
+2019,2019,16,8622,6315865,Elderly Services,05A,LMC,42380.54,Senior services
+2019,2019,16,8622,6319504,Elderly Services,05A,LMC,38175.52,Senior services
+2019,2019,16,8622,6335721,Elderly Services,05A,LMC,13974.4,Senior services
+2019,2019,44,8640,6308678,North Neighborhoods Elderly Services,05A,LMC,18750.0,Senior services
+2019,2019,44,8640,6311380,North Neighborhoods Elderly Services,05A,LMC,3750.0,Senior services
+2019,2019,44,8640,6315865,North Neighborhoods Elderly Services,05A,LMC,1250.0,Senior services
+2019,2019,44,8640,6329658,North Neighborhoods Elderly Services,05A,LMC,1250.0,Senior services
+2019,2019,47,8621,6308678,Northside Senior Meal Program,05A,LMC,7955.4,Senior services
+2019,2019,47,8621,6335721,Northside Senior Meal Program,05A,LMC,6264.6,Senior services
+2019,2019,60,8637,6308678,Senior Services,05A,LMC,37670.0,Senior services
+2019,2019,60,8637,6315865,Senior Services,05A,LMC,3710.0,Senior services
+2019,2019,60,8637,6319659,Senior Services,05A,LMC,4450.0,Senior services
+2019,2019,60,8637,6335721,Senior Services,05A,LMC,3000.0,Senior services
+2019,2018,68,8523,6225158,Out-of-School Youth Development Services,05D,LMC,6265.04,Youth services
+2019,2018,68,8523,6235392,Out-of-School Youth Development Services,05D,LMC,4806.7,Youth services
+2019,2018,77,8546,6248289,St. Louis Youth Jobs,05D,LMC,2444.67,Youth services
+2019,2018,77,8546,6306617,St. Louis Youth Jobs,05D,LMC,14882.76,Youth services
+2019,2019,9,8653,6308678,CDBG Community Internships,05D,LMC,25000.0,Youth services
+2019,2019,13,8624,6308678,Comprehensive Mentoring Services for At-Risk Youth 2019,05D,LMC,14434.2,Youth services
+2019,2019,13,8624,6311380,Comprehensive Mentoring Services for At-Risk Youth 2019,05D,LMC,23522.4,Youth services
+2019,2019,13,8624,6319504,Comprehensive Mentoring Services for At-Risk Youth 2019,05D,LMC,25790.0,Youth services
+2019,2019,13,8624,6329658,Comprehensive Mentoring Services for At-Risk Youth 2019,05D,LMC,4544.1,Youth services
+2019,2019,50,8614,6308678,Out-of-School Youth Development Services,05D,LMC,58463.95,Youth services
+2019,2019,50,8614,6329658,Out-of-School Youth Development Services,05D,LMC,12206.29,Youth services
+2019,2019,54,8609,6319504,Public Services,05D,LMC,14583.36,Youth services
+2019,2019,63,8649,6308678,St. Louis ArtWorks - 2019 CDBG,05D,LMC,17959.86,Youth services
+2019,2019,63,8649,6315865,St. Louis ArtWorks - 2019 CDBG,05D,LMC,2355.01,Youth services
+2019,2019,63,8649,6319504,St. Louis ArtWorks - 2019 CDBG,05D,LMC,1233.6,Youth services
+2019,2019,63,8649,6329658,St. Louis ArtWorks - 2019 CDBG,05D,LMC,2056.0,Youth services
+2019,2019,64,8635,6308678,STL Youth Jobs,05D,LMC,8456.1,Youth services
+2019,2018,1,8540,6230223,Reentry Services,05H,LMC,7200.0,Other
+2019,2018,1,8540,6235392,Reentry Services,05H,LMC,5400.0,Other
+2019,2018,31,8505,6230223,Beyond Jobs: Job & Leadership Training,05H,LMC,1691.52,Other
+2019,2018,31,8505,6260799,Beyond Jobs: Job & Leadership Training,05H,LMC,1286.4,Other
+2019,2018,41,8531,6230223,Competitive Employment Program,05H,LMC,5000.0,Other
+2019,2018,41,8531,6235392,Competitive Employment Program,05H,LMC,1000.0,Other
+2019,2019,12,8611,6308678,Competitive Employment Program,05H,LMC,63500.0,Other
+2019,2019,12,8611,6327764,Competitive Employment Program,05H,LMC,10000.0,Other
+2019,2019,12,8611,6329658,Competitive Employment Program,05H,LMC,14500.0,Other
+2019,2019,34,8619,6308678,Job and Leadership Training,05H,LMC,20874.8,Other
+2019,2019,34,8619,6311380,Job and Leadership Training,05H,LMC,1875.0,Other
+2019,2019,34,8619,6319504,Job and Leadership Training,05H,LMC,1875.0,Other
+2019,2019,34,8619,6335721,Job and Leadership Training,05H,LMC,375.0,Other
+2019,2019,35,8626,6308678,Job Training,05H,LMC,39000.0,Other
+2019,2019,56,8612,6308678,Reentry Services,05H,LMC,52000.0,Other
+2019,2019,56,8612,6327764,Reentry Services,05H,LMC,5500.0,Other
+2019,2019,56,8612,6329658,Reentry Services,05H,LMC,1000.0,Other
+2019,2018,10,8468,6241052,Trauma-Informed Justice System,05I,LMA,48000.0,Other
+2019,2018,10,8468,6299399,Trauma-Informed Justice System,05I,LMA,9707.0,Other
+2019,2018,14,8488,6254102,Neighborhood Alliance,05I,LMA,103047.0,Other
+2019,2018,66,8524,6230223,North Newstead Neighborhood Safety Initiative,05I,LMA,4000.0,Other
+2019,2019,46,8636,6308678,North Neighborhoods Safety Initiative,05I,LMA,30333.33,Other
+2019,2019,46,8636,6311380,North Neighborhoods Safety Initiative,05I,LMA,8805.55,Other
+2019,2019,46,8636,6315865,North Neighborhoods Safety Initiative,05I,LMA,3361.11,Other
+2019,2019,46,8636,6329658,North Neighborhoods Safety Initiative,05I,LMA,12444.44,Other
+2019,2019,1,8603,6308678,2018-19 Fair Housing Assistance Program,05J,LMA,13166.01,Other
+2019,2019,1,8603,6315865,2018-19 Fair Housing Assistance Program,05J,LMA,1946.83,Other
+2019,2019,1,8603,6319504,2018-19 Fair Housing Assistance Program,05J,LMA,399.84,Other
+2019,2019,1,8603,6327764,2018-19 Fair Housing Assistance Program,05J,LMA,2406.1,Other
+2019,2019,1,8603,6335721,2018-19 Fair Housing Assistance Program,05J,LMA,2762.03,Other
+2019,2019,18,8647,6308678,Fair Housing Education and Counseling,05J,LMA,46115.02,Other
+2019,2019,18,8647,6311380,Fair Housing Education and Counseling,05J,LMA,2384.98,Other
+2019,2018,40,8530,6225158,Childcare,05L,LMC,2475.95,Other
+2019,2018,40,8530,6235392,Childcare,05L,LMC,1974.55,Other
+2019,2018,51,8525,6230223,Flance Management Inc.,05L,LMC,1388.75,Other
+2019,2018,51,8525,6241052,Flance Management Inc.,05L,LMC,1257.45,Other
+2019,2018,78,8548,6225158,Summer Youth Enrichment,05L,LMC,16920.0,Other
+2019,2019,10,8629,6308678,Childcare,05L,LMC,28326.06,Other
+2019,2019,10,8629,6311380,Childcare,05L,LMC,2867.4,Other
+2019,2019,10,8629,6319504,Childcare,05L,LMC,3751.2,Other
+2019,2019,10,8629,6329658,Childcare,05L,LMC,4518.0,Other
+2019,2019,10,8629,6335721,Childcare,05L,LMC,0.2,Other
+2019,2019,11,8599,6308678,CHIPS Health and Wellness Center,05M,LMC,60001.2,Other
+2019,2019,11,8599,6311380,CHIPS Health and Wellness Center,05M,LMC,7666.82,Other
+2019,2019,11,8599,6319504,CHIPS Health and Wellness Center,05M,LMC,7331.98,Other
+2019,2019,27,8600,6308678,Health Care Beyond Walls,05M,LMA,14000.0,Other
+2019,2019,27,8600,6311380,Health Care Beyond Walls,05M,LMA,2750.0,Other
+2019,2019,27,8600,6319504,Health Care Beyond Walls,05M,LMA,1650.0,Other
+2019,2019,27,8600,6335721,Health Care Beyond Walls,05M,LMA,2200.0,Other
+2019,2019,67,8610,6308678,Youth Leadership Training Program,05M,LMA,11000.0,Other
+2019,2019,67,8610,6335721,Youth Leadership Training Program,05M,LMA,1500.0,Other
+2019,2018,67,8532,6225158,Operation Brightside,05V,LMA,12787.61,Other
+2019,2018,67,8532,6260799,Operation Brightside,05V,LMA,7076.38,Other
+2019,2019,43,8641,6308678,North Neighborhoods Beautification,05V,LMA,16600.0,Other
+2019,2019,43,8641,6311380,North Neighborhoods Beautification,05V,LMA,1800.0,Other
+2019,2019,43,8641,6315865,North Neighborhoods Beautification,05V,LMA,2400.0,Other
+2019,2019,43,8641,6329658,North Neighborhoods Beautification,05V,LMA,3000.0,Other
+2019,2019,49,8627,6308678,Operation Brightside,05V,LMA,206915.12,Other
+2019,2019,49,8627,6311380,Operation Brightside,05V,LMA,12699.21,Other
+2019,2019,49,8627,6315865,Operation Brightside,05V,LMA,29547.95,Other
+2019,2019,49,8627,6319504,Operation Brightside,05V,LMA,11626.49,Other
+2019,2019,49,8627,6319659,Operation Brightside,05V,LMA,11500.0,Other
+2019,2019,49,8627,6327764,Operation Brightside,05V,LMA,11915.12,Other
+2019,2019,49,8627,6329658,Operation Brightside,05V,LMA,11772.95,Other
+2019,2019,49,8627,6335721,Operation Brightside,05V,LMA,11053.33,Other
+2019,2018,36,8536,6230223,CCBF Food and Nutritional Services,05W,LMC,1853.95,Other
+2019,2018,36,8536,6241052,CCBF Food and Nutritional Services,05W,LMC,2571.64,Other
+2019,2018,52,8538,6225158,Food Pantry,05W,LMC,5229.56,Other
+2019,2018,52,8538,6235392,Food Pantry,05W,LMC,4660.83,Other
+2019,2019,6,8602,6308678,CCBF Food and Nutritional Services,05W,LMC,21762.95,Other
+2019,2019,6,8602,6311380,CCBF Food and Nutritional Services,05W,LMC,3065.38,Other
+2019,2019,6,8602,6327764,CCBF Food and Nutritional Services,05W,LMC,3329.92,Other
+2019,2019,6,8602,6335721,CCBF Food and Nutritional Services,05W,LMC,3372.35,Other
+2019,2019,22,8633,6308678,Food Pantry,05W,LMC,14583.31,Other
+2019,2019,22,8633,6315865,Food Pantry,05W,LMC,2083.33,Other
+2019,2019,22,8633,6319659,Food Pantry,05W,LMC,2083.33,Other
+2019,2019,22,8633,6335721,Food Pantry,05W,LMC,2083.33,Other
+2019,2019,55,8628,6308678,Public Services - Food Access,05W,LMC,86755.05,Other
+2019,2019,55,8628,6311380,Public Services - Food Access,05W,LMC,13244.95,Other
+2019,2019,55,8630,6308678,Food Pantry,05W,LMC,27387.32,Other
+2019,2019,55,8630,6311380,Food Pantry,05W,LMC,4140.29,Other
+2019,2019,55,8630,6319504,Food Pantry,05W,LMC,4027.01,Other
+2019,2019,55,8630,6329658,Food Pantry,05W,LMC,3832.65,Other
+2019,2018,2,8464,6235392,Hope House PSH,05Z,LMC,8590.07,Other public services
+2019,2018,8,8516,6230223,Release to Rent - Reentry Housing & Services,05Z,LMC,6246.23,Other public services
+2019,2018,8,8516,6248289,Release to Rent - Reentry Housing & Services,05Z,LMC,1291.86,Other public services
+2019,2018,8,8516,6254102,Release to Rent - Reentry Housing & Services,05Z,LMC,7833.03,Other public services
+2019,2018,32,8518,6225158,Building Better Gardens and Better Communities,05Z,LMA,9000.0,Other public services
+2019,2018,32,8518,6235392,Building Better Gardens and Better Communities,05Z,LMA,2000.0,Other public services
+2019,2018,46,8521,6225158,Expanded Recreation Program,05Z,LMA,3264.34,Other public services
+2019,2018,46,8521,6230223,Expanded Recreation Program,05Z,LMA,1301.54,Other public services
+2019,2018,50,8506,6225158,Financial Capability 2018,05Z,LMA,3472.2,Other public services
+2019,2018,59,8529,6225158,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,40438.89,Other public services
+2019,2018,59,8529,6230223,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,13262.52,Other public services
+2019,2018,59,8529,6235392,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,36312.14,Other public services
+2019,2018,59,8529,6241052,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,1957.24,Other public services
+2019,2018,70,8515,6225158,Problem Property Team Program,05Z,LMA,7759.12,Other public services
+2019,2018,70,8515,6230223,Problem Property Team Program,05Z,LMA,4655.47,Other public services
+2019,2018,71,8541,6243122,Problem Property Team Program,05Z,LMA,4095.81,Other public services
+2019,2018,79,8513,6225158,UL Community Development 2018,05Z,LMA,1400.0,Other public services
+2019,2018,79,8513,6235392,UL Community Development 2018,05Z,LMA,4200.0,Other public services
+2019,2019,2,8613,6308678,Build Communities Through Urban Agriculture,05Z,LMA,25000.0,Other public services
+2019,2019,2,8613,6319659,Build Communities Through Urban Agriculture,05Z,LMA,4500.0,Other public services
+2019,2019,17,8596,6308678,Expanded Recreation Program,05Z,LMA,132695.03,Other public services
+2019,2019,17,8596,6311380,Expanded Recreation Program,05Z,LMA,26835.99,Other public services
+2019,2019,17,8596,6315865,Expanded Recreation Program,05Z,LMA,26929.15,Other public services
+2019,2019,17,8596,6319504,Expanded Recreation Program,05Z,LMA,27190.07,Other public services
+2019,2019,17,8596,6319659,Expanded Recreation Program,05Z,LMA,26500.0,Other public services
+2019,2019,17,8596,6329658,Expanded Recreation Program,05Z,LMA,10946.56,Other public services
+2019,2019,17,8596,6335721,Expanded Recreation Program,05Z,LMA,12497.79,Other public services
+2019,2019,20,8642,6308678,Financial Capability 2019,05Z,LMA,9834.88,Other public services
+2019,2019,20,8642,6311380,Financial Capability 2019,05Z,LMA,1513.06,Other public services
+2019,2019,20,8642,6319504,Financial Capability 2019,05Z,LMA,6052.24,Other public services
+2019,2019,20,8642,6329658,Financial Capability 2019,05Z,LMA,4539.18,Other public services
+2019,2019,32,8597,6308678,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,34545.75,Other public services
+2019,2019,32,8597,6311380,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,436.71,Other public services
+2019,2019,32,8597,6315865,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,4665.31,Other public services
+2019,2019,32,8597,6319504,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,436.71,Other public services
+2019,2019,32,8597,6327764,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,537.08,Other public services
+2019,2019,32,8597,6329658,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,9040.08,Other public services
+2019,2019,32,8597,6335721,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,4249.7,Other public services
+2019,2019,52,8632,6308678,Problem Property Team Program - City Counselor's Office,05Z,LMA,135729.26,Other public services
+2019,2019,52,8632,6311380,Problem Property Team Program - City Counselor's Office,05Z,LMA,7842.97,Other public services
+2019,2019,52,8632,6315865,Problem Property Team Program - City Counselor's Office,05Z,LMA,7842.97,Other public services
+2019,2019,52,8632,6319504,Problem Property Team Program - City Counselor's Office,05Z,LMA,7842.97,Other public services
+2019,2019,52,8632,6327764,Problem Property Team Program - City Counselor's Office,05Z,LMA,14491.81,Other public services
+2019,2019,52,8632,6329658,Problem Property Team Program - City Counselor's Office,05Z,LMA,7892.53,Other public services
+2019,2019,52,8632,6335721,Problem Property Team Program - City Counselor's Office,05Z,LMA,7892.53,Other public services
+2019,2019,53,8651,6308678,Problem Property Team Program - Municipal Courts,05Z,LMA,9983.94,Other public services
+2019,2019,53,8651,6311380,Problem Property Team Program - Municipal Courts,05Z,LMA,1432.24,Other public services
+2019,2019,53,8651,6327764,Problem Property Team Program - Municipal Courts,05Z,LMA,1750.43,Other public services
+2019,2019,57,8618,6308678,Release to Rent - Reentry Housing & Services,05Z,LMC,40444.69,Other public services
+2019,2019,57,8618,6315865,Release to Rent - Reentry Housing & Services,05Z,LMC,6485.72,Other public services
+2019,2019,57,8618,6319504,Release to Rent - Reentry Housing & Services,05Z,LMC,7225.01,Other public services
+2019,2019,57,8618,6329658,Release to Rent - Reentry Housing & Services,05Z,LMC,10714.3,Other public services
+2019,2019,58,8625,6308678,Resident Leadership Training and Development 1,05Z,LMA,22583.3,Other public services
+2019,2019,58,8625,6319504,Resident Leadership Training and Development 1,05Z,LMA,5874.99,Other public services
+2019,2019,58,8625,6335721,Resident Leadership Training and Development 1,05Z,LMA,2862.57,Other public services
+2019,2019,61,8650,6308678,SLACO Community Development and Engagement Institute,05Z,LMA,11100.0,Other public services
+2019,2019,61,8650,6311380,SLACO Community Development and Engagement Institute,05Z,LMA,1850.0,Other public services
+2019,2019,61,8650,6319504,SLACO Community Development and Engagement Institute,05Z,LMA,3700.0,Other public services
+2019,2019,61,8650,6329658,SLACO Community Development and Engagement Institute,05Z,LMA,5550.0,Other public services
+2019,2014,63,8116,6235392,Dr. Martin Luther King Corridor Pre-Development,06,LMA,3383.25,Interim assistance
+2019,2014,63,8116,6241052,Dr. Martin Luther King Corridor Pre-Development,06,LMA,62198.96,Interim assistance
+2019,2014,63,8116,6302520,Dr. Martin Luther King Corridor Pre-Development,06,LMA,23320.38,Interim assistance
+2019,2014,63,8116,6306617,Dr. Martin Luther King Corridor Pre-Development,06,LMA,480.7,Interim assistance
+2019,2018,62,8539,6225158,LRA Property Maintenance and Vacancy Support Program,06,LMA,203538.43,Interim assistance
+2019,2018,62,8539,6235392,LRA Property Maintenance and Vacancy Support Program,06,LMA,1817.45,Interim assistance
+2019,2018,62,8539,6241052,LRA Property Maintenance and Vacancy Support Program,06,LMA,156876.52,Interim assistance
+2019,2018,62,8539,6254102,LRA Property Maintenance and Vacancy Support Program,06,LMA,479.8,Interim assistance
+2019,2019,38,8646,6308678,LRA Property Maintenance and Vacancy Support,06,LMA,498119.18,Interim assistance
+2019,2019,38,8646,6311380,LRA Property Maintenance and Vacancy Support,06,LMA,164336.16,Interim assistance
+2019,2019,38,8646,6319504,LRA Property Maintenance and Vacancy Support,06,LMA,179808.61,Interim assistance
+2019,2019,38,8646,6335721,LRA Property Maintenance and Vacancy Support,06,LMA,33228.72,Interim assistance
+2019,2015,96,8569,6241052,3835 Ohio,12,LMH,3232.72,Construction of housing
+2019,2015,96,8569,6243122,3835 Ohio,12,LMH,14843.5,Construction of housing
+2019,2015,96,8569,6254102,3835 Ohio,12,LMH,21952.61,Construction of housing
+2019,2015,96,8569,6264359,3835 Ohio,12,LMH,7042.9,Construction of housing
+2019,2015,96,8569,6273650,3835 Ohio,12,LMH,8081.2,Construction of housing
+2019,2015,96,8569,6284525,3835 Ohio,12,LMH,935.02,Construction of housing
+2019,2015,96,8569,6299399,3835 Ohio,12,LMH,12720.67,Construction of housing
+2019,2015,96,8569,6311380,3835 Ohio,12,LMH,30621.25,Construction of housing
+2019,2015,96,8569,6319504,3835 Ohio,12,LMH,16171.06,Construction of housing
+2019,2015,96,8569,6335721,3835 Ohio,12,LMH,2783.42,Construction of housing
+2019,2015,51,8045,6230223,Healthy Home Repair Loan Pool,14A,LMH,392.0,Rehab: single-unit residential
+2019,2015,51,8045,6248289,Healthy Home Repair Loan Pool,14A,LMH,2137.0,Rehab: single-unit residential
+2019,2015,96,8568,6241052,3501 Nebraska,14A,LMH,2354.79,Rehab: single-unit residential
+2019,2015,96,8568,6243122,3501 Nebraska,14A,LMH,695.5,Rehab: single-unit residential
+2019,2015,96,8568,6254102,3501 Nebraska,14A,LMH,12239.76,Rehab: single-unit residential
+2019,2015,96,8568,6264359,3501 Nebraska,14A,LMH,17170.23,Rehab: single-unit residential
+2019,2015,96,8568,6273650,3501 Nebraska,14A,LMH,19416.04,Rehab: single-unit residential
+2019,2015,96,8568,6284525,3501 Nebraska,14A,LMH,29346.85,Rehab: single-unit residential
+2019,2015,96,8568,6295763,3501 Nebraska,14A,LMH,4199.68,Rehab: single-unit residential
+2019,2015,96,8568,6302520,3501 Nebraska,14A,LMH,2830.54,Rehab: single-unit residential
+2019,2015,96,8568,6311380,3501 Nebraska,14A,LMH,16218.65,Rehab: single-unit residential
+2019,2015,96,8568,6319504,3501 Nebraska,14A,LMH,23449.99,Rehab: single-unit residential
+2019,2015,96,8568,6335721,3501 Nebraska,14A,LMH,21181.36,Rehab: single-unit residential
+2019,2016,11,8141,6235392,Home Repair Program Loan Pool,14A,LMH,582.0,Rehab: single-unit residential
+2019,2016,11,8141,6248289,Home Repair Program Loan Pool,14A,LMH,220.0,Rehab: single-unit residential
+2019,2016,11,8141,6254102,Home Repair Program Loan Pool,14A,LMH,392.0,Rehab: single-unit residential
+2019,2017,51,8353,6273695,Home Repair Loan Pool,14A,LMH,18746.0,Rehab: single-unit residential
+2019,2018,17,8579,6264359,Minor Home Repair,14A,LMH,106331.06,Rehab: single-unit residential
+2019,2018,17,8579,6277745,Minor Home Repair,14A,LMH,1585.57,Rehab: single-unit residential
+2019,2018,17,8579,6284525,Minor Home Repair,14A,LMH,51432.28,Rehab: single-unit residential
+2019,2018,17,8579,6299399,Minor Home Repair,14A,LMH,15836.86,Rehab: single-unit residential
+2019,2018,17,8579,6319504,Minor Home Repair,14A,LMH,36972.8,Rehab: single-unit residential
+2019,2018,17,8579,6319659,Minor Home Repair,14A,LMH,17695.2,Rehab: single-unit residential
+2019,2018,17,8579,6335721,Minor Home Repair,14A,LMH,20973.65,Rehab: single-unit residential
+2019,2018,18,8500,6225158,North Newstead Minor Home Repair Program,14A,LMH,3800.0,Rehab: single-unit residential
+2019,2018,18,8500,6235392,North Newstead Minor Home Repair Program,14A,LMH,2200.0,Rehab: single-unit residential
+2019,2018,18,8500,6243122,North Newstead Minor Home Repair Program,14A,LMH,8000.0,Rehab: single-unit residential
+2019,2018,18,8500,6248289,North Newstead Minor Home Repair Program,14A,LMH,1000.0,Rehab: single-unit residential
+2019,2018,18,8500,6264359,North Newstead Minor Home Repair Program,14A,LMH,5000.0,Rehab: single-unit residential
+2019,2018,18,8500,6273650,North Newstead Minor Home Repair Program,14A,LMH,3000.0,Rehab: single-unit residential
+2019,2018,19,8499,6235392,Homebuyer Services DPA,14A,LMH,10000.0,Rehab: single-unit residential
+2019,2018,22,8495,6243122,Healthy Home Repair Inspection Program,14A,LMH,17722.41,Rehab: single-unit residential
+2019,2018,27,8501,6241052,Choice Home Repair,14A,LMH,9000.0,Rehab: single-unit residential
+2019,2018,27,8501,6264359,Choice Home Repair,14A,LMH,3000.0,Rehab: single-unit residential
+2019,2018,27,8501,6284525,Choice Home Repair,14A,LMH,1000.0,Rehab: single-unit residential
+2019,2018,27,8501,6295763,Choice Home Repair,14A,LMH,1000.0,Rehab: single-unit residential
+2019,2018,27,8501,6329658,Choice Home Repair,14A,LMH,2000.0,Rehab: single-unit residential
+2019,2018,35,8497,6230223,Carondelet Minor Home Repair Program,14A,LMH,2600.0,Rehab: single-unit residential
+2019,2018,35,8497,6241052,Carondelet Minor Home Repair Program,14A,LMH,4800.0,Rehab: single-unit residential
+2019,2018,54,8498,6225158,Harambee Tuckpointing Program,14A,LMH,10148.03,Rehab: single-unit residential
+2019,2018,54,8498,6235392,Harambee Tuckpointing Program,14A,LMH,6610.44,Rehab: single-unit residential
+2019,2018,57,8496,6230223,Healthy Home Repair Program,14A,LMH,45259.31,Rehab: single-unit residential
+2019,2018,57,8496,6235392,Healthy Home Repair Program,14A,LMH,33873.33,Rehab: single-unit residential
+2019,2018,57,8496,6241052,Healthy Home Repair Program,14A,LMH,7938.76,Rehab: single-unit residential
+2019,2018,57,8496,6254102,Healthy Home Repair Program,14A,LMH,80.03,Rehab: single-unit residential
+2019,2018,57,8496,6260799,Healthy Home Repair Program,14A,LMH,1034.11,Rehab: single-unit residential
+2019,2018,57,8496,6302520,Healthy Home Repair Program,14A,LMH,1348.36,Rehab: single-unit residential
+2019,2018,57,8496,6311380,Healthy Home Repair Program,14A,LMH,7657.48,Rehab: single-unit residential
+2019,2018,58,8494,6225158,Healthy Home Repair Program Loan Pool,14A,LMH,121171.0,Rehab: single-unit residential
+2019,2018,58,8494,6230223,Healthy Home Repair Program Loan Pool,14A,LMH,28026.0,Rehab: single-unit residential
+2019,2018,58,8494,6235392,Healthy Home Repair Program Loan Pool,14A,LMH,96453.0,Rehab: single-unit residential
+2019,2018,58,8494,6241052,Healthy Home Repair Program Loan Pool,14A,LMH,24555.0,Rehab: single-unit residential
+2019,2018,58,8494,6243122,Healthy Home Repair Program Loan Pool,14A,LMH,42305.0,Rehab: single-unit residential
+2019,2018,58,8494,6248289,Healthy Home Repair Program Loan Pool,14A,LMH,126491.0,Rehab: single-unit residential
+2019,2018,58,8494,6254102,Healthy Home Repair Program Loan Pool,14A,LMH,29605.0,Rehab: single-unit residential
+2019,2018,58,8494,6260799,Healthy Home Repair Program Loan Pool,14A,LMH,11150.0,Rehab: single-unit residential
+2019,2018,58,8494,6264359,Healthy Home Repair Program Loan Pool,14A,LMH,5052.0,Rehab: single-unit residential
+2019,2018,58,8494,6268703,Healthy Home Repair Program Loan Pool,14A,LMH,20802.0,Rehab: single-unit residential
+2019,2018,58,8494,6273650,Healthy Home Repair Program Loan Pool,14A,LMH,22628.0,Rehab: single-unit residential
+2019,2018,58,8494,6277745,Healthy Home Repair Program Loan Pool,14A,LMH,844.0,Rehab: single-unit residential
+2019,2018,58,8494,6284525,Healthy Home Repair Program Loan Pool,14A,LMH,14743.0,Rehab: single-unit residential
+2019,2018,58,8494,6295763,Healthy Home Repair Program Loan Pool,14A,LMH,806.0,Rehab: single-unit residential
+2019,2018,58,8583,6243122,Choice/CDA Home Repair,14A,LMH,1899.0,Rehab: single-unit residential
+2019,2018,58,8583,6248289,Choice/CDA Home Repair,14A,LMH,7136.0,Rehab: single-unit residential
+2019,2018,58,8583,6264359,Choice/CDA Home Repair,14A,LMH,10000.0,Rehab: single-unit residential
+2019,2018,58,8583,6277745,Choice/CDA Home Repair,14A,LMH,360.0,Rehab: single-unit residential
+2019,2018,58,8583,6302520,Choice/CDA Home Repair,14A,LMH,4350.0,Rehab: single-unit residential
+2019,2018,58,8583,6306617,Choice/CDA Home Repair,14A,LMH,5036.0,Rehab: single-unit residential
+2019,2018,58,8583,6311380,Choice/CDA Home Repair,14A,LMH,1787.0,Rehab: single-unit residential
+2019,2018,58,8583,6327764,Choice/CDA Home Repair,14A,LMH,900.0,Rehab: single-unit residential
+2019,2018,58,8583,6335721,Choice/CDA Home Repair,14A,LMH,5665.0,Rehab: single-unit residential
+2019,2018,80,8567,6273650,UL Minor Home Repair 2018,14A,LMH,48678.95,Rehab: single-unit residential
+2019,2018,80,8567,6284525,UL Minor Home Repair 2018,14A,LMH,1605.94,Rehab: single-unit residential
+2019,2018,80,8567,6299399,UL Minor Home Repair 2018,14A,LMH,5588.15,Rehab: single-unit residential
+2019,2018,80,8567,6306617,UL Minor Home Repair 2018,14A,LMH,5853.43,Rehab: single-unit residential
+2019,2018,80,8567,6319504,UL Minor Home Repair 2018,14A,LMH,3573.82,Rehab: single-unit residential
+2019,2019,5,8590,6308678,Carondelet Minor Home Repair Program,14A,LMH,25903.97,Rehab: single-unit residential
+2019,2019,5,8590,6319659,Carondelet Minor Home Repair Program,14A,LMH,8368.8,Rehab: single-unit residential
+2019,2019,5,8590,6335721,Carondelet Minor Home Repair Program,14A,LMH,2979.64,Rehab: single-unit residential
+2019,2019,26,8589,6308678,Harambee Tuckpointing Youth Job Training Program,14A,LMH,55638.49,Rehab: single-unit residential
+2019,2019,26,8589,6311380,Harambee Tuckpointing Youth Job Training Program,14A,LMH,8333.28,Rehab: single-unit residential
+2019,2019,26,8589,6319504,Harambee Tuckpointing Youth Job Training Program,14A,LMH,8333.28,Rehab: single-unit residential
+2019,2019,26,8589,6335721,Harambee Tuckpointing Youth Job Training Program,14A,LMH,8333.28,Rehab: single-unit residential
+2019,2019,28,8588,6308678,Healthy Home Repair Inspections,14A,LMH,188639.31,Rehab: single-unit residential
+2019,2019,28,8588,6311380,Healthy Home Repair Inspections,14A,LMH,11281.32,Rehab: single-unit residential
+2019,2019,28,8588,6315865,Healthy Home Repair Inspections,14A,LMH,10948.22,Rehab: single-unit residential
+2019,2019,28,8588,6319504,Healthy Home Repair Inspections,14A,LMH,10948.46,Rehab: single-unit residential
+2019,2019,28,8588,6327764,Healthy Home Repair Inspections,14A,LMH,21898.97,Rehab: single-unit residential
+2019,2019,28,8588,6329658,Healthy Home Repair Inspections,14A,LMH,10950.27,Rehab: single-unit residential
+2019,2019,28,8588,6335721,Healthy Home Repair Inspections,14A,LMH,11031.75,Rehab: single-unit residential
+2019,2019,29,8592,6308678,Healthy Home Repair Program,14A,LMH,199678.56,Rehab: single-unit residential
+2019,2019,29,8592,6319659,Healthy Home Repair Program,14A,LMH,22212.85,Rehab: single-unit residential
+2019,2019,29,8592,6329658,Healthy Home Repair Program,14A,LMH,73133.88,Rehab: single-unit residential
+2019,2019,29,8592,6335721,Healthy Home Repair Program,14A,LMH,36984.01,Rehab: single-unit residential
+2019,2019,30,8593,6308678,Home Repair Program Loan Pool,14A,LMH,723546.0,Rehab: single-unit residential
+2019,2019,30,8593,6311380,Home Repair Program Loan Pool,14A,LMH,52639.0,Rehab: single-unit residential
+2019,2019,30,8593,6315865,Home Repair Program Loan Pool,14A,LMH,40304.0,Rehab: single-unit residential
+2019,2019,30,8593,6319504,Home Repair Program Loan Pool,14A,LMH,47668.0,Rehab: single-unit residential
+2019,2019,30,8593,6319659,Home Repair Program Loan Pool,14A,LMH,10994.0,Rehab: single-unit residential
+2019,2019,30,8593,6327764,Home Repair Program Loan Pool,14A,LMH,49233.0,Rehab: single-unit residential
+2019,2019,30,8593,6329658,Home Repair Program Loan Pool,14A,LMH,35150.0,Rehab: single-unit residential
+2019,2019,30,8593,6335721,Home Repair Program Loan Pool,14A,LMH,42397.0,Rehab: single-unit residential
+2019,2019,31,8586,6308678,Homebuyer Services DPA 2019,14A,LMH,80000.0,Rehab: single-unit residential
+2019,2019,31,8586,6311380,Homebuyer Services DPA 2019,14A,LMH,20000.0,Rehab: single-unit residential
+2019,2019,31,8586,6319504,Homebuyer Services DPA 2019,14A,LMH,5000.0,Rehab: single-unit residential
+2019,2019,45,8587,6308678,North Neighborhoods Minor Home Repair,14A,LMH,29473.8,Rehab: single-unit residential
+2019,2019,45,8587,6319659,North Neighborhoods Minor Home Repair,14A,LMH,12314.08,Rehab: single-unit residential
+2019,2019,45,8587,6335721,North Neighborhoods Minor Home Repair,14A,LMH,6446.36,Rehab: single-unit residential
+2019,2016,63,8215,6237921,Neighborhood Commercial District Incentive Program,14E,LMA,1899.0,Rehab: commercial/industrial
+2019,2016,63,8215,6299399,Neighborhood Commercial District Incentive Program,14E,LMA,5725.0,Rehab: commercial/industrial
+2019,2017,55,8350,6273695,Neighborhood Commercial District Program,14E,LMA,53225.55,Rehab: commercial/industrial
+2019,2018,65,8519,6225158,Neighborhood Commercial District Program,14E,LMA,96541.07,Rehab: commercial/industrial
+2019,2018,65,8519,6241052,Neighborhood Commercial District Program,14E,LMA,63306.22,Rehab: commercial/industrial
+2019,2019,42,8623,6308678,Neighborhood Commercial District Program,14E,LMA,153378.83,Rehab: commercial/industrial
+2019,2019,42,8623,6315865,Neighborhood Commercial District Program,14E,LMA,2576.84,Rehab: commercial/industrial
+2019,2019,42,8623,6319504,Neighborhood Commercial District Program,14E,LMA,101947.88,Rehab: commercial/industrial
+2019,2019,42,8623,6335721,Neighborhood Commercial District Program,14E,LMA,7380.0,Rehab: commercial/industrial
+2019,2016,13,8187,6260799,CDA Rehabilitation Administration,14H,LMA,12343.42,Rehab administration
+2019,2017,64,8345,6268703,CDA Rehabilitation Administration,14H,LMH,124.24,Rehab administration
+2019,2017,64,8345,6311380,CDA Rehabilitation Administration,14H,LMH,126.88,Rehab administration
+2019,2018,38,8509,6225158,CDA Rehabilitation Administration (CDBG),14H,LMH,10433.29,Rehab administration
+2019,2018,38,8509,6230223,CDA Rehabilitation Administration (CDBG),14H,LMH,29172.5,Rehab administration
+2019,2018,38,8509,6243122,CDA Rehabilitation Administration (CDBG),14H,LMH,14554.56,Rehab administration
+2019,2018,38,8509,6248289,CDA Rehabilitation Administration (CDBG),14H,LMH,256.0,Rehab administration
+2019,2018,38,8509,6254102,CDA Rehabilitation Administration (CDBG),14H,LMH,336.0,Rehab administration
+2019,2018,38,8509,6264359,CDA Rehabilitation Administration (CDBG),14H,LMH,56.0,Rehab administration
+2019,2018,38,8509,6311380,CDA Rehabilitation Administration (CDBG),14H,LMH,2750.0,Rehab administration
+2019,2018,38,8509,6315865,CDA Rehabilitation Administration (CDBG),14H,LMH,445.0,Rehab administration
+2019,2019,8,8604,6308678,CDA Rehabilitation Administration (CDBG),14H,LMH,302215.21,Rehab administration
+2019,2019,8,8604,6311380,CDA Rehabilitation Administration (CDBG),14H,LMH,15255.39,Rehab administration
+2019,2019,8,8604,6315865,CDA Rehabilitation Administration (CDBG),14H,LMH,14995.42,Rehab administration
+2019,2019,8,8604,6319504,CDA Rehabilitation Administration (CDBG),14H,LMH,30228.02,Rehab administration
+2019,2019,8,8604,6319659,CDA Rehabilitation Administration (CDBG),14H,LMH,15000.0,Rehab administration
+2019,2019,8,8604,6327764,CDA Rehabilitation Administration (CDBG),14H,LMH,19641.55,Rehab administration
+2019,2019,8,8604,6329658,CDA Rehabilitation Administration (CDBG),14H,LMH,22268.77,Rehab administration
+2019,2019,8,8604,6335721,CDA Rehabilitation Administration (CDBG),14H,LMH,19985.48,Rehab administration
+2019,2019,3,8657,6306617,"St. Louis Apparel Manufacturing, LLC",18A,LMJ,100000.0,ED: assistance to for-profits
+2019,2019,3,8657,6308678,"St. Louis Apparel Manufacturing, LLC",18A,LMJ,200000.0,ED: assistance to for-profits
+2019,2018,30,8469,6225158,Microenterprise Development,18C,LMC,16309.45,Other
+2019,2018,30,8469,6241052,Microenterprise Development,18C,LMC,7095.22,Other
+2018,2014,16,8493,6202336,3152 Nebraska,01,LMH,40744.13,Acquisition
+2018,2014,16,8493,6213041,3152 Nebraska,01,LMH,37470.59,Acquisition
+2018,2014,16,8493,6221650,3152 Nebraska,01,LMH,18747.21,Acquisition
+2018,2016,87,8563,6202336,Expanded Recreation - Public Facilities Improvements,03F,LMA,21637.15,Other
+2018,2013,61,8086,6195509,Red Sea Eritrean Community Center,03G,LMA,6730.0,Other
+2018,2013,61,8086,6208496,Red Sea Eritrean Community Center,03G,LMA,8076.0,Other
+2018,2013,61,8086,6213041,Red Sea Eritrean Community Center,03G,LMA,4038.0,Other
+2018,2016,84,8266,6170367,North Sarah Phase III Infrastructure,03K,LMA,87500.0,Street improvements
+2018,2016,85,8271,6138139,South Grand Priority District Lighting,03K,LMA,1199.71,Street improvements
+2018,2017,9,8317,6132092,Emergency Shelter Program,03T,LMC,1455.3,Other
+2018,2017,9,8317,6134245,Emergency Shelter Program,03T,LMC,3966.92,Other
+2018,2018,20,8517,6198275,Interfaith Residency Emergency Housing,03T,LMC,12260.0,Other
+2018,2018,43,8507,6198275,Covenant House Missouri's Crisis Program,03T,LMC,10404.57,Other
+2018,2016,86,8371,6202336,Public Facility-Economic Development,03Z,LMC,15410.0,Other public improvements
+2018,2017,32,8338,6132092,Elderly Services,05A,LMC,10121.66,Senior services
+2018,2018,5,8534,6198275,North Newstead Elderly Services,05A,LMC,15000.0,Senior services
+2018,2018,9,8510,6198275,Northside Senior Meal Program,05A,LMC,8735.25,Senior services
+2018,2018,9,8510,6202336,Northside Senior Meal Program,05A,LMC,1353.0,Senior services
+2018,2018,44,8543,6198275,Elderly Services,05A,LMC,127497.42,Senior services
+2018,2018,44,8543,6202336,Elderly Services,05A,LMC,10037.5,Senior services
+2018,2018,44,8543,6208496,Elderly Services,05A,LMC,60168.0,Senior services
+2018,2018,44,8543,6213041,Elderly Services,05A,LMC,6088.26,Senior services
+2018,2018,44,8543,6216218,Elderly Services,05A,LMC,29377.4,Senior services
+2018,2018,44,8543,6221650,Elderly Services,05A,LMC,21823.35,Senior services
+2018,2018,73,8527,6198275,Senior Services,05A,LMC,44880.0,Senior services
+2018,2018,73,8527,6208496,Senior Services,05A,LMC,2620.0,Senior services
+2018,2018,73,8527,6221650,Senior Services,05A,LMC,3000.0,Senior services
+2018,2017,2,8291,6133104,Comprehensive Mentoring Services for 100 At-Risk Youth,05D,LMC,5287.52,Youth services
+2018,2017,21,8295,6132092,Out-of-School Youth Development Services,05D,LMC,3535.86,Youth services
+2018,2017,25,8303,6133104,St. Louis Youth Jobs,05D,LMC,45.67,Youth services
+2018,2017,34,8306,6134245,Community Internships,05D,LMC,6.47,Youth services
+2018,2017,41,8342,6167816,Empowering Youth To Succeed,05D,LMC,25000.0,Youth services
+2018,2017,43,8307,6132092,Solve+Build+Play After-School Program,05D,LMC,4075.04,Youth services
+2018,2018,39,8504,6198275,CDBG Community Internships,05D,LMC,21047.64,Youth services
+2018,2018,55,8483,6198275,Health Care Beyond Walls,05D,LMC,25000.0,Youth services
+2018,2018,68,8523,6198275,Out-of-School Youth Development Services,05D,LMC,60459.66,Youth services
+2018,2018,68,8523,6208496,Out-of-School Youth Development Services,05D,LMC,6025.06,Youth services
+2018,2018,68,8523,6221650,Out-of-School Youth Development Services,05D,LMC,8079.8,Youth services
+2018,2018,76,8533,6198275,St. Louis ArtWorks - 2018 CDBG,05D,LMC,21842.28,Youth services
+2018,2018,76,8533,6208496,St. Louis ArtWorks - 2018 CDBG,05D,LMC,3156.0,Youth services
+2018,2018,77,8546,6198275,St. Louis Youth Jobs,05D,LMC,1815.47,Youth services
+2018,2018,77,8546,6202336,St. Louis Youth Jobs,05D,LMC,2346.12,Youth services
+2018,2018,77,8546,6208496,St. Louis Youth Jobs,05D,LMC,8110.98,Youth services
+2018,2018,77,8546,6213041,St. Louis Youth Jobs,05D,LMC,17707.93,Youth services
+2018,2018,1,8540,6198275,Reentry Services,05H,LMC,28600.0,Other
+2018,2018,1,8540,6208496,Reentry Services,05H,LMC,5200.0,Other
+2018,2018,31,8505,6198275,Beyond Jobs: Job & Leadership Training,05H,LMC,22022.0,Other
+2018,2018,41,8531,6198275,Competitive Employment Program,05H,LMC,14500.0,Other
+2018,2018,41,8531,6208496,Competitive Employment Program,05H,LMC,3000.0,Other
+2018,2018,41,8531,6213041,Competitive Employment Program,05H,LMC,1500.0,Other
+2018,2017,29,8344,6132092,North Newstead Neighborhood Safety Initiative,05I,LMA,1500.0,Other
+2018,2017,29,8344,6133104,North Newstead Neighborhood Safety Initiative,05I,LMA,1500.0,Other
+2018,2018,66,8524,6198275,North Newstead Neighborhood Safety Initiative,05I,LMA,46138.76,Other
+2018,2018,66,8524,6202336,North Newstead Neighborhood Safety Initiative,05I,LMA,2361.0,Other
+2018,2018,66,8524,6213041,North Newstead Neighborhood Safety Initiative,05I,LMA,11000.0,Other
+2018,2018,47,8520,6198275,Fair Housing Education and Counseling,05J,LMA,43347.53,Other
+2018,2018,47,8520,6208496,Fair Housing Education and Counseling,05J,LMA,1932.2,Other
+2018,2018,47,8520,6221650,Fair Housing Education and Counseling,05J,LMA,3220.26,Other
+2018,2017,14,8330,6133104,Flance Early Learning Center,05L,LMC,3366.04,Other
+2018,2017,18,8299,6170367,Grace Hill Settlement House After School Program,05L,LMC,16467.22,Other
+2018,2017,19,8296,6132092,Childcare,05L,LMC,3781.2,Other
+2018,2017,19,8296,6133104,Childcare,05L,LMC,3051.18,Other
+2018,2018,40,8530,6198275,Childcare,05L,LMC,27289.5,Other
+2018,2018,40,8530,6208496,Childcare,05L,LMC,2438.0,Other
+2018,2018,40,8530,6221650,Childcare,05L,LMC,3071.65,Other
+2018,2018,51,8525,6198275,Flance Management Inc.,05L,LMC,15771.15,Other
+2018,2018,51,8525,6202336,Flance Management Inc.,05L,LMC,1984.65,Other
+2018,2018,51,8525,6208496,Flance Management Inc.,05L,LMC,1560.45,Other
+2018,2018,51,8525,6221650,Flance Management Inc.,05L,LMC,4247.05,Other
+2018,2017,8,8326,6133104,Health Care Beyond Walls,05M,LMC,4100.0,Other
+2018,2017,13,8328,6133104,Adult and Pediatric Medical Services,05M,LMC,4153.82,Other
+2018,2017,13,8328,6134245,Adult and Pediatric Medical Services,05M,LMC,692.31,Other
+2018,2018,3,8465,6198275,Health and Wellness,05M,LMC,62775.31,Other
+2018,2018,3,8465,6202336,Health and Wellness,05M,LMC,12224.69,Other
+2018,2017,11,8318,6138172,Operation Brightside,05V,LMA,10554.81,Other
+2018,2017,11,8318,6141727,Operation Brightside,05V,LMA,3181.19,Other
+2018,2018,7,8463,6198275,North Newstead Beautification and Clean-up Prog,05V,LMA,14000.0,Other
+2018,2018,7,8463,6202336,North Newstead Beautification and Clean-up Prog,05V,LMA,1000.0,Other
+2018,2018,7,8463,6213041,North Newstead Beautification and Clean-up Prog,05V,LMA,3000.0,Other
+2018,2018,7,8463,6221650,North Newstead Beautification and Clean-up Prog,05V,LMA,1000.0,Other
+2018,2018,67,8532,6198275,Operation Brightside,05V,LMA,207219.97,Other
+2018,2018,67,8532,6202336,Operation Brightside,05V,LMA,12678.68,Other
+2018,2018,67,8532,6208496,Operation Brightside,05V,LMA,12419.97,Other
+2018,2018,67,8532,6213041,Operation Brightside,05V,LMA,12569.75,Other
+2018,2018,67,8532,6216218,Operation Brightside,05V,LMA,22415.98,Other
+2018,2018,67,8532,6221650,Operation Brightside,05V,LMA,11289.69,Other
+2018,2017,3,8289,6134245,CCBF Food and Nutritional Services,05W,LMC,2009.67,Other
+2018,2017,7,8287,6133104,Food Pantry - City Seniors,05W,LMC,1666.66,Other
+2018,2017,20,8294,6133104,Food Pantry,05W,LMC,5607.37,Other
+2018,2018,36,8536,6198275,CCBF Food and Nutritional Services,05W,LMC,15686.27,Other
+2018,2018,36,8536,6213041,CCBF Food and Nutritional Services,05W,LMC,1853.95,Other
+2018,2018,36,8536,6221650,CCBF Food and Nutritional Services,05W,LMC,1900.02,Other
+2018,2018,52,8538,6198275,Food Pantry,05W,LMC,30648.54,Other
+2018,2018,52,8538,6208496,Food Pantry,05W,LMC,3832.65,Other
+2018,2018,52,8538,6216218,Food Pantry,05W,LMC,3832.65,Other
+2018,2017,1,8314,6132092,Innovative Concept Academy Program,05Z,LMA,116.75,Other public services
+2018,2017,1,8314,6133104,Innovative Concept Academy Program,05Z,LMA,43664.55,Other public services
+2018,2017,1,8314,6134245,Innovative Concept Academy Program,05Z,LMA,22699.65,Other public services
+2018,2017,4,8315,6132092,Problem Property City Counselor's Office,05Z,LMA,4817.38,Other public services
+2018,2017,5,8316,6148533,Problem Property Municipal Courts,05Z,LMA,331.57,Other public services
+2018,2017,10,8292,6141727,Expanded Recreation Program,05Z,LMA,2561.96,Other public services
+2018,2017,17,8290,6132092,Building Better Gardens and Better Communities,05Z,LMA,9375.0,Other public services
+2018,2017,23,8302,6133104,Next Steps Home Offender Reentry Program,05Z,LMC,7637.5,Other public services
+2018,2017,35,8323,6138172,Family Support Centers,05Z,LMA,13273.51,Other public services
+2018,2017,35,8323,6160403,Family Support Centers,05Z,LMA,4401.06,Other public services
+2018,2017,35,8323,6170367,Family Support Centers,05Z,LMA,11143.31,Other public services
+2018,2017,37,8322,6133104,Sustainable Neighborhoods Program,05Z,LMA,5000.0,Other public services
+2018,2017,40,8325,6133104,UL Community Development 2017,05Z,LMA,2925.0,Other public services
+2018,2018,2,8464,6221650,Hope House PSH,05Z,LMC,10897.85,Other public services
+2018,2018,4,8467,6198275,Youth Leadership Development Program,05Z,LMA,14500.0,Other public services
+2018,2018,4,8467,6208496,Youth Leadership Development Program,05Z,LMA,500.0,Other public services
+2018,2018,8,8516,6198275,Release to Rent Reentry Program,05Z,LMC,31291.75,Other public services
+2018,2018,8,8516,6208496,Release to Rent Reentry Program,05Z,LMC,2337.13,Other public services
+2018,2018,11,8466,6198275,Neighborhood United for Change,05Z,LMA,13636.3,Other public services
+2018,2018,11,8466,6213041,Neighborhood United for Change,05Z,LMA,1363.7,Other public services
+2018,2018,32,8518,6198275,Building Better Gardens and Better Communities,05Z,LMA,19500.0,Other public services
+2018,2018,32,8518,6208496,Building Better Gardens and Better Communities,05Z,LMA,500.0,Other public services
+2018,2018,32,8518,6221650,Building Better Gardens and Better Communities,05Z,LMA,4000.0,Other public services
+2018,2018,46,8521,6198275,Expanded Recreation Program,05Z,LMA,254773.93,Other public services
+2018,2018,46,8521,6202336,Expanded Recreation Program,05Z,LMA,3514.64,Other public services
+2018,2018,46,8521,6208496,Expanded Recreation Program,05Z,LMA,3571.15,Other public services
+2018,2018,46,8521,6213041,Expanded Recreation Program,05Z,LMA,3179.73,Other public services
+2018,2018,46,8521,6216218,Expanded Recreation Program,05Z,LMA,6980.81,Other public services
+2018,2018,46,8521,6221650,Expanded Recreation Program,05Z,LMA,4727.87,Other public services
+2018,2018,50,8506,6198275,Financial Capability 2018,05Z,LMA,17361.06,Other public services
+2018,2018,50,8506,6208496,Financial Capability 2018,05Z,LMA,2777.76,Other public services
+2018,2018,50,8506,6221650,Financial Capability 2018,05Z,LMA,1388.88,Other public services
+2018,2018,59,8529,6198275,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,36763.77,Other public services
+2018,2018,59,8529,6202336,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,2493.8,Other public services
+2018,2018,59,8529,6208496,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,8729.29,Other public services
+2018,2018,59,8529,6216218,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,589.6,Other public services
+2018,2018,59,8529,6221650,Innovative Concept Academy Program For At Risk Youth,05Z,LMA,5502.65,Other public services
+2018,2018,70,8515,6198275,Problem Property Team Program,05Z,LMA,144012.25,Other public services
+2018,2018,70,8515,6202336,Problem Property Team Program,05Z,LMA,7710.75,Other public services
+2018,2018,70,8515,6208496,Problem Property Team Program,05Z,LMA,7710.75,Other public services
+2018,2018,70,8515,6213041,Problem Property Team Program,05Z,LMA,7710.75,Other public services
+2018,2018,70,8515,6216218,Problem Property Team Program,05Z,LMA,15469.87,Other public services
+2018,2018,70,8515,6221650,Problem Property Team Program,05Z,LMA,7759.12,Other public services
+2018,2018,71,8541,6198275,Problem Property Team Program,05Z,LMA,8008.18,Other public services
+2018,2018,71,8541,6208496,Problem Property Team Program,05Z,LMA,2896.01,Other public services
+2018,2018,72,8562,6209263,Public Services - Food Access,05Z,LMC,100000.0,Other public services
+2018,2018,79,8513,6198275,UL Community Development 2018,05Z,LMA,18200.0,Other public services
+2018,2018,79,8513,6213041,UL Community Development 2018,05Z,LMA,4800.0,Other public services
+2018,2018,79,8513,6221650,UL Community Development 2018,05Z,LMA,1400.0,Other public services
+2018,2014,63,8116,6133104,Dr. Martin Luther King Corridor Pre-Development,06,LMA,28145.27,Interim assistance
+2018,2014,63,8116,6167816,Dr. Martin Luther King Corridor Pre-Development,06,LMA,14978.75,Interim assistance
+2018,2014,63,8116,6202336,Dr. Martin Luther King Corridor Pre-Development,06,LMA,8927.93,Interim assistance
+2018,2017,44,8327,6132092,LRA Property Board-Up and Maintenance,06,LMA,14566.53,Interim assistance
+2018,2017,44,8327,6134245,LRA Property Board-Up and Maintenance,06,LMA,172594.62,Interim assistance
+2018,2017,44,8327,6138172,LRA Property Board-Up and Maintenance,06,LMA,12684.42,Interim assistance
+2018,2018,62,8539,6198275,LRA Property Maintenance and Vacancy Support Program,06,LMA,673289.15,Interim assistance
+2018,2018,62,8539,6208496,LRA Property Maintenance and Vacancy Support Program,06,LMA,2486.17,Interim assistance
+2018,2018,62,8539,6221650,LRA Property Maintenance and Vacancy Support Program,06,LMA,11512.48,Interim assistance
+2018,2014,16,8428,6132092,5230 Grace,12,LMH,64615.75,Construction of housing
+2018,2014,16,8428,6133104,5230 Grace,12,LMH,16577.2,Construction of housing
+2018,2014,16,8428,6134245,5230 Grace,12,LMH,19677.8,Construction of housing
+2018,2014,16,8428,6141727,5230 Grace,12,LMH,23600.05,Construction of housing
+2018,2014,16,8428,6153187,5230 Grace,12,LMH,13334.42,Construction of housing
+2018,2014,16,8428,6188361,5230 Grace,12,LMH,2194.77,Construction of housing
+2018,2014,60,8114,6141727,3944 Michigan Rehab,14A,LMH,5706.0,Rehab: single-unit residential
+2018,2014,60,8114,6213041,3944 Michigan Rehab,14A,LMH,10832.0,Rehab: single-unit residential
+2018,2014,60,8114,6216218,3944 Michigan Rehab,14A,LMH,1336.0,Rehab: single-unit residential
+2018,2014,60,8369,6133104,2821 Texas,14A,LMH,5810.32,Rehab: single-unit residential
+2018,2014,60,8369,6138139,2821 Texas,14A,LMH,4847.7,Rehab: single-unit residential
+2018,2014,60,8369,6138172,2821 Texas,14A,LMH,1443.72,Rehab: single-unit residential
+2018,2014,60,8369,6148533,2821 Texas,14A,LMH,2307.13,Rehab: single-unit residential
+2018,2014,60,8369,6148535,2821 Texas,14A,LMH,900.0,Rehab: single-unit residential
+2018,2014,60,8369,6188361,2821 Texas,14A,LMH,1153.23,Rehab: single-unit residential
+2018,2014,60,8369,6198096,2821 Texas,14A,LMH,7673.86,Rehab: single-unit residential
+2018,2015,51,8045,6132092,Healthy Home Repair Loan Pool,14A,LMH,5000.0,Rehab: single-unit residential
+2018,2015,51,8045,6134245,Healthy Home Repair Loan Pool,14A,LMH,17006.0,Rehab: single-unit residential
+2018,2015,51,8045,6138139,Healthy Home Repair Loan Pool,14A,LMH,18244.0,Rehab: single-unit residential
+2018,2015,51,8045,6138172,Healthy Home Repair Loan Pool,14A,LMH,3225.0,Rehab: single-unit residential
+2018,2015,51,8045,6148533,Healthy Home Repair Loan Pool,14A,LMH,6700.0,Rehab: single-unit residential
+2018,2015,51,8045,6153187,Healthy Home Repair Loan Pool,14A,LMH,2750.0,Rehab: single-unit residential
+2018,2015,51,8045,6202336,Healthy Home Repair Loan Pool,14A,LMH,6650.0,Rehab: single-unit residential
+2018,2015,51,8045,6213041,Healthy Home Repair Loan Pool,14A,LMH,2300.0,Rehab: single-unit residential
+2018,2016,11,8141,6148533,Home Repair Program Loan Pool,14A,LMH,24010.0,Rehab: single-unit residential
+2018,2016,11,8141,6153187,Home Repair Program Loan Pool,14A,LMH,2920.0,Rehab: single-unit residential
+2018,2016,11,8141,6163792,Home Repair Program Loan Pool,14A,LMH,4565.0,Rehab: single-unit residential
+2018,2016,11,8141,6189848,Home Repair Program Loan Pool,14A,LMH,14319.0,Rehab: single-unit residential
+2018,2016,11,8141,6213041,Home Repair Program Loan Pool,14A,LMH,1800.0,Rehab: single-unit residential
+2018,2017,46,8357,6132092,Carondelet Minor Home Repair Program,14A,LMH,11000.0,Rehab: single-unit residential
+2018,2017,46,8357,6133104,Carondelet Minor Home Repair Program,14A,LMH,2200.0,Rehab: single-unit residential
+2018,2017,48,8355,6132092,Minor Home Repair Program (MHR),14A,LMH,5207.99,Rehab: single-unit residential
+2018,2017,48,8355,6133104,Minor Home Repair Program (MHR),14A,LMH,11630.55,Rehab: single-unit residential
+2018,2017,48,8355,6153187,Minor Home Repair Program (MHR),14A,LMH,4500.0,Rehab: single-unit residential
+2018,2017,48,8355,6181575,Minor Home Repair Program (MHR),14A,LMH,470.5,Rehab: single-unit residential
+2018,2017,49,8366,6160403,UL Home Repair,14A,LMH,47679.85,Rehab: single-unit residential
+2018,2017,49,8366,6170367,UL Home Repair,14A,LMH,35153.74,Rehab: single-unit residential
+2018,2017,49,8366,6221650,UL Home Repair,14A,LMH,170.57,Rehab: single-unit residential
+2018,2017,50,8352,6148533,Healthy Home Repair Inspection Program,14A,LMH,10484.19,Rehab: single-unit residential
+2018,2017,51,8353,6132092,Home Repair Loan Pool,14A,LMH,2344.0,Rehab: single-unit residential
+2018,2017,51,8353,6134245,Home Repair Loan Pool,14A,LMH,15330.0,Rehab: single-unit residential
+2018,2017,51,8353,6138139,Home Repair Loan Pool,14A,LMH,35700.0,Rehab: single-unit residential
+2018,2017,51,8353,6138172,Home Repair Loan Pool,14A,LMH,5230.0,Rehab: single-unit residential
+2018,2017,51,8353,6148533,Home Repair Loan Pool,14A,LMH,4360.0,Rehab: single-unit residential
+2018,2017,51,8353,6153187,Home Repair Loan Pool,14A,LMH,22255.0,Rehab: single-unit residential
+2018,2017,51,8353,6160403,Home Repair Loan Pool,14A,LMH,8845.0,Rehab: single-unit residential
+2018,2017,51,8353,6163792,Home Repair Loan Pool,14A,LMH,5382.0,Rehab: single-unit residential
+2018,2017,51,8353,6170367,Home Repair Loan Pool,14A,LMH,42290.36,Rehab: single-unit residential
+2018,2017,51,8353,6202336,Home Repair Loan Pool,14A,LMH,779.64,Rehab: single-unit residential
+2018,2017,52,8354,6132092,Healthy Home Repair Program,14A,LMH,25866.56,Rehab: single-unit residential
+2018,2017,52,8354,6133104,Healthy Home Repair Program,14A,LMH,9964.52,Rehab: single-unit residential
+2018,2017,52,8354,6134245,Healthy Home Repair Program,14A,LMH,13135.0,Rehab: single-unit residential
+2018,2017,52,8354,6138139,Healthy Home Repair Program,14A,LMH,5200.0,Rehab: single-unit residential
+2018,2017,52,8354,6138172,Healthy Home Repair Program,14A,LMH,2600.0,Rehab: single-unit residential
+2018,2017,52,8354,6148533,Healthy Home Repair Program,14A,LMH,17610.0,Rehab: single-unit residential
+2018,2017,52,8354,6153187,Healthy Home Repair Program,14A,LMH,15380.0,Rehab: single-unit residential
+2018,2017,52,8354,6181575,Healthy Home Repair Program,14A,LMH,787.5,Rehab: single-unit residential
+2018,2018,18,8500,6198275,North Newstead Minor Home Repair Program,14A,LMH,15000.0,Rehab: single-unit residential
+2018,2018,18,8500,6208496,North Newstead Minor Home Repair Program,14A,LMH,11600.0,Rehab: single-unit residential
+2018,2018,18,8500,6221650,North Newstead Minor Home Repair Program,14A,LMH,5200.0,Rehab: single-unit residential
+2018,2018,19,8499,6198275,Homebuyer Services DPA,14A,LMH,25000.0,Rehab: single-unit residential
+2018,2018,19,8499,6202336,Homebuyer Services DPA,14A,LMH,50000.0,Rehab: single-unit residential
+2018,2018,19,8499,6208496,Homebuyer Services DPA,14A,LMH,5000.0,Rehab: single-unit residential
+2018,2018,19,8499,6221650,Homebuyer Services DPA,14A,LMH,10000.0,Rehab: single-unit residential
+2018,2018,22,8495,6198275,Healthy Home Repair Inspection Program,14A,LMH,197975.98,Rehab: single-unit residential
+2018,2018,22,8495,6202336,Healthy Home Repair Inspection Program,14A,LMH,10756.53,Rehab: single-unit residential
+2018,2018,22,8495,6208496,Healthy Home Repair Inspection Program,14A,LMH,10816.82,Rehab: single-unit residential
+2018,2018,22,8495,6213041,Healthy Home Repair Inspection Program,14A,LMH,10756.29,Rehab: single-unit residential
+2018,2018,22,8495,6216218,Healthy Home Repair Inspection Program,14A,LMH,21571.97,Rehab: single-unit residential
+2018,2018,27,8501,6202336,Choice Home Repair,14A,LMH,1500.0,Rehab: single-unit residential
+2018,2018,27,8501,6209263,Choice Home Repair,14A,LMH,9500.0,Rehab: single-unit residential
+2018,2018,27,8501,6213041,Choice Home Repair,14A,LMH,1000.0,Rehab: single-unit residential
+2018,2018,35,8497,6198275,Carondelet Minor Home Repair Program,14A,LMH,29400.0,Rehab: single-unit residential
+2018,2018,35,8497,6213041,Carondelet Minor Home Repair Program,14A,LMH,2400.0,Rehab: single-unit residential
+2018,2018,35,8497,6221650,Carondelet Minor Home Repair Program,14A,LMH,400.0,Rehab: single-unit residential
+2018,2018,54,8498,6198275,Harambee Tuckpointing Program,14A,LMH,62186.92,Rehab: single-unit residential
+2018,2018,54,8498,6208496,Harambee Tuckpointing Program,14A,LMH,10400.88,Rehab: single-unit residential
+2018,2018,54,8498,6216218,Harambee Tuckpointing Program,14A,LMH,10400.88,Rehab: single-unit residential
+2018,2018,57,8496,6198275,Healthy Home Repair Program,14A,LMH,263102.35,Rehab: single-unit residential
+2018,2018,57,8496,6208496,Healthy Home Repair Program,14A,LMH,30982.07,Rehab: single-unit residential
+2018,2018,57,8496,6216218,Healthy Home Repair Program,14A,LMH,2475.3,Rehab: single-unit residential
+2018,2018,57,8496,6221650,Healthy Home Repair Program,14A,LMH,28481.19,Rehab: single-unit residential
+2018,2018,58,8494,6198275,Healthy Home Repair Program Loan Pool,14A,LMH,452971.0,Rehab: single-unit residential
+2018,2018,58,8494,6202336,Healthy Home Repair Program Loan Pool,14A,LMH,72034.0,Rehab: single-unit residential
+2018,2018,58,8494,6208496,Healthy Home Repair Program Loan Pool,14A,LMH,25250.0,Rehab: single-unit residential
+2018,2018,58,8494,6213041,Healthy Home Repair Program Loan Pool,14A,LMH,158536.0,Rehab: single-unit residential
+2018,2018,58,8494,6216218,Healthy Home Repair Program Loan Pool,14A,LMH,69154.0,Rehab: single-unit residential
+2018,2018,58,8494,6221650,Healthy Home Repair Program Loan Pool,14A,LMH,102834.0,Rehab: single-unit residential
+2018,2013,27,7651,6132092,Neighborhood Commercial District Improvement Program,14E,LMA,15000.0,Rehab: commercial/industrial
+2018,2013,27,7651,6133104,Neighborhood Commercial District Improvement Program,14E,LMA,9462.5,Rehab: commercial/industrial
+2018,2013,27,7651,6138172,Neighborhood Commercial District Improvement Program,14E,LMA,40000.0,Rehab: commercial/industrial
+2018,2013,27,7651,6148533,Neighborhood Commercial District Improvement Program,14E,LMA,8904.0,Rehab: commercial/industrial
+2018,2013,27,7651,6153187,Neighborhood Commercial District Improvement Program,14E,LMA,2630.0,Rehab: commercial/industrial
+2018,2013,27,7651,6163792,Neighborhood Commercial District Improvement Program,14E,LMA,8144.0,Rehab: commercial/industrial
+2018,2013,27,7651,6198096,Neighborhood Commercial District Improvement Program,14E,LMA,12959.0,Rehab: commercial/industrial
+2018,2017,55,8350,6133104,Neighborhood Commercial District Program,14E,LMA,4503.04,Rehab: commercial/industrial
+2018,2017,55,8350,6134245,Neighborhood Commercial District Program,14E,LMA,125631.61,Rehab: commercial/industrial
+2018,2017,55,8350,6138139,Neighborhood Commercial District Program,14E,LMA,3988.92,Rehab: commercial/industrial
+2018,2017,55,8350,6141727,Neighborhood Commercial District Program,14E,LMA,39868.0,Rehab: commercial/industrial
+2018,2017,55,8350,6148533,Neighborhood Commercial District Program,14E,LMA,6661.29,Rehab: commercial/industrial
+2018,2017,55,8350,6153187,Neighborhood Commercial District Program,14E,LMA,6500.0,Rehab: commercial/industrial
+2018,2017,55,8350,6160403,Neighborhood Commercial District Program,14E,LMA,26337.62,Rehab: commercial/industrial
+2018,2017,55,8350,6163792,Neighborhood Commercial District Program,14E,LMA,10570.31,Rehab: commercial/industrial
+2018,2017,55,8350,6167816,Neighborhood Commercial District Program,14E,LMA,3310.0,Rehab: commercial/industrial
+2018,2017,55,8350,6170367,Neighborhood Commercial District Program,14E,LMA,70939.0,Rehab: commercial/industrial
+2018,2017,55,8350,6177996,Neighborhood Commercial District Program,14E,LMA,30000.0,Rehab: commercial/industrial
+2018,2018,65,8519,6198275,Neighborhood Commercial District Program,14E,LMA,139744.32,Rehab: commercial/industrial
+2018,2016,13,8187,6193349,CDA Rehabilitation Administration,14H,LMA,46.12,Rehab administration
+2018,2017,64,8345,6132092,CDA Rehabilitation Administration,14H,LMH,10204.54,Rehab administration
+2018,2017,64,8345,6133104,CDA Rehabilitation Administration,14H,LMH,787.26,Rehab administration
+2018,2017,64,8345,6134245,CDA Rehabilitation Administration,14H,LMH,14.08,Rehab administration
+2018,2017,64,8345,6138139,CDA Rehabilitation Administration,14H,LMH,7272.24,Rehab administration
+2018,2017,64,8345,6141727,CDA Rehabilitation Administration,14H,LMH,2692.59,Rehab administration
+2018,2018,38,8509,6198275,CDA Rehabilitation Administration (CDBG),14H,LMH,316651.25,Rehab administration
+2018,2018,38,8509,6202336,CDA Rehabilitation Administration (CDBG),14H,LMH,13826.22,Rehab administration
+2018,2018,38,8509,6208496,CDA Rehabilitation Administration (CDBG),14H,LMH,29867.16,Rehab administration
+2018,2018,38,8509,6213041,CDA Rehabilitation Administration (CDBG),14H,LMH,9112.05,Rehab administration
+2018,2018,38,8509,6216218,CDA Rehabilitation Administration (CDBG),14H,LMH,23206.23,Rehab administration
+2018,2018,38,8509,6221650,CDA Rehabilitation Administration (CDBG),14H,LMH,11379.2,Rehab administration
+2018,2018,33,8475,6198275,Rockwell Beer Company LLC,18A,LMJ,150000.0,ED: assistance to for-profits
+2018,2017,57,8351,6134245,Microenterprise Development,18C,LMC,9523.8,Other
+2018,2018,30,8469,6208496,Microenterprise Development,18C,LMC,24761.81,Other

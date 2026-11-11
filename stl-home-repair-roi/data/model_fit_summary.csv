@@ -1,0 +1,10 @@
+metric,value
+M1_ols_r2_in_sample,0.3419883702590381
+M1_n,57830.0
+M2_r2,0.4312314896901956
+M2_n,80001.0
+M2_midwest_old_n,6051.0
+M3_ols_r2_test,0.3276709587127586
+M3_gbm_r2_test,0.3413056002108184
+jobs_total_prof,82656.0
+jobs_stl_like,1206.0
