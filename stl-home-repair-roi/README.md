@@ -40,3 +40,25 @@ Model summaries are in `output/`.
 Healthy Home Repair benchmark (2025 CAPER): 415 repairs for 57 homeowners, about $22K per home.
 
 Caveats: ROI is public benefit per grant dollar, not contractor margin. Sub-awards are program allocations, not single jobs. Classification is keyword-based.
+
+## Where to find the houses (scripts 06–07)
+```
+python scripts/06_pull_location_data.py          # FEMA IHP registrations, HUD CDBG by tract, TIGERweb tracts/places
+python scripts/07_location_scoring.py <dir of ACS 2023 table-based summary files: b25003 b25007 b25036 b25077 b25119 .dat>
+```
+Every census tract in St. Louis City and County gets a 0–100 percentile score. The weights follow the ROI ranking:
+
+| Factor | Weight |
+|---|---|
+| Owner-occupied homes built before 1940 (lead) | 25% |
+| Low owner median income (program eligibility) | 25% |
+| Seniors in pre-1960 homes (aging in place) | 20% |
+| FEMA unmet homeowner repair need from the 2022 flood and 2025 storms (disaster) | 20% |
+| Low home value | 10% |
+
+Outputs: `data/tract_opportunity_scores.csv`, `data/area_opportunity_scores.csv` (City neighborhoods and County municipalities), `data/top_areas_by_program.csv`, `data/tract_map.geojson`.
+
+What it found:
+* **North City, along the May 2025 tornado path**: Kingsway East, O'Fallon, Penrose, Greater Ville, Lewis Place, Walnut Park and Mark Twain. FEMA owner registrations there show $23M of unmet homeowner repair need from the tornado alone.
+* **North County's inner-ring suburbs**: Velda Village Hills, Northwoods, Jennings, Ferguson, Bellefontaine Neighbors, Overland, Florissant and St. Ann. These have the largest count of seniors in 1950s houses (aging in place, weatherization).
+* **South City's pre-1940 brick**: Dutchtown, Gravois Park, Bevo Mill, Princeton Heights, Mount Pleasant and Patch. These have the most pre-1940 owner-occupied homes (lead).

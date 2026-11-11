@@ -1,0 +1,41 @@
+lens,metric,lens_rank,area,jurisdiction,value,owner_median_income,key
+Lead hazard control,Owner-occupied homes built before 1940,1,Dutchtown,St. Louis City,2314.0,64763.0,Lead hazard control|1
+Lead hazard control,Owner-occupied homes built before 1940,2,Overland,St. Louis County,1535.0,60835.0,Lead hazard control|2
+Lead hazard control,Owner-occupied homes built before 1940,3,Gravois Park,St. Louis City,1173.0,68410.5,Lead hazard control|3
+Lead hazard control,Owner-occupied homes built before 1940,4,Bevo Mill,St. Louis City,1142.0,59318.0,Lead hazard control|4
+Lead hazard control,Owner-occupied homes built before 1940,5,Ferguson,St. Louis County,1090.0,63081.5,Lead hazard control|5
+Lead hazard control,Owner-occupied homes built before 1940,6,Princeton Heights,St. Louis City,947.0,68250.0,Lead hazard control|6
+Lead hazard control,Owner-occupied homes built before 1940,7,Patch,St. Louis City,865.0,54948.0,Lead hazard control|7
+Lead hazard control,Owner-occupied homes built before 1940,8,Jeff Vanderlou,St. Louis City,706.0,52202.0,Lead hazard control|8
+Lead hazard control,Owner-occupied homes built before 1940,9,Kingsway East,St. Louis City,654.0,58604.0,Lead hazard control|9
+Lead hazard control,Owner-occupied homes built before 1940,10,Jennings,St. Louis County,604.0,49033.0,Lead hazard control|10
+Aging-in-place,Est. homeowners 65+ in pre-1960 homes,1,Florissant,St. Louis County,1880.0,76393.0,Aging-in-place|1
+Aging-in-place,Est. homeowners 65+ in pre-1960 homes,2,Ferguson,St. Louis County,1239.0,63081.5,Aging-in-place|2
+Aging-in-place,Est. homeowners 65+ in pre-1960 homes,3,Overland,St. Louis County,1237.0,60835.0,Aging-in-place|3
+Aging-in-place,Est. homeowners 65+ in pre-1960 homes,4,Bellefontaine Neighbors,St. Louis County,821.0,60467.5,Aging-in-place|4
+Aging-in-place,Est. homeowners 65+ in pre-1960 homes,5,Jennings,St. Louis County,812.0,49033.0,Aging-in-place|5
+Aging-in-place,Est. homeowners 65+ in pre-1960 homes,6,St. Ann,St. Louis County,667.0,72708.0,Aging-in-place|6
+Aging-in-place,Est. homeowners 65+ in pre-1960 homes,7,Hazelwood,St. Louis County,629.0,72104.0,Aging-in-place|7
+Aging-in-place,Est. homeowners 65+ in pre-1960 homes,8,Northwoods,St. Louis County,603.0,44833.0,Aging-in-place|8
+Aging-in-place,Est. homeowners 65+ in pre-1960 homes,9,Dutchtown,St. Louis City,502.0,64763.0,Aging-in-place|9
+Aging-in-place,Est. homeowners 65+ in pre-1960 homes,10,Berkeley,St. Louis County,437.0,44659.5,Aging-in-place|10
+"Disaster repair (2022 flood, 2025 tornado)",FEMA unmet homeowner repair need ($),1,Greater Ville,St. Louis City,6191196.0,37058.5,"Disaster repair (2022 flood, 2025 tornado)|1"
+"Disaster repair (2022 flood, 2025 tornado)",FEMA unmet homeowner repair need ($),2,Penrose,St. Louis City,3443240.0,34245.0,"Disaster repair (2022 flood, 2025 tornado)|2"
+"Disaster repair (2022 flood, 2025 tornado)",FEMA unmet homeowner repair need ($),3,Kingsway East,St. Louis City,2071960.0,58604.0,"Disaster repair (2022 flood, 2025 tornado)|3"
+"Disaster repair (2022 flood, 2025 tornado)",FEMA unmet homeowner repair need ($),4,Academy,St. Louis City,2028004.0,71849.0,"Disaster repair (2022 flood, 2025 tornado)|4"
+"Disaster repair (2022 flood, 2025 tornado)",FEMA unmet homeowner repair need ($),5,O'Fallon,St. Louis City,1405180.0,41613.0,"Disaster repair (2022 flood, 2025 tornado)|5"
+"Disaster repair (2022 flood, 2025 tornado)",FEMA unmet homeowner repair need ($),6,Lewis Place,St. Louis City,1246868.0,45147.0,"Disaster repair (2022 flood, 2025 tornado)|6"
+"Disaster repair (2022 flood, 2025 tornado)",FEMA unmet homeowner repair need ($),7,O'Fallon Park,St. Louis City,993748.0,,"Disaster repair (2022 flood, 2025 tornado)|7"
+"Disaster repair (2022 flood, 2025 tornado)",FEMA unmet homeowner repair need ($),8,Florissant,St. Louis County,904260.0,76393.0,"Disaster repair (2022 flood, 2025 tornado)|8"
+"Disaster repair (2022 flood, 2025 tornado)",FEMA unmet homeowner repair need ($),9,The Ville,St. Louis City,604415.0,,"Disaster repair (2022 flood, 2025 tornado)|9"
+"Disaster repair (2022 flood, 2025 tornado)",FEMA unmet homeowner repair need ($),10,Mark Twain I-70 Industrial,St. Louis City,543972.0,60686.0,"Disaster repair (2022 flood, 2025 tornado)|10"
+Weatherization & general repair,Owner-occupied homes built before 1960,1,Florissant,St. Louis County,6131.0,76393.0,Weatherization & general repair|1
+Weatherization & general repair,Owner-occupied homes built before 1960,2,Overland,St. Louis County,3625.0,60835.0,Weatherization & general repair|2
+Weatherization & general repair,Owner-occupied homes built before 1960,3,Ferguson,St. Louis County,3475.0,63081.5,Weatherization & general repair|3
+Weatherization & general repair,Owner-occupied homes built before 1960,4,Dutchtown,St. Louis City,2767.0,64763.0,Weatherization & general repair|4
+Weatherization & general repair,Owner-occupied homes built before 1960,5,St. Ann,St. Louis County,2425.0,72708.0,Weatherization & general repair|5
+Weatherization & general repair,Owner-occupied homes built before 1960,6,Jennings,St. Louis County,2189.0,49033.0,Weatherization & general repair|6
+Weatherization & general repair,Owner-occupied homes built before 1960,7,Hazelwood,St. Louis County,1970.0,72104.0,Weatherization & general repair|7
+Weatherization & general repair,Owner-occupied homes built before 1960,8,Bellefontaine Neighbors,St. Louis County,1736.0,60467.5,Weatherization & general repair|8
+Weatherization & general repair,Owner-occupied homes built before 1960,9,Bevo Mill,St. Louis City,1591.0,59318.0,Weatherization & general repair|9
+Weatherization & general repair,Owner-occupied homes built before 1960,10,Berkeley,St. Louis County,1437.0,44659.5,Weatherization & general repair|10

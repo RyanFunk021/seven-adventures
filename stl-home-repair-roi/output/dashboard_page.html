@@ -30,13 +30,21 @@
 .hr details { font-size: var(--cds-font-size-caption); line-height: 1.55; color: var(--color-fg-muted); }
 .hr details summary { cursor: pointer; color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
 .hr details li { margin-bottom: 4px; }
+.hr .map { position: relative; width: 100%; min-height: 360px; }
+.hr .map path.t { stroke: var(--color-bg); stroke-width: .5; }
+.hr .map path.t:hover { stroke: var(--color-fg); stroke-width: 1.5; }
+.hr .ramp { display: flex; align-items: center; gap: 6px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); flex-wrap: wrap; }
+.hr .ramp i { display: inline-block; width: 22px; height: 10px; }
+.hr .lens-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--cds-gap-lg); }
+.hr .lens-grid h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0 0 4px; }
+.hr .ctl { display: flex; gap: var(--cds-gap-sm); align-items: center; flex-wrap: wrap; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
 .hr [data-dash-source-state=refreshing] { opacity: .5; }
 </style>
 
 <div class="hr" data-read lang="en">
   <header id="top" style="display:flex;flex-direction:column;gap:var(--cds-gap-sm)">
     <h1>St. Louis Home Repair Grant ROI</h1>
-    <p class="lede">Lead hazard control has the highest measured return of any federally funded home repair: <b data-draw="lead-bcr" data-source="ranking" data-field="bcr_low" data-where="rank=1">—</b>–<b data-draw="lead-bcr-hi" data-source="ranking" data-field="bcr_high" data-where="rank=1">—</b> dollars of benefit per dollar spent. Aging-in-place modifications and weatherization follow. Where no ROI study exists, roof replacement and flood repair carry the most value per job, and flood repair has the largest open pool of money.</p>
+    <p class="lede">Lead hazard control has the highest measured return of any federally funded home repair: <b data-draw="lead-bcr" data-source="ranking" data-field="bcr_low" data-where="rank=1">—</b>–<b data-draw="lead-bcr-hi" data-source="ranking" data-field="bcr_high" data-where="rank=1">—</b> dollars of benefit per dollar spent. Aging-in-place modifications and weatherization follow. Where no ROI study exists, roof replacement and flood repair carry the most value per job, and flood repair has the largest open pool of money. The houses are concentrated in north City, north County and south City (map below).</p>
     <p class="sub">For a contractor doing federally funded repairs in St. Louis City and County. ROI here means public benefit per $1 of grant (health, energy, Medicaid savings) from published evaluations, plus a home-value model built for this page. Contractor profit margins are not in any public data.</p>
   </header>
 
@@ -55,6 +63,38 @@
         <thead><tr><th data-field="rank">#</th><th data-field="improvement">Improvement</th><th class="num" data-field="bcr_low">Benefit per $1</th><th data-field="roi_basis">ROI basis</th><th class="num" data-field="stl_federal_funding">Local sub-awards</th><th class="num" data-field="stl_prime_grants">Direct federal grants</th><th class="num" data-field="typical_job">Typical job</th><th data-field="note">Why it ranks here</th></tr></thead>
         <tbody data-draw="ranking-body"></tbody>
       </table>
+    </div>
+  </section>
+
+  <section id="where-section">
+    <h2>Where to find the houses</h2>
+    <p class="lede">The best area is <b data-draw="top-area" data-source="areas" data-field="area" data-where="rank=1">—</b>, scoring <b data-draw="top-score" data-source="areas" data-field="opportunity_score" data-where="rank=1">—</b> of 100. The strongest ground is north City's 2025 tornado path, north County's older inner-ring suburbs, and south City's pre-1940 brick neighborhoods.</p>
+    <p class="sub">Each of St. Louis City and County's census tracts is scored 0–100 by percentile. The weights follow the ROI ranking: pre-1940 owner-occupied homes (lead) 25%, low owner income (program eligibility) 25%, seniors in pre-1960 homes (aging in place) 20%, FEMA unmet homeowner repair need (disaster) 20%, low home value 10%. Sources are ACS 2019–2023 and FEMA registrations for the July 2022 flood and the March and May 2025 storms.</p>
+    <div class="ctl"><label for="map-metric">Color tracts by</label>
+      <select class="dash-select" id="map-metric" aria-label="Map metric">
+        <option value="opportunity_score">Overall opportunity score</option>
+        <option value="owner_pre1940">Owner homes built before 1940 (lead)</option>
+        <option value="senior_old_homes">Seniors in pre-1960 homes (aging in place)</option>
+        <option value="fema_unmet_need">FEMA unmet repair need (disaster)</option>
+        <option value="fema_owner_regs">FEMA homeowner registrations</option>
+      </select></div>
+    <div class="ramp" data-draw="map-ramp"></div>
+    <div class="map" id="tract-map" data-draw="map" data-source="tractmap"></div>
+    <h2 style="margin-top:var(--cds-gap-md)">Top 20 neighborhoods and municipalities</h2>
+    <p class="sub">Tracts rolled up to the City neighborhood or County municipality that holds each tract's center. Areas with under 150 owner-occupied homes are left out.</p>
+    <div class="tw">
+      <table id="area-table" data-source="areas" data-row-key="rank">
+        <thead><tr><th data-field="rank">#</th><th data-field="area">Area</th><th data-field="jurisdiction">Where</th><th class="num" data-field="opportunity_score">Score</th><th class="num" data-field="owner_pre1940">Owner homes pre-1940</th><th class="num" data-field="senior_old_homes">Seniors in pre-1960 homes</th><th class="num" data-field="fema_owner_regs">FEMA owner registrations</th><th class="num" data-field="fema_unmet_need">FEMA unmet need</th><th class="num" data-field="owner_median_income">Owner median income</th><th class="num" data-field="median_value">Median home value</th></tr></thead>
+        <tbody data-draw="area-body"></tbody>
+      </table>
+    </div>
+    <h2 style="margin-top:var(--cds-gap-md)">Best areas for each type of job</h2>
+    <p class="sub">Areas where the typical owner earns under $80K, ranked by the count that matters for each program. Big County municipalities rank high partly because they are big.</p>
+    <div class="lens-grid">
+      <div id="lens-lead"><h3>Lead hazard control</h3><p class="sub">Owner homes built before 1940</p><table data-source="tops" data-row-key="key"><thead><tr><th data-field="area">Area</th><th class="num" data-field="value">Homes</th></tr></thead><tbody data-draw="lens" data-lens="Lead hazard control"></tbody></table></div>
+      <div id="lens-aging"><h3>Aging in place</h3><p class="sub">Est. homeowners 65+ in pre-1960 homes</p><table data-source="tops" data-row-key="key"><thead><tr><th data-field="area">Area</th><th class="num" data-field="value">Homes</th></tr></thead><tbody data-draw="lens" data-lens="Aging-in-place"></tbody></table></div>
+      <div id="lens-disaster"><h3>Disaster repair</h3><p class="sub">FEMA unmet homeowner repair need</p><table data-source="tops" data-row-key="key"><thead><tr><th data-field="area">Area</th><th class="num" data-field="value">Unmet need</th></tr></thead><tbody data-draw="lens" data-lens="Disaster repair (2022 flood, 2025 tornado)"></tbody></table></div>
+      <div id="lens-wx"><h3>Weatherization and general repair</h3><p class="sub">Owner homes built before 1960</p><table data-source="tops" data-row-key="key"><thead><tr><th data-field="area">Area</th><th class="num" data-field="value">Homes</th></tr></thead><tbody data-draw="lens" data-lens="Weatherization &amp; general repair"></tbody></table></div>
     </div>
   </section>
 
@@ -128,6 +168,7 @@
       <li><b>American Housing Survey</b> 2019, 2021, 2023 national files: 82,656 contractor-done jobs. No St. Louis metro sample exists in these years, so the Midwest older-home subset stands in.</li>
       <li><b>UMSL Community Innovation and Action Center</b>, Home Repair Study (May 2023): repair needs and costs for older St. Louis homeowners.</li>
       <li><b>ROI evidence</b>: Gould (2009), Environmental Health Perspectives 117(7), lead hazard control returns $17–$221 per $1. DOE/ORNL Weatherization Assistance Program national evaluations: energy savings-to-investment ratio 1.4, benefit-cost 4.1 with health and safety. CAPABLE (Johns Hopkins; Bishai et al. 2018, JAGS): about $867 per month lower Medicaid spending against a $2,825–$5,000 program cost.</li>
+      <li><b>Location data</b>: ACS 2019–2023 5-year summary files (tables B25003, B25007, B25036, B25077, B25119) by 2020 census tract; FEMA OpenFEMA Individuals and Households Program registrations (disasters 4665, 4867, 4877), owner-occupants only; Census TIGERweb tracts and places; City of St. Louis neighborhood boundaries. The senior-in-older-home count assumes owner age and building age are independent within a tract.</li>
       <li><b>Limits</b>: sub-awards are often annual program allocations, not single jobs. The keyword classification is approximate. The value model is correlational. Roof, furnace and electrical work have no published ROI study; they rank on value per job and local need.</li>
     </ul>
   </details>
@@ -306,4 +347,43 @@ dash.draw('gbm', fit('M3_gbm_r2_test', d3.format('.0%')));
 dash.draw('olst', fit('M3_ols_r2_test', d3.format('.0%')));
 dash.draw('m2r2', fit('M2_r2', d3.format('.0%')));
 dash.draw('m2n', fit('M2_n', d3.format(',')));
+const MAPLBL = { opportunity_score: 'Opportunity score', owner_pre1940: 'Owner homes pre-1940', senior_old_homes: 'Seniors in pre-1960 homes', fema_unmet_need: 'FEMA unmet need', fema_owner_regs: 'FEMA owner registrations' };
+const mapFmt = (k, v) => v == null ? 'n/a' : k === 'fema_unmet_need' ? money(v) : d3.format(',.0f')(v);
+const metricNow = () => { const sel = document.querySelector('#map-metric'); return sel ? sel.value : 'opportunity_score'; };
+document.querySelectorAll('#map-metric').forEach((sel) => sel.addEventListener('change', () => { dash.draw('map'); dash.draw('map-ramp'); }));
+const geoOf = () => { const r = dash.data('tractmap'); if (r.status !== 'ok' || !r.data) return null; const d = r.data; return d.features ? d : (d.data && d.data.features ? d.data : null); };
+const binsFor = (fc, k) => { const v = fc.features.map((f) => f.properties[k]).filter((x) => x != null); return d3.scaleQuantile().domain(v).range([0.12, 0.3, 0.5, 0.72, 0.95]); };
+dash.draw('map-ramp', (el) => {
+  const fc = geoOf(); el.replaceChildren(); if (!fc) return; const k = metricNow(); const q = binsFor(fc, k); const th = q.quantiles();
+  const lo = document.createElement('span'); lo.textContent = 'Lower'; el.appendChild(lo);
+  q.range().forEach((o, i) => { const b = document.createElement('i'); b.style.background = dash.colors[0]; b.style.opacity = o; b.title = i === 0 ? '< ' + mapFmt(k, th[0]) : i === th.length ? '≥ ' + mapFmt(k, th[i - 1]) : mapFmt(k, th[i - 1]) + '–' + mapFmt(k, th[i]); el.appendChild(b); });
+  const hi = document.createElement('span'); hi.textContent = 'Higher (' + MAPLBL[k] + ', quintiles)'; el.appendChild(hi);
+});
+dash.draw('map', (el) => {
+  const fc = geoOf(); if (!fc) return window.HR.failed(el, 'tractmap');
+  const k = metricNow(); const W = el.clientWidth || 600; const H = Math.max(340, Math.min(640, W * 0.95));
+  d3.select(el).selectAll('svg').remove();
+  const svg = d3.select(el).append('svg').attr('width', W).attr('height', H).attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Map of St. Louis City and County census tracts colored by ' + MAPLBL[k]);
+  const proj = d3.geoMercator().fitSize([W, H], fc); const path = d3.geoPath(proj); const q = binsFor(fc, k); const tt = window.HR.tip(el);
+  svg.selectAll('path.t').data(fc.features).join('path').attr('class', 't').attr('d', path)
+    .style('fill', (f) => f.properties[k] == null ? 'var(--cds-chart-muted)' : dash.colors[0]).style('fill-opacity', (f) => f.properties[k] == null ? 0.25 : q(f.properties[k]))
+    .on('mousemove', (ev, f) => { const p = f.properties; tt.show(ev, [p.area + ' (' + p.jurisdiction + ')', 'Opportunity score ' + mapFmt('x', p.opportunity_score), 'Owner homes pre-1940: ' + mapFmt('x', p.owner_pre1940), 'Seniors in pre-1960 homes: ' + mapFmt('x', p.senior_old_homes), 'FEMA owner registrations: ' + mapFmt('x', p.fema_owner_regs) + ', unmet need ' + money(p.fema_unmet_need), 'Owner median income: ' + (p.owner_median_income == null ? 'n/a' : money(p.owner_median_income)), 'Tract ' + p.tract]); })
+    .on('mouseleave', () => tt.hide());
+});
+dash.draw('top-area', (el) => text(el, 'areas', (r) => r.find((d) => +d.rank === 1).area));
+dash.draw('top-score', (el) => text(el, 'areas', (r) => d3.format('.0f')(+r.find((d) => +d.rank === 1).opportunity_score)));
+dash.draw('area-body', (tb) => {
+  const r = rows('areas'); tb.replaceChildren(); if (!r) return;
+  r.filter((d) => +d.rank <= 20).sort((a, b) => a.rank - b.rank).forEach((d) => { const tr = document.createElement('tr'); tr.dataset.key = d.rank;
+    const f0 = (v) => v === '' || v == null ? 'n/a' : d3.format(',.0f')(+v);
+    [[d.rank], [d.area], [d.jurisdiction.replace('St. Louis ', '')], [d3.format('.0f')(+d.opportunity_score), 'num'], [f0(d.owner_pre1940), 'num'], [f0(d.senior_old_homes), 'num'], [f0(d.fema_owner_regs), 'num'], [money(+d.fema_unmet_need), 'num'], [d.owner_median_income === '' ? 'n/a' : money(+d.owner_median_income), 'num'], [d.median_value === '' ? 'n/a' : money(+d.median_value), 'num']]
+      .forEach(([v, c]) => { const td = document.createElement('td'); td.textContent = v; if (c) td.className = c; tr.appendChild(td); });
+    tb.appendChild(tr); });
+});
+dash.draw('lens', (tb) => {
+  const r = rows('tops'); tb.replaceChildren(); if (!r) return;
+  r.filter((d) => d.lens === tb.dataset.lens).sort((a, b) => a.lens_rank - b.lens_rank).forEach((d) => { const tr = document.createElement('tr'); tr.dataset.key = encodeURIComponent(d.key);
+    const a = document.createElement('td'); a.textContent = d.lens_rank + '. ' + d.area + (d.jurisdiction.includes('County') ? ' (County)' : ''); tr.appendChild(a);
+    const v = document.createElement('td'); v.className = 'num'; v.textContent = d.lens.startsWith('Disaster') ? money(+d.value) : d3.format(',.0f')(+d.value); tr.appendChild(v); tb.appendChild(tr); });
+});
 </script>
