@@ -38,6 +38,11 @@
 .hr .lens-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--cds-gap-lg); }
 .hr .lens-grid h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0 0 4px; }
 .hr .ctl { display: flex; gap: var(--cds-gap-sm); align-items: center; flex-wrap: wrap; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.hr .ask { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm); margin-top: var(--cds-gap-xs); padding: var(--cds-pad-sm) var(--cds-pad-md); border: 1px dashed var(--color-border-line); border-radius: var(--cds-radius); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.hr .ask button { font: inherit; color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 4px 10px; cursor: pointer; }
+.hr .ask button:hover { border-color: var(--color-fg-muted); }
+.hr .ask button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.hr .ask .now { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
 .hr [data-dash-source-state=refreshing] { opacity: .5; }
 </style>
 
@@ -47,6 +52,7 @@
     <p class="lede">Lead hazard control has the highest measured return of any federally funded home repair: <b data-draw="lead-bcr" data-source="ranking" data-field="bcr_low" data-where="rank=1">—</b>–<b data-draw="lead-bcr-hi" data-source="ranking" data-field="bcr_high" data-where="rank=1">—</b> dollars of benefit per dollar spent. Aging-in-place modifications and weatherization follow. Where no ROI study exists, roof replacement and flood repair carry the most value per job, and flood repair has the largest open pool of money. The houses are concentrated in north City, north County and south City (map below).</p>
     <p class="sub">For a contractor doing federally funded repairs in St. Louis City and County. ROI here means public benefit per $1 of grant (health, energy, Medicaid savings) from published evaluations, plus a home-value model built for this page. Contractor profit margins are not in any public data.</p>
   </header>
+  <div class="ask" id="ask-overall" data-ask-for="top"><span>A general question about this analysis?</span><button type="button" class="ask-btn" data-ask-for="top">Ask a question</button><span class="how">Then click the title above and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click the title to place your question.</span></div>
 
   <div class="tiles" id="tiles">
     <div class="tile"><span class="k">Highest measured ROI · lead hazard control</span><span class="v">$<span data-draw="t-lead" data-source="ranking" data-field="bcr_low" data-where="rank=1">—</span>+ per $1</span><span class="n">Health, lifetime earnings and tax benefits (Gould 2009)</span></div>
@@ -64,6 +70,8 @@
         <tbody data-draw="ranking-body"></tbody>
       </table>
     </div>
+  
+    <div class="ask" id="ask-ranking" data-ask-for="ranking-section"><span>Question about the ranking?</span><button type="button" class="ask-btn" data-ask-for="ranking-section">Ask a question</button><span class="how">Then click anywhere in this section and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click in this section to place your question.</span></div>
   </section>
 
   <section id="where-section">
@@ -96,12 +104,16 @@
       <div id="lens-disaster"><h3>Disaster repair</h3><p class="sub">FEMA unmet homeowner repair need</p><table data-source="tops" data-row-key="key"><thead><tr><th data-field="area">Area</th><th class="num" data-field="value">Unmet need</th></tr></thead><tbody data-draw="lens" data-lens="Disaster repair (2022 flood, 2025 tornado)"></tbody></table></div>
       <div id="lens-wx"><h3>Weatherization and general repair</h3><p class="sub">Owner homes built before 1960</p><table data-source="tops" data-row-key="key"><thead><tr><th data-field="area">Area</th><th class="num" data-field="value">Homes</th></tr></thead><tbody data-draw="lens" data-lens="Weatherization &amp; general repair"></tbody></table></div>
     </div>
+  
+    <div class="ask" id="ask-where" data-ask-for="where-section"><span>Question about locations and neighborhoods?</span><button type="button" class="ask-btn" data-ask-for="where-section">Ask a question</button><span class="how">Then click anywhere in this section and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click in this section to place your question.</span></div>
   </section>
 
   <section id="funding-section">
     <h2>Where federal repair money lands in St. Louis</h2>
     <p class="sub">1,311 federal sub-awards to St. Louis City and County organizations, sorted into improvement types by their descriptions. Highlighted bars are home repair work a contractor can bid on.</p>
     <div class="chart" id="funding-chart" data-draw="funding" data-source="subawards" style="min-height:330px"></div>
+  
+    <div class="ask" id="ask-funding" data-ask-for="funding-section"><span>Question about where the money lands?</span><button type="button" class="ask-btn" data-ask-for="funding-section">Ask a question</button><span class="how">Then click anywhere in this section and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click in this section to place your question.</span></div>
   </section>
 
   <div class="two">
@@ -110,7 +122,9 @@
       <p class="sub">Lead money spiked in 2022; weatherization came back in 2025.</p>
       <div class="legend" data-draw="trend-legend"></div>
       <div class="chart" id="trend-chart" data-draw="trend" data-source="subyear" style="min-height:260px"></div>
-    </section>
+    
+    <div class="ask" id="ask-trend" data-ask-for="trend-section"><span>Question about funding by year?</span><button type="button" class="ask-btn" data-ask-for="trend-section">Ask a question</button><span class="how">Then click anywhere in this section and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click in this section to place your question.</span></div>
+  </section>
     <section id="prime-section">
       <h2>Direct federal grants by program</h2>
       <p class="sub">Prime awards to St. Louis City and County recipients since FY2008.</p>
@@ -120,7 +134,9 @@
           <tbody data-draw="prime-body"></tbody>
         </table>
       </div>
-    </section>
+    
+    <div class="ask" id="ask-prime" data-ask-for="prime-section"><span>Question about direct federal grants?</span><button type="button" class="ask-btn" data-ask-for="prime-section">Ask a question</button><span class="how">Then click anywhere in this section and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click in this section to place your question.</span></div>
+  </section>
   </div>
 
   <section id="cost-section">
@@ -128,6 +144,8 @@
     <p class="sub">American Housing Survey 2019–2023, contractor-done jobs on owner-occupied single-family homes, in 2024 dollars. The St. Louis-like subset is Midwest homes built before 1960, worth under $200K, with household income under $60K.</p>
     <div class="legend"><span style="--sw: var(--cds-chart-muted)">U.S. median</span><span class="stl-swatch">St. Louis-like median</span></div>
     <div class="chart" id="cost-chart" data-draw="cost" data-source="ahs" style="min-height:420px"></div>
+  
+    <div class="ask" id="ask-cost" data-ask-for="cost-section"><span>Question about repair costs?</span><button type="button" class="ask-btn" data-ask-for="cost-section">Ask a question</button><span class="how">Then click anywhere in this section and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click in this section to place your question.</span></div>
   </section>
 
   <div class="two">
@@ -135,12 +153,16 @@
       <h2>Home value gain after each repair</h2>
       <p class="sub">Model M2: percent difference in owner-reported home value for homes with each repair in the last two years, holding age, size, region, income and year fixed. Bars cross zero where the effect is not distinguishable from none. Correlation only; owners who fix one thing tend to keep up the whole house.</p>
       <div class="chart" id="hedonic-chart" data-draw="hedonic" data-source="hedonic" style="min-height:380px"></div>
-    </section>
+    
+    <div class="ask" id="ask-hedonic" data-ask-for="hedonic-section"><span>Question about home value gains?</span><button type="button" class="ask-btn" data-ask-for="hedonic-section">Ask a question</button><span class="how">Then click anywhere in this section and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click in this section to place your question.</span></div>
+  </section>
     <section id="need-section">
       <h2>What St. Louis homeowners need most</h2>
       <p class="sub">UMSL survey of 583 older St. Louis homeowners (2023): number who need each repair times its cost. This is the dollar need, and so the total value of the work.</p>
       <div class="chart" id="need-chart" data-draw="need" data-source="need" style="min-height:300px"></div>
-    </section>
+    
+    <div class="ask" id="ask-need" data-ask-for="need-section"><span>Question about St. Louis repair needs?</span><button type="button" class="ask-btn" data-ask-for="need-section">Ask a question</button><span class="how">Then click anywhere in this section and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click in this section to place your question.</span></div>
+  </section>
   </div>
 
   <section id="caper-section">
@@ -152,11 +174,15 @@
         <tbody data-draw="caper-body"></tbody>
       </table>
     </div>
+  
+    <div class="ask" id="ask-caper" data-ask-for="caper-section"><span>Question about City CDBG spending?</span><button type="button" class="ask-btn" data-ask-for="caper-section">Ask a question</button><span class="how">Then click anywhere in this section and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click in this section to place your question.</span></div>
   </section>
 
   <section id="models-section">
     <h2>How well the models fit</h2>
     <p class="lede">The cost model (M1) explains <b data-draw="m1r2" data-source="fit" data-field="value" data-where="metric=M1_ols_r2_in_sample">—</b> of the variation in job cost across <b data-draw="m1n" data-source="fit" data-field="value" data-where="metric=M1_n">—</b> jobs. Improvement type is the main driver; home value and income add a little. A gradient-boosted model scores <b data-draw="gbm" data-source="fit" data-field="value" data-where="metric=M3_gbm_r2_test">—</b> on held-out jobs against <b data-draw="olst" data-source="fit" data-field="value" data-where="metric=M3_ols_r2_test">—</b> for plain regression, so the simple model is close to the best these fields allow. The home-value model (M2) explains <b data-draw="m2r2" data-source="fit" data-field="value" data-where="metric=M2_r2">—</b> across <b data-draw="m2n" data-source="fit" data-field="value" data-where="metric=M2_n">—</b> homes.</p>
+  
+    <div class="ask" id="ask-models" data-ask-for="models-section"><span>Question about the models?</span><button type="button" class="ask-btn" data-ask-for="models-section">Ask a question</button><span class="how">Then click anywhere in this section and type it. Answers appear in the same thread.</span><span class="now" hidden>Comment mode is on. Click in this section to place your question.</span></div>
   </section>
 
   <details id="methods">
@@ -169,6 +195,7 @@
       <li><b>UMSL Community Innovation and Action Center</b>, Home Repair Study (May 2023): repair needs and costs for older St. Louis homeowners.</li>
       <li><b>ROI evidence</b>: Gould (2009), Environmental Health Perspectives 117(7), lead hazard control returns $17–$221 per $1. DOE/ORNL Weatherization Assistance Program national evaluations: energy savings-to-investment ratio 1.4, benefit-cost 4.1 with health and safety. CAPABLE (Johns Hopkins; Bishai et al. 2018, JAGS): about $867 per month lower Medicaid spending against a $2,825–$5,000 program cost.</li>
       <li><b>Location data</b>: ACS 2019–2023 5-year summary files (tables B25003, B25007, B25036, B25077, B25119) by 2020 census tract; FEMA OpenFEMA Individuals and Households Program registrations (disasters 4665, 4867, 4877), owner-occupants only; Census TIGERweb tracts and places; City of St. Louis neighborhood boundaries. The senior-in-older-home count assumes owner age and building age are independent within a tract.</li>
+      <li><b>Questions</b>: each section has an Ask a question button. Questions are comment threads pinned to that section. Anyone who can comment on this dashboard sees them, and answers are posted as replies in the same thread.</li>
       <li><b>Limits</b>: sub-awards are often annual program allocations, not single jobs. The keyword classification is approximate. The value model is correlational. Roof, furnace and electrical work have no published ROI study; they rank on value per job and local need.</li>
     </ul>
   </details>
@@ -386,4 +413,24 @@ dash.draw('lens', (tb) => {
     const a = document.createElement('td'); a.textContent = d.lens_rank + '. ' + d.area + (d.jurisdiction.includes('County') ? ' (County)' : ''); tr.appendChild(a);
     const v = document.createElement('td'); v.className = 'num'; v.textContent = d.lens.startsWith('Disaster') ? money(+d.value) : d3.format(',.0f')(+d.value); tr.appendChild(v); tb.appendChild(tr); });
 });
+// Feedback: each "Ask a question" button turns on the dashboard's comment mode and scrolls to its section.
+(() => {
+  const commentBtn = () => document.querySelector('[data-comment-button]');
+  const sync = () => {
+    const on = document.documentElement.hasAttribute('data-comment-mode');
+    document.querySelectorAll('.hr .ask').forEach((a) => {
+      a.querySelectorAll('.now').forEach((n) => { n.hidden = !on; });
+      a.querySelectorAll('.how').forEach((n) => { n.hidden = on; });
+      a.querySelectorAll('.ask-btn').forEach((b) => { b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+    });
+  };
+  new MutationObserver(sync).observe(document.documentElement, { attributes: true, attributeFilter: ['data-comment-mode'] });
+  sync();
+  document.querySelectorAll('.hr .ask-btn').forEach((b) => b.addEventListener('click', () => {
+    const target = document.getElementById(b.getAttribute('data-ask-for'));
+    if (target) target.scrollIntoView({ block: 'start', behavior: window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? 'smooth' : 'auto' });
+    const cb = commentBtn();
+    if (cb && !document.documentElement.hasAttribute('data-comment-mode')) cb.click();
+  }));
+})();
 </script>
